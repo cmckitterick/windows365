@@ -6,11 +6,14 @@ author: Heidilohr
 
 ms.service: virtual-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 03/30/2020
 ms.author: helohr
 manager: lizross
 ---
 # Create a host pool with an Azure Resource Manager template
+
+>[!IMPORTANT]
+>This content applies to the Fall 2019 release that doesn't support Azure Resource Manager Windows Virtual Desktop objects.
 
 Host pools are a collection of one or more identical virtual machines within Windows Virtual Desktop tenant environments. Each host pool can contain an app group that users can interact with as they would on a physical desktop.
 
@@ -24,7 +27,7 @@ Make sure you know the following things before running the Azure Resource Manage
 - Your domain join credentials.
 - Your Windows Virtual Desktop credentials.
 
-When you create a Windows Virtual Desktop host pool with the Azure Resource Manager template, you can create a virtual machine from the Azure gallery, a managed image, or an unmanaged image. To learn more about how to create VM images, see [Prepare a Windows VHD or VHDX to upload to Azure](../virtual-machines/windows/prepare-for-upload-vhd-image.md) and [Create a managed image of a generalized VM in Azure](../virtual-machines/windows/capture-image-resource.md).
+When you create a Windows Virtual Desktop host pool with the Azure Resource Manager template, you can create a virtual machine from the Azure gallery, a managed image, or an unmanaged image. To learn more about how to create VM images, see [Prepare a Windows VHD or VHDX to upload to Azure](../../virtual-machines/windows/prepare-for-upload-vhd-image.md) and [Create a managed image of a generalized VM in Azure](../../virtual-machines/windows/capture-image-resource.md).
 
 ## Run the Azure Resource Manager template for provisioning a new host pool
 
@@ -38,7 +41,7 @@ If you're deploying in a Cloud Solution Provider subscription, follow these step
 
 1. Scroll down and right-click **Deploy to Azure**, then select **Copy Link Location**.
 2. Open a text editor like Notepad and paste the link there.
-3. Right after "https://portal.azure.com/" and before the hashtag (#) enter an at sign (@) followed by the tenant domain name. Here's an example of the format you should use: https://portal.azure.com/@Contoso.onmicrosoft.com#create/.
+3. Right after "https://portal.azure.com/" and before the hashtag (#) enter an at sign (@) followed by the tenant domain name. Here's an example of the format you should use: `https://portal.azure.com/@Contoso.onmicrosoft.com#create/`.
 4. Sign in to the Azure portal as a user with Admin/Contributor permissions to the Cloud Solution Provider subscription.
 5. Paste the link you copied to the text editor into the address bar.
 
@@ -67,4 +70,4 @@ The user's UPN should match the user's identity in Azure Active Directory (for e
 After you've completed these steps, users added to the desktop application group can sign in to Windows Virtual Desktop with supported Remote Desktop clients and see a resource for a session desktop.
 
 >[!IMPORTANT]
->To help secure your Windows Virtual Desktop environment in Azure, we recommend you don't open inbound port 3389 on your VMs. Windows Virtual Desktop doesn't require an open inbound port 3389 for users to access the host pool's VMs. If you must open port 3389 for troubleshooting purposes, we recommend you use [just-in-time VM access](../security-center/security-center-just-in-time.md).
+>To help secure your Windows Virtual Desktop environment in Azure, we recommend you don't open inbound port 3389 on your VMs. Windows Virtual Desktop doesn't require an open inbound port 3389 for users to access the host pool's VMs. If you must open port 3389 for troubleshooting purposes, we recommend you use [just-in-time VM access](../../security-center/security-center-just-in-time.md).
