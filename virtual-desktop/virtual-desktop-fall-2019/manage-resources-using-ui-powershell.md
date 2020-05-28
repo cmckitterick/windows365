@@ -6,12 +6,15 @@ author: Heidilohr
 
 ms.service: virtual-desktop
 ms.topic: conceptual
-ms.date: 01/10/2020
+ms.date: 03/30/2020
 ms.author: helohr
 manager: lizross
 ---
 
 # Deploy a management tool with PowerShell
+
+>[!IMPORTANT]
+>This content applies to the Fall 2019 release that doesn't support Azure Resource Manager Windows Virtual Desktop objects.
 
 This article will show you how to deploy the management tool using PowerShell.
 
@@ -33,12 +36,7 @@ The following browsers are compatible with the management tool:
 Before deploying the management tool, you'll need an Azure Active Directory (Azure AD) user to create an app registration and deploy the management UI. This user must:
 
 - Have permission to create resources in your Azure subscription
-- Have permission to create an Azure AD application. Follow these steps to check if your user has the required permissions by following the instructions in [Required permissions](../active-directory/develop/howto-create-service-principal-portal.md#required-permissions).
-
-In order to successfully deploy and configure the management tool, you first need to download the following PowerShell scripts from the [RDS-Templates GitHub repo](https://github.com/Azure/RDS-Templates/tree/master/wvd-templates/wvd-management-ux/deploy/scripts) and save them to the same folder on your local machine.
-
-  - createWvdMgmtUxAppRegistration.ps1
-  - updateWvdMgmtUxApiUrl.ps1
+- Have permission to create an Azure AD application. Follow these steps to check if your user has the required permissions by following the instructions in [Required permissions](../../active-directory/develop/howto-create-service-principal-portal.md#required-permissions).
 
 After you deploy and configure the management tool, we recommend you ask a user to launch the management UI to make sure everything works. The user who launches the management UI must have a role assignment that lets them view or edit the Windows Virtual Desktop tenant.
 
@@ -65,11 +63,23 @@ Keep the PowerShell window you used to sign in open to run additional PowerShell
 
 ## Create an Azure Active Directory app registration
 
+In order to successfully deploy and configure the management tool, you first need to download the following PowerShell scripts from the [RDS-Templates GitHub repo](https://github.com/Azure/RDS-Templates/tree/master/wvd-templates/wvd-management-ux/deploy/scripts)
+
+```powershell
+Set-Location -Path "c:\temp"
+$uri = "https://raw.githubusercontent.com/Azure/RDS-Templates/master/wvd-templates/wvd-management-ux/deploy/scripts/createWvdMgmtUxAppRegistration.ps1"
+Invoke-WebRequest -Uri $uri -OutFile ".\createWvdMgmtUxAppRegistration.ps1"
+$uri = "https://raw.githubusercontent.com/Azure/RDS-Templates/master/wvd-templates/wvd-management-ux/deploy/scripts/updateWvdMgmtUxApiUrl.ps1"
+Invoke-WebRequest -Uri $uri -OutFile ".\updateWvdMgmtUxApiUrl.ps1"
+```
+
 Run the following commands to create the app registration with required API permissions:
 
 ```powershell
 $appName = Read-Host -Prompt "Enter a unique name for the management tool's app registration. The name can't contain spaces or special characters."
-$subscriptionId = Read-Host -Prompt "Enter the Azure subscription ID where you will be deploying the management tool."
+$azureSubscription = Get-AzSubscription | Out-GridView -PassThru
+$subscriptionId = $azureSubscription.Id
+Get-AzSubscription -SubscriptionId $subscriptionId | Select-AzSubscription
 
 .\createWvdMgmtUxAppRegistration.ps1 -AppName $appName -SubscriptionId $subscriptionId
 ```
@@ -130,11 +140,11 @@ To verify the Azure AD application configuration and provide consent:
 3. Select **All applications** and search the unique app name you provided for the PowerShell script in [Create an Azure Active Directory app registration](#create-an-azure-active-directory-app-registration).
 4. In the panel on the left side of the browser, select **Authentication** and make sure the redirect URI is the same as the web app URL for the management tool, as shown in the following image.
    
-   [ ![The authentication page with the entered redirect URI](media/management-ui-redirect-uri-inline.png) ](media/management-ui-redirect-uri-expanded.png#lightbox)
+   [ ![The authentication page with the entered redirect URI](../media/management-ui-redirect-uri-inline.png) ](../media/management-ui-redirect-uri-expanded.png#lightbox)
 
 5. In the left panel, select **API permissions** to confirm that permissions were added. If you're a global admin, select the **Grant admin consent for `tenantname`**  button and follow the dialog prompts to provide admin consent for your organization.
     
-    [ ![The API permissions page](media/management-ui-permissions-inline.png) ](media/management-ui-permissions-expanded.png#lightbox)
+    [ ![The API permissions page](../media/management-ui-permissions-inline.png) ](../media/management-ui-permissions-expanded.png#lightbox)
 
 You can now start using the management tool.
 
@@ -160,4 +170,4 @@ If you come across any issues with the management tool or other Windows Virtual 
 
 ## Next steps
 
-Now that you've learned how to deploy and connect to the management tool, you can learn how to use Azure Service Health to monitor service issues and health advisories. To learn more, see our [Set up service alerts tutorial](./set-up-service-alerts.md).
+Now that you've learned how to deploy and connect to the management tool, you can learn how to use Azure Service Health to monitor service issues and health advisories. To learn more, see our [Set up service alerts tutorial](set-up-service-alerts-2019.md).
