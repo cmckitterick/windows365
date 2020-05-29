@@ -6,10 +6,14 @@ author: Heidilohr
 
 ms.service: virtual-desktop
 ms.topic: tutorial
-ms.date: 09/09/2019
+ms.date: 05/27/2020
 ms.author: helohr
+manager: lizross
 ---
 # Tutorial: Create service principals and role assignments by using PowerShell
+
+>[!IMPORTANT]
+>This content applies to the Fall 2019 release that doesn't support Azure Resource Manager Windows Virtual Desktop objects.
 
 Service principals are identities that you can create in Azure Active Directory to assign roles and permissions for a specific purpose. In Windows Virtual Desktop, you can create a service principal to:
 
@@ -39,7 +43,7 @@ Before you can create service principals and role assignments, you need to do th
 
 ## Create a service principal in Azure Active Directory
 
-After you’ve fulfilled the prerequisites in your PowerShell session, run the following PowerShell cmdlets to create a multitenant service principal in Azure.
+After you've fulfilled the prerequisites in your PowerShell session, run the following PowerShell cmdlets to create a multitenant service principal in Azure.
 
 ```powershell
 Import-Module AzureAD
@@ -49,7 +53,7 @@ $svcPrincipalCreds = New-AzureADApplicationPasswordCredential -ObjectId $svcPrin
 ```
 ## View your credentials in PowerShell
 
-Before you create the role assignment for your service principal, view your credentials and write them down for future reference. The password is especially important because you won’t be able to retrieve it after you close this PowerShell session.
+Before you create the role assignment for your service principal, view your credentials and write them down for future reference. The password is especially important because you won't be able to retrieve it after you close this PowerShell session.
 
 Here are the three credentials you should write down and the cmdlets you need to run to get them:
 
@@ -71,7 +75,7 @@ Here are the three credentials you should write down and the cmdlets you need to
     $svcPrincipal.AppId
     ```
 
-## Create a role assignment in Windows Virtual Desktop Preview
+## Create a role assignment in Windows Virtual Desktop
 
 Next, you need to create a role assignment so the service principal can sign in to Windows Virtual Desktop. Make sure to sign in with an account that has permissions to create role assignments.
 
@@ -107,4 +111,4 @@ After you've signed in, make sure everything works by testing a few Windows Virt
 After you've created the service principal and assigned it a role in your Windows Virtual Desktop tenant, you can use it to create a host pool. To learn more about host pools, continue to the tutorial for creating a host pool in Windows Virtual Desktop.
 
  > [!div class="nextstepaction"]
- > [Windows Virtual Desktop host pool tutorial](./create-host-pools-azure-marketplace.md)
+ > [Create a host pool with Azure Marketplace](create-host-pools-azure-marketplace-2019.md)

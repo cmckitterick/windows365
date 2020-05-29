@@ -6,16 +6,20 @@ author: Heidilohr
 
 ms.service: virtual-desktop
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 03/30/2020
 ms.author: helohr
+manager: lizross
 ---
 # Deploy a Windows 7 virtual machine on Windows Virtual Desktop
+
+>[!IMPORTANT]
+>This content applies to the Fall 2019 release that doesn't support Azure Resource Manager Windows Virtual Desktop objects.
 
 The process to deploy a Windows 7 virtual machine (VM) on Windows Virtual Desktop is slightly different than for VMs running later versions of Windows. This guide will tell you how to deploy Windows 7.
 
 ## Prerequisites
 
-Before you start, follow the instructions in [Create a host pool with PowerShell](create-host-pools-powershell.md) to create a host pool. After that, follow the instructions in [Create host pools in Azure Marketplace](create-host-pools-azure-marketplace.md#optional-assign-additional-users-to-the-desktop-application-group) to assign one or more users to the desktop application group.
+Before you start, follow the instructions in [Create a host pool with PowerShell](create-host-pools-powershell-2019.md) to create a host pool. After that, follow the instructions in [Create host pools in Azure Marketplace](create-host-pools-azure-marketplace-2019.md#optional-assign-additional-users-to-the-desktop-application-group) to assign one or more users to the desktop application group.
 
 ## Configure a Windows 7 virtual machine
 
@@ -26,10 +30,10 @@ To set up a Windows 7 VM on Windows Virtual Desktop:
 1. Sign in to the Azure portal and either search for the Windows 7 Enterprise image or upload your own customized Windows 7 Enterprise (x64) image.  
 2. Deploy one or multiple virtual machines with Windows 7 Enterprise as its host operating system. Make sure the virtual machines allow Remote Desktop Protocol (RDP) (the TCP/3389 port).
 3. Connect to the Windows 7 Enterprise host using the RDP and authenticate with the credentials you defined while configuring your deployment. 
-4. Add the account you used while connecting to the host with RDP to the “Remote Desktop User” group. If you don't do this, you might not be able to connect to the VM after you join it to your Active Directory domain.
+4. Add the account you used while connecting to the host with RDP to the "Remote Desktop User" group. If you don't do this, you might not be able to connect to the VM after you join it to your Active Directory domain.
 5. Go to Windows Update on your VM.
 6. Install all Windows Updates in the Important category.
-7. Install all Windows Updates in the Optional category (excluding language packs). This installs the Remote Desktop Protocol 8.0 update ([KB2592687](https://www.microsoft.com/download/details.aspx?id=35393)) that you need to complete these instructions.
+7. Install all Windows Updates in the Optional category (excluding language packs). This installs the Remote Desktop Protocol 8.0 update ([KB2592687](https://www.microsoft.com/download/details.aspx?id=35387)) that you need to complete these instructions.
 8. Open the Local Group Policy Editor and navigate to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Remote Desktop Services** > **Remote Desktop Session Host** > **Remote Session Environment**.
 9. Enable the Remote Desktop Protocol 8.0 policy.
 10. Join this VM to your Active Directory domain.

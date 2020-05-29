@@ -6,11 +6,20 @@ author: Heidilohr
 
 ms.service: virtual-desktop
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 03/30/2020
 ms.author: helohr
+manager: lizross
 ---
 
 # Deploy the diagnostics tool
+
+>[!IMPORTANT]
+>This content applies to the Fall 2019 release that doesn't support Azure Resource Manager Windows Virtual Desktop objects.
+
+>[!IMPORTANT]
+>As of March 16, 2020, we've temporarily disabled diagnostic queries that impacted user experience due to increased demand on the service. This will cause the tool to stop working because it relies on those queries to function. We'll update this article when diagnostic queries are available again.
+>
+>Until then, we highly recommend you [use Log Analytics](diagnostics-log-analytics-2019.md) for continued monitoring.
 
 Here's what the diagnostics tool for Windows Virtual Desktop can do for you:
 
@@ -113,7 +122,7 @@ Here's how to manually configure the recommended performance counters:
 Learn more about the performance counters at [Windows and Linux performance data sources in Azure Monitor](/azure/azure-monitor/platform/data-sources-performance-counters).
 
 >[!NOTE]
->Any additional counters you configure won’t show up in the diagnostics tool itself. To make it appear in the diagnostics tool, you need to configure the tool's config file. Instructions for how to do this with advanced administration will be available in GitHub at a later date.
+>Any additional counters you configure won't show up in the diagnostics tool itself. To make it appear in the diagnostics tool, you need to configure the tool's config file. Instructions for how to do this with advanced administration will be available in GitHub at a later date.
 
 ## Validate the script results in the Azure portal
 
@@ -124,10 +133,9 @@ Before you continue deploying the diagnostics tool, we recommend that you verify
 To make sure your app registration has API permissions:
 
 1. Open a browser and connect to the [Azure portal](https://portal.azure.com/) with your administrative account.
-2. Go to **App registrations** and look for your Azure AD App registration.
-
-      ![The API permissions page.](media/api-permissions-page.png)
-
+2. Go to **Azure Active Directory**.
+3. Go to **App registrations** and select **All Applications**.
+4. Look for your Azure AD app registration with the same app name you entered in step 5 of [Create an Azure Active Directory app registration](deploy-diagnostics.md#create-an-azure-active-directory-app-registration).
 
 ### Review your Log Analytics workspace
 
@@ -139,7 +147,7 @@ To make sure your Log Analytics workspace has the preconfigured Windows performa
 4. Make sure the following counters are preconfigured:
 
    - LogicalDisk(\*)\\%Free Space: Displays the amount of free space of the total usable space on the disk as a percentage.
-   - LogicalDisk(C:)\\Avg. Disk Queue Length: The length of disk transfer request for your C drive. The value shouldn’t exceed 2 for more than a short period of time.
+   - LogicalDisk(C:)\\Avg. Disk Queue Length: The length of disk transfer request for your C drive. The value shouldn't exceed 2 for more than a short period of time.
    - Memory(\*)\\Available Mbytes: The available memory for the system in megabytes.
    - Processor Information(\*)\\Processor Time: the percentage of elapsed time that the processor spends to execute a non-Idle thread.
    - User Input Delay per Session(\*)\\Max Input Delay
@@ -158,7 +166,7 @@ In order to be able to view the health of VMs, you'll need to enable the Log Ana
 
 To deploy the Azure Resource Management template for the diagnostics tool:
 
-1.  Go to the [GitHub Azure RDS-Templates page](https://github.com/Azure/RDS-Templates/tree/master/wvd-templates/diagnostics-sample/deploy).
+1.  Go to the [GitHub Azure RDS-Templates page](https://github.com/Azure/RDS-Templates/tree/master/wvd-templates/diagnostics-sample/deploy).
 2.  Deploy the template to Azure and follow the instructions in the template. Make sure you have the following information available:
 
     -   Client-Id
@@ -183,7 +191,7 @@ To set the Redirect URI:
 6. Select **Web** in the drop-down menu under Type.
 7. Enter the URL from the app overview page and add **/security/signin-callback** to the end of it. For example: `https://<yourappname>.azurewebsites.net/security/signin-callback`.
 
-   ![The redirect URI page](media/redirect-uri-page.png)
+   ![The redirect URI page](../media/redirect-uri-page.png)
 
 8. Now, go to your Azure resources, select the Azure App Services resource with the name you provided in the template and navigate to the URL associated with it. (For example, if the app name you used in the template was `contosoapp45`, then your associated URL is <https://contosoapp45.azurewebsites.net>).
 9. Sign in using the appropriate Azure Active Directory user account.
@@ -194,7 +202,7 @@ To set the Redirect URI:
 Before you make the diagnostics tool available to your users, make sure they have the following permissions:
 
 - Users need read access for log analytics. For more information, see [Get started with roles, permissions, and security with Azure Monitor](/azure/azure-monitor/platform/roles-permissions-security).
--  Users also need read access for the Windows Virtual Desktop tenant (RDS Reader role). For more information, see [Delegated access in Windows Virtual Desktop](delegated-access-virtual-desktop.md).
+-  Users also need read access for the Windows Virtual Desktop tenant (RDS Reader role). For more information, see [Delegated access in Windows Virtual Desktop](delegated-access-virtual-desktop-2019.md).
 
 You also need to give your users the following information:
 
@@ -207,7 +215,7 @@ After you've signed in to your account using the information you've received fro
 
 ### How to read activity search results
 
-Activities are sorted by timestamp, with the latest activity first. If the results return an error, first check to see if it's a service error. For service errors, create a support ticket with the activity information to help us debug the issue. All other error types can usually be solved by the user or administrator. For a list of the most common error scenarios and how to solve them, see [Identify and diagnose issues](diagnostics-role-service.md#common-error-scenarios).
+Activities are sorted by timestamp, with the latest activity first. If the results return an error, first check to see if it's a service error. For service errors, create a support ticket with the activity information to help us debug the issue. All other error types can usually be solved by the user or administrator. For a list of the most common error scenarios and how to solve them, see [Identify and diagnose issues](diagnostics-role-service-2019.md#common-error-scenarios).
 
 >[!NOTE]
 >Service errors are called "external errors" in the linked documentation. This will be changed when we update the PowerShell reference.
@@ -255,5 +263,5 @@ You can also interact with users on the session host:
 
 ## Next steps
 
-- Learn how to monitor activity logs at [Use diagnostics with Log Analytics](diagnostics-log-analytics.md).
-- Read about common error scenarios and how to fix them at [Identify and diagnose issues](diagnostics-role-service.md).
+- Learn how to monitor activity logs at [Use diagnostics with Log Analytics](diagnostics-log-analytics-2019.md).
+- Read about common error scenarios and how to fix them at [Identify and diagnose issues](diagnostics-role-service-2019.md).
