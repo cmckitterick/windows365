@@ -3,14 +3,14 @@ title: Connect to Azure Virtual Desktop with the web client - Azure
 description: How to connect to Azure Virtual Desktop using the web client.
 author: Heidilohr
 ms.topic: how-to
-ms.date: 09/24/2019
+ms.date: 07/20/2021
 ms.author: helohr
 manager: femila
 ---
 # Connect to Azure Virtual Desktop with the web client
 
 >[!IMPORTANT]
->This content applies to Azure Virtual Desktop with Azure Resource Manager Azure Virtual Desktop objects. If you're using Azure Virtual Desktop (classic) without Azure Resource Manager objects, see [this article](./virtual-desktop-fall-2019/connect-web-2019.md).
+>This content applies to Azure Virtual Desktop with Azure Resource Manager Azure Virtual Desktop objects. If you're using Azure Virtual Desktop (classic) without Azure Resource Manager objects, see [this article](../virtual-desktop-fall-2019/connect-web-2019.md).
 
 The web client lets you access your Azure Virtual Desktop resources from a web browser without the lengthy installation process.
 
@@ -39,6 +39,8 @@ In a browser, navigate to the Azure Resource Manager-integrated version of the A
 >If you're using Azure Virtual Desktop (classic) without Azure Resource Manager integration, connect to your resources at <https://rdweb.wvd.microsoft.com/webclient> instead.
 >
 > If you're using the US Gov portal, use <https://rdweb.wvd.azure.us/arm/webclient/index.html>.
+> 
+> To connect to the Azure China portal, use <https://rdweb.wvd.azure.cn/arm/webclient/index.html>.
 
 >[!NOTE]
 >If you've already signed in with a different Azure Active Directory account than the one you want to use for Azure Virtual Desktop, you should either sign out or use a private browser window.
