@@ -3,7 +3,7 @@ title: Create and assign an autoscale scaling plan for Azure Virtual Desktop
 description: How to create and assign an autoscale scaling plan to optimize deployment costs.
 author: Heidilohr
 ms.topic: how-to
-ms.date: 01/10/2024
+ms.date: 04/11/2024
 ms.author: helohr
 manager: femila
 ms.custom: references_regions, devx-track-azurepowershell
@@ -16,9 +16,9 @@ To learn more about autoscale, see [Autoscale scaling plans and example scenario
 
 >[!NOTE]
 > - Azure Virtual Desktop (classic) doesn't support autoscale. 
-> - Autoscale doesn't support Azure Virtual Desktop for Azure Stack HCI.
 > - You can't use autoscale and [scale session hosts using Azure Automation and Azure Logic Apps](scaling-automation-logic-apps.md) on the same host pool. You must use one or the other.
 > - Autoscale is available in Azure and Azure Government.
+> - Autoscale support for Azure Stack HCI with Azure Virtual Desktop is currently in PREVIEW. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 For best results, we recommend using autoscale with VMs you deployed with Azure Virtual Desktop Azure Resource Manager templates or first-party tools from Microsoft.
 
@@ -29,7 +29,7 @@ To use scaling plans, make sure you follow these guidelines:
 - Scaling plan configuration data must be stored in the same region as the host pool configuration. Deploying session host VMs is supported in all Azure regions.
 - When using autoscale for pooled host pools, you must have a configured *MaxSessionLimit* parameter for that host pool. Don't use the default value. You can configure this value in the host pool settings in the Azure portal or run the [New-AzWvdHostPool](/powershell/module/az.desktopvirtualization/new-azwvdhostpool) or [Update-AzWvdHostPool](/powershell/module/az.desktopvirtualization/update-azwvdhostpool) PowerShell cmdlets.
 - You must grant Azure Virtual Desktop access to manage the power state of your session host VMs. You must have the `Microsoft.Authorization/roleAssignments/write` permission on your subscriptions in order to assign the role-based access control (RBAC) role for the Azure Virtual Desktop service principal on those subscriptions. This is part of **User Access Administrator** and **Owner** built in roles.
-- If you want to use personal desktop autoscale with hibernation (preview), you will need to [self-register your subscription](../virtual-machines/hibernate-resume.md) and enable the hibernation feature when [creating VMs](deploy-azure-virtual-desktop.md) for your personal host pool. For the full list of prerequisites for hibernation, see [Prerequisites to use hibernation](../virtual-machines/hibernate-resume.md).
+- If you want to use personal desktop autoscale with hibernation (preview), you will need to enable the hibernation feature when [creating VMs](deploy-azure-virtual-desktop.md) for your personal host pool. For the full list of prerequisites for hibernation, see [Prerequisites to use hibernation](../virtual-machines/hibernate-resume.md).
 
     > [!IMPORTANT]
     > Hibernation is currently in PREVIEW.
@@ -445,6 +445,6 @@ To assign a scaling plan to existing host pools:
 
 Now that you've created your scaling plan, here are some things you can do:
 
-- [Enable diagnostics for your scaling plan](autoscale-diagnostics.md)
+- [Monitor Autoscale operations with Insights](autoscale-diagnostics.md)
 
 If you'd like to learn more about terms used in this article, check out our [autoscale glossary](autoscale-glossary.md). For examples of how autoscale works, see [Autoscale example scenarios](autoscale-scenarios.md). You can also look at our [Autoscale FAQ](autoscale-faq.yml) if you have other questions.
