@@ -53,24 +53,24 @@ The following UEFI components and settings can be configured on Windows 365 Link
   - Wake-on-power
   - Alternate boot
   - Network stack
-- UEFI password (optoinal)
+- UEFI password (optional)
   - No change
   - Set or modify password
   - Clear password
 
 ## Create a UEFI configuration package
 
-Creating a UEFI configuration package for Windows 365 Link is very similar to the process for doing the same with Surface. However, there are some differences explained in the following steps.
+Creating a UEFI configuration package for Windows 365 Link is similar to the process for doing the same with Surface. However, there are some differences explained in the following steps.
 
 1. Install the [Surface IT Toolkit](/surface/surface-it-toolkit).
-2. Have an USB key (16GB) available. This USB key is formatted during this process.
+2. Have a USB key (16 GB) available. This USB key is formatted during this process.
 3. Follow the steps in [Create a Surface UEFI configuration package](/surface/surface-it-toolkit-uefi-config#create-a-surface-uefi-configuration-package) in the Surface documentation, with the following caveats:
     - For **Choose Deployment Build**, select **WinPE**.
     - For **Choose WinPE Package Type**, Select **Configuration Package**.
     - For **Choose Architecture**, select **x64**.
     - For **Select the Devices to be Configured**, select **Windows 365 Link**.
 4. When you get to the **Final Review** page, insert or select the USB to be used to create the WinPE package.
-5. When the device package creation is complete, note the last two characters of the certificate as this will be needed later and then select **Finish**.
+5. When the device package creation is complete, note the last two characters of the certificate to use later and then select **Finish**.
 6. Boot to WinPE using the newly created USB.
 7. When prompted, enter the last two characters of the certificate thumbprint that you noted earlier.
 
