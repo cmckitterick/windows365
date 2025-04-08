@@ -31,7 +31,7 @@ ms.collection:
 
 # Manage firmware settings for Windows 365 Link devices
 
-You can use the [Surface Enterprise Management Mode (SEMM)](/surface/surface-enterprise-management-mode#surface-uefi-configurator) feature with Windows 365 Link to enroll, manage, and remove Unified Extensible Firmware Interface (UEFI) settings. You can access SEMM by using the UEFI Configurator in the [Surface IT Toolkit](/surface/surface-it-toolkit). You can use the configurator to enable or disable hardware components at the firmware level and enroll a Windows 365 LINK device in SEMM.
+You can use the [Surface Enterprise Management Mode (SEMM)](/surface/surface-enterprise-management-mode#surface-uefi-configurator) feature with Windows 365 Link to enroll, manage, and remove Unified Extensible Firmware Interface (UEFI) settings. You can access SEMM by using the UEFI Configurator in the [Surface IT Toolkit](/surface/surface-it-toolkit). The configurator lets you enable or disable hardware components at the firmware level and enroll a Windows 365 LINK device in SEMM.
 
 For full information about SEMM and instructions on how to use it, see [Get started with SEMM](/surface/surface-enterprise-management-mode#surface-uefi-configurator).
 
