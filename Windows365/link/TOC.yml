@@ -61,10 +61,8 @@ items:
     href: wipe-reset-windows-365-link.md
   - name: Auto detect local time zone
     href: auto-detect-time-zone.md
-<<<<<<< HEAD
   - name: Manage firmware settings
     href: manage-firmware-settings.md
-=======
   - name: Windows CPC OS privacy and data
     href: windows-cpc-os-privacy-data.md
 - name: Developers
@@ -75,7 +73,6 @@ items:
     href: iwts-window-info-service.md
   - name: IWTSWindowChangedCallback
     href: iwts-window-changed-callback.md
->>>>>>> 16e1e5dcdbe618105b70085cde0f049c1a7bda80
 - name: Troubleshooting
   items:
   - name: Troubleshooting
