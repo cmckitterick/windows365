@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 05/04/2025
+ms.date: 05/05/2025
 ms.topic: how-to
 ms.service: windows-365-link
 ms.subservice:
@@ -72,11 +72,11 @@ Creating a UEFI configuration package for Windows 365 Link is similar to the pro
 4. When you get to the **Final Review** page, insert or select the USB to be used to create the WinPE package.
 5. When the device package creation is complete, note the last two characters of the certificate to use later and then select **Finish**.
 6. Boot to WinPE using the newly created USB.
-  1. Insert the USB into the Windows 365 Link.
-  2. While Windows 365 Link is booting up, press a small object (like a SIM card tool or a paper clip) into the hole under the power port on the back of the device. You can do this when booting up from a powered off state or during a reboot.
-  3. On the **Windows 365 Link UEFI** page, select **Boot configuration**.
-  4. On the **Configure boot device order** page, hold the left mouse button on **USB Storage** and swipe left.
-  5. On the **Boot this device immediately** page, select **OK**.
+    1. Insert the USB into the Windows 365 Link.
+    2. While Windows 365 Link is booting up, press a small object (like a SIM card tool or a paper clip) into the hole under the power port on the back of the device. You can do this when booting up from a powered off state or during a reboot.
+    3. On the **Windows 365 Link UEFI** page, select **Boot configuration**.
+    4. On the **Configure boot device order** page, hold the left mouse button on **USB Storage** and swipe left.
+    5. On the **Boot this device immediately** page, select **OK**.
 7. When prompted, enter the last two characters of the certificate thumbprint that you noted earlier.
 
 ## Unenroll devices from SEMM
