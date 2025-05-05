@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 11/19/2024
+ms.date: 04/28/2025
 ms.topic: overview
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -31,7 +31,7 @@ ms.collection:
 
 <!--Erikje todo: review UI closer to release and update, update caps-->
 
-# Connected Frontline Cloud PCs report (preview)
+# Connected Frontline Cloud PCs report
 
 This report helps you:
 
@@ -40,8 +40,6 @@ This report helps you:
 - See which users are currently using the concurrency buffer (Frontline Cloud PCs in dedicated mode only).
 - Restart Frontline Cloud PCs to get concurrency below the set threshold.
 - Make sure you have purchased the right number of licenses for your peak usage.
-
-The Connected Frontline Cloud PCs report is in [public preview](..\public-preview.md).
 
 ## Maximum concurrency limit
 

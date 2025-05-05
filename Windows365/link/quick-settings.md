@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2025
+ms.date: 04/24/2025
 ms.topic: overview
 ms.service: windows-365-link
 ms.subservice:
@@ -49,6 +49,8 @@ Select audio output device and manage its volume.
 
 To see the accessibility options, on the **Sign in** screen, select the **Accessibility** icon (![Image of the Accessibility icon.](media/quick-settings/accessibility-icon.gif)). You can then set the following accessibility options.
 
+## Settings
+
 | Control | Description |
 | --- | --- |
 | Wi-Fi | View and manage Wi-Fi connection. |
@@ -57,6 +59,7 @@ To see the accessibility options, on the **Sign in** screen, select the **Access
 | Language | Choose display language used on your Windows 365 Link. |
 | Display | Change the scale for you display and set two monitor arrangement. |
 | Privacy and Security | View privacy and security settings for your Location, Camera, and microphone. Not in OOBE.|
+| About this device | Device name, OS build, Serial numbers and Check for updates. |
 | Power button | View power management options for the device. |
 
 ## Shortcuts

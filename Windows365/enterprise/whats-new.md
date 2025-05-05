@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2025
+ms.date: 05/01/2025
 ms.topic: whats-new
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -56,6 +56,96 @@ For more information about public preview items, see [Public preview in Windows 
 -->
 
 <!-- ########################## -->
+## Week of April 28, 2025 (Service release 2504)
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device management
+
+#### Guidance when placing a Cloud PC under review<!--57214800-->
+
+Adhere to SEC Rule 17a-4 by configuring Azure Blob storage for immutability. For more information, see [Place a Cloud PC under review](place-cloud-pc-under-review.md) and [Azure - Cohasset Assessment - WORM Storage (2024) Report](https://servicetrust.microsoft.com/DocumentPage/19b08fd4-d276-43e8-9461-715981d0ea20).
+
+#### Resize Windows 365 Frontline Cloud PCs in designated mode<!--54353038-->
+
+Admins can now resize Windows 365 Frontline Cloud PCs in designated mode. For more information, see [Resize Windows 365 Frontline Cloud PCs in dedicated mode](resize-cloud-pc-frontline.md).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device security
+
+#### Credential Guard and HVCI enabled by default<!--554824970-->
+
+Newly provisioned and reprovisioned Cloud PCs running a Windows 11 gallery image now have VBS, HVCI, and Credential Guard enabled by default. For more information, see [Windows 365 security](security.md).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Monitor and troubleshoot
+
+#### Connected Frontline Cloud PCs report is generally available<!--56225850-->
+
+The Connected Frontline Cloud PCs report has moved out of preview and into general availability. For more information, see [Connected Frontline Cloud PCs report](report-connected-frontline-cloud-pcs.md).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Windows App
+
+#### Token protection (Preview) in Windows App on Windows devices<!--56337771--> 
+
+You can now use a Conditional Access policy to require token protection for sign-in tokens (refresh tokens) on Windows devices. Such policies can reduce attacks using token theft by ensuring a token is usable only from the intended device. For more information, see [Microsoft Entra Conditional Access token protection explained](/entra/identity/conditional-access/concept-token-protection).
+
+<!-- ########################## -->
+## Week of April 21, 2025
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device management
+
+#### Move selected Cloud PCs from one region or Azure network connection to another<!--55706276-->
+
+You can now move selected Cloud PCs from one region or Azure network connection (ANC) to another. For more information, see [Move Cloud PC](move-cloud-pc.md).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device provisioning
+
+#### Create provisioning policy process warning for lack of Windows 365 Frontline licenses<!--56967522-->
+
+When creating a provisioning policy for Windows 365 Frontline Cloud PCs, the process now provides a warning if the tenant has no Windows 365 Frontline licenses.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Documentation
+
+#### New documentation article: Microsoft and customer roles and responsibilities for Windows 365<!--57154947-->
+
+We’ve created a new article. For more information, see [Microsoft and customer roles and responsibilities for Windows 365](/windows-365/customer-microsoft-responsibilities).
+
+<!-- ########################## -->
+## Week of April 14, 2025
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device management
+
+#### Health status for Cloud PC restore point<!--56539504-->
+
+You can now see the health status of Cloud PC restore points before deciding to start a restore. For more information, see [Restore a single Cloud PC to a previous state](restore-single-cloud-pc.md) and [Restore multiple Cloud PCs in bulk](restore-bulk.md).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Monitor and troubleshoot
+
+#### Concurrency buffer usage alert<!--54902162-->
+
+You can set up a new alert to monitor concurrency buffer usage for Windows 365 Frontline in dedicated mode.
+
+#### Cloud PC concurrency report update<!--55445657-->
+
+The Connected Frontline Cloud PCs report now shows a user's session length. You can also restart Windows 365 Frontline Cloud PCs from the report if you've reached max concurrency on any indivudal assignments. For more information, see [Connected Frontline Cloud PCs report](report-connected-frontline-cloud-pcs.md).
+
+<!-- ########################## -->
+## Week of April 7, 2025
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Windows 365 Government
+
+#### Windows 365 Government scope tag support<!--56916925-->
+
+Windows 365 Government now supports scope tags.
+
+<!-- ########################## -->
 ## Week of March 31, 2025 (Service release 2503)
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -68,6 +158,10 @@ The Every time sign-in frequency option has moved out of preview and into genera
 #### Default Visual Effects performance option change<!--55063759-->
 
 The Visual Effects performance option now defaults to **Let Windows choose what’s best for my computer**.
+
+#### Windows 365 disaster recovery options<!--55482055-->
+
+Admins now have two options for disaster recovery: the existing cross region disaster recovery and the new disaster recovery plus. The latter allocates a second Cloud PC at the time of configuration which improves RTO. As the recovery Cloud PC already exists, there isn't a capacity risk at the time of failure. For more information, see [Windows 365 disaster recovery plus](disaster-recovery-plus.md).
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Provisioning

@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 08/28/2024
+ms.date: 04/30/2025
 ms.topic: overview
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -66,11 +66,10 @@ All new Cloud PCs have the following security components enabled by default:
 
 - **vTPM**: Short for virtual Trusted Platform Module, a vTPM provides Cloud PCs their own dedicated TPM instance that acts as a secure vault for keys and measurements. For more information, see [vTPM](/azure/virtual-machines/trusted-launch#vtpm).
 - **Secure Boot**: Secure Boot is a feature that prevents the Windows operating system from booting if untrusted rootkits or boot kits are installed on the machine. For more information, see [secure boot](/azure/virtual-machines/trusted-launch#secure-boot).
+- Hypervisor Code Integrity (HVCI)\*
+- [Microsoft Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage)\*
 
-With both security components enabled, Windows 365 supports enabling the following Windows security features:
-
-- Hypervisor Code Integrity (HVCI)
-- [Microsoft Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage)
+\* Only enabled by default for Cloud PCs running a Windows 11 gallery image.
 
 ### Security features requiring specific Cloud PC SKUs or configuration
 

@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2025
+ms.date: 04/30/2025
 ms.topic: how-to
 ms.service: windows-365-link
 ms.subservice:
@@ -41,9 +41,9 @@ You can enforce the local time zone on Windows 365 Link devices by following the
 4. Enter a **Name** for the policy, like "Windows 365 Link Time Zone Detection" and a useful **Description**.
 5. Select **Next**.
 6. On the **Configuration settings** page, select **Add settings**.
-7. Search for **Privacy** and select that category.
-8. Select **Let apps Access Location** and  **Let Apps Access Location Force Allow These Apps**.
-9. Select **Next**.
+7. Search for **Access location** and select the **Privacy** category.
+8. Select **Let Apps Access Location** and close the **Settings picker**.
+9. For **Let Apps Access Location**, select **Force allow** > **Next**.
 10. On the **Scope tags** page, select any desired scope tags to apply, then select **Next**.
 11. On the **Assignments** page, target Windows 365 Link devices per your preferred method. For example, you can use **Add all devices** with an **Include** filter using a Windows 365 Link device filter. This filter targets the policy at all Windows 365 Link devices.
 12. Select **Next**.

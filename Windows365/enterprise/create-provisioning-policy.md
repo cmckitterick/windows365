@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 02/06/2025
+ms.date: 04/28/2025
 ms.topic: how-to
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -66,7 +66,7 @@ A few things to keep in mind:
 
 3. On the  **General** page, select a **License type**:
     - **Enterprise**: Provision Cloud PCs for Windows 365 Enterprise.
-    - **Frontline**: Provision Cloud PCs for [Windows 365 Frontline](introduction-windows-365-frontline.md).
+    - **Frontline**: Provision Cloud PCs for [Windows 365 Frontline](introduction-windows-365-frontline.md). You must have Windows 365 Frontline licenses to create a provisioning policy for Frontline Cloud PCs. A warning is shown if you lack such licenses when you choose this option.
 4. If you choose **Frontline**, you must also select a **Frontline type**:
     - **Dedicated**: Provision Cloud PCs in [dedicated mode](introduction-windows-365-frontline.md#windows-365-frontline-in-dedicated-mode).
     - **Shared**: Provision Cloud PCs in [shared mode](introduction-windows-365-frontline.md#windows-365-frontline-in-shared-mode).
@@ -133,7 +133,7 @@ To select an ANC, follow these steps:
       - **None**. Manage and update Cloud PCs manually.
      - Frontline shared mode
        - **Windows Autopilot (Preview)** is a cloud service that ensures Intune applications and scripts are installed during initial enrollment and setup. Optionally choose a Device Preparation Profile from the list.  
-      
+
 9. Select **Next**.
 10. On the **Assignments** page, choose **Select groups** > choose the groups you want this policy assigned to > **Select**. Nested groups aren't currently supported.
 11. For Windows 365 Frontline dedicated mode, you must also select a Cloud PC size for each group in the policy. Choose **Select one** > select a size under **Available sizes** > **Select**. After you select a size for each group, select **Next**.
@@ -155,9 +155,9 @@ Admins can confirm the list of members who received Cloud PCs by reviewing the *
 
 Windows 365 Frontline licenses are for both Frontline Cloud PCs in dedicated mode and shared mode. Frontline Cloud PCs in dedicated mode are prioritized over shared mode when you add licenses.
 
-## Concurrency management (public preview)<!--49324723-->
+## Concurrency management<!--49324723-->
 
-If you select the option to create an assignment, the assignment defines the maximum concurrency limit for that group of users. When the concurrency limit is reached, subsequent users can't log on. They must wait for licenses to be freed up. The concurrency buffer is bound to the assignment and is counted based on the assignment license count instead of the total license count. You can see license usage across different assignments in the [Connected Frontline Cloud PCs report](report-connected-frontline-cloud-pcs.md). This feature is in [public preview](../public-preview.md).
+If you select the option to create an assignment, the assignment defines the maximum concurrency limit for that group of users. When the concurrency limit is reached, subsequent users can't log on. They must wait for licenses to be freed up. The concurrency buffer is bound to the assignment and is counted based on the assignment license count instead of the total license count. You can see license usage across different assignments in the [Connected Frontline Cloud PCs report](report-connected-frontline-cloud-pcs.md).
 
 <!-- ########################## -->
 ## Next steps
