@@ -65,10 +65,10 @@ No matter which method you use, the policies will be enforced on the Cloud PC En
 
      It's recommended to match Conditional Access policies between these apps. Matching ensures that the policy applies to the Cloud PC End-user portal, the connection to the Gateway and the Cloud PC for a consistent experience. If you want to exclude apps, you must also choose all of these apps.
 
-        > [!IMPORTANT]
+     > [!IMPORTANT]
      > With single sign-on (SSO) enabled, authentication to the Cloud PC uses the **Microsoft Remote Desktop** Entra ID app today. An upcoming change will transition the authentication to the **Windows Cloud Login** Entra ID app. To ensure a smooth transition, you need to add both Entra ID apps to your CA policies.
 
-        > [!NOTE]
+     > [!NOTE]
      > If you don't see the Windows Cloud Login app when configuring your Conditional Access policy, use the following steps to create the app. You must have Owner or Contributor permissions on the subscription to make these changes:
      >
      >  1. Sign into the [Azure portal](https://portal.azure.com).
