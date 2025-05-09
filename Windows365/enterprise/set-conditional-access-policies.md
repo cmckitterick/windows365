@@ -58,8 +58,8 @@ No matter which method you use, the policies will be enforced on the Cloud PC En
 5. On the new pane that opens, search for and select the specific user or group that you want to target with the CA policy, then choose **Select**.
 6. Under **Target resources**, select **No target resources selected**.
 7. Under the **Include** tab, choose **Select apps** > under **Select**, choose **None**.
-8. In the **Select** pane, search for and select the following apps based on the resources you're trying to protect:
-    - **Windows 365** (app ID 0af06dc6-e4b5-4f28-818e-e78e62d137a5). You can also search for "cloud" to find this app. This app is used when retrieving the list of resources for the user and when users initiate actions on their Cloud PC like Restart.
+1. In the **Select** pane, search for and select the following apps based on the resources you're trying to protect:
+   - **Windows 365** (app ID 0af06dc6-e4b5-4f28-818e-e78e62d137a5). For some tenants this app may be called **Cloud PC**. This app is used when retrieving the list of resources for the user and when users initiate actions on their Cloud PC like Restart.
     - **Azure Virtual Desktop** (app ID 9cdead84-a844-4324-93f2-b2e6bb768d07). This app may also appear as **Windows Virtual Desktop**. This app is used to authenticate to the Azure Virtual Desktop Gateway during the connection and when the client sends diagnostic information to the service.
     - **Microsoft Remote Desktop** (app ID a4a365df-50f1-4397-bc59-1a1564b8bb9c) and **Windows Cloud Login** (app ID 270efc09-cd0d-444b-a71f-39af4910ec45). These apps are only needed when you [configure single sign-on](configure-single-sign-on.md) in a provisioning policy. These apps are used to authenticate users to the Cloud PC.
 
