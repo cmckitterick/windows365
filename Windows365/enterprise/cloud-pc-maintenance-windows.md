@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 02/24/2025
+ms.date: 05/13/2025
 ms.topic: how-to
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -31,7 +31,7 @@ ms.collection:
 
 # Cloud PC Maintenance windows (preview)
 
-Admins can use Cloud PC maintenance windows to schedule specific times to run actions on Cloud PCs. For maximum flexibility, these windows can be scheduled:
+Admins can use Cloud PC maintenance windows to schedule specific times to run bulk resize actions on Cloud PCs. For maximum flexibility, these windows can be scheduled:
 
 - Daily.
 - Weekly.
@@ -40,7 +40,7 @@ Admins can use Cloud PC maintenance windows to schedule specific times to run ac
 - With two or more hours per window.
 - For specific Microsoft Entra groups.
 - With notifications to users of the upcoming window.
-- For bulk resize actions.
+- For bulk resize actions only.
 
 These windows help you efficiently plan and manage Cloud PC maintenance activities, reduce disruption to user productivity, and comply with organizational policies.
 
