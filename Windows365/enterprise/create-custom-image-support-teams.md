@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 08/28/2024
+ms.date: 05/06/2025
 ms.topic: how-to
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -41,8 +41,8 @@ The following steps are only needed when you aren’t using the Windows 365 gall
     - Name: IsWVDEnvironment
     - Type: DWORD
     - Value: 1
-2. Install the [latest Visual C++ runtime](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads). This runtime is required for the Teams WebRTC protocol redirection to work.
-3. Install the [WebRTC Redirector (websocket) plugin](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWNg9F). For instructions on how to install, see [Install the Teams WebSocket Service](/azure/virtual-desktop/teams-on-avd#install-the-teams-websocket-service). The plugin is required for Teams to function properly in a Cloud PC environment with the optimizations.
+2. Install the [latest Visual C++ runtime](/cpp/windows/latest-supported-vc-redist). This runtime is required for the Teams WebRTC protocol redirection to work.
+3. Install the [WebRTC Redirector (websocket) plugin](https://aka.ms/msrdcwebrtcsvc/msi). For instructions on how to install, see [Install the Teams WebSocket Service](/azure/virtual-desktop/teams-on-avd#install-the-teams-websocket-service). The plugin is required for Teams to function properly in a Cloud PC environment with the optimizations.
 
 > [!NOTE]
 > Don’t install the Microsoft Teams desktop application. If you want Microsoft Teams on the Cloud PC, install Microsoft 365 Apps + Teams by using Microsoft Intune.

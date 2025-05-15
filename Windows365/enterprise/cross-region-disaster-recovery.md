@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/01/2024
+ms.date: 05/07/2025
 ms.topic: how-to
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -53,7 +53,7 @@ When the admin deactivates cross region disaster recovery after the outage event
 
 If there's an outage, the service has the following target objectives for cross region disaster recovery:
 
-- RTO of < 4 hours for tenants with less than 50,000 Cloud PCs in a region.
+- RTO of < 4 hours for tenants with less than 50,000 Cloud PCs.
 - RPO of <4 hours.
 
 Devices are restored as quickly as possible. You can target specific devices to recover earlier than others. The speed and scale of the restoration process is per region and per tenant. Therefore, when performing multiple cross region disaster recovery activation actions, you can prioritize certain devices to be restored in earlier actions. This strategy prioritizes certain devices but doesn’t change the overall RTO for the full environment.

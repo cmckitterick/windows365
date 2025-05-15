@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 02/25/2025
+ms.date: 05/05/2025
 ms.topic: how-to
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -47,12 +47,13 @@ To create an ANC, you must meet these requirements:
 
 - Have the [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator) or [Windows 365 Administrator](/azure/active-directory/roles/permissions-reference) role.
 - Have an Active Directory user account with sufficient permissions to join the AD domain into this Organizational Unit (hybrid Microsoft Entra join ANCs only).
-- Have the Subscription Reader role in the Azure Subscription where the VNET associated with the ANC was located.
+- Have the Subscription Reader role in the Azure Subscription where the vNET associated with the ANC was located.
 - If you want to create an ANC with a network or resource group that was never used in any previous ANC creation, then you must have the Subscription owner or user administrator role.
 - For Disaster Recovery (DR) purposes, make sure that there are at least 50% of the IP addresses available in your subnet. If reprovisioning for DR is required, sufficient new IP addresses are required for each Cloud PC provisioned on the subnet.
-- For Windows 365 Government - GCC only and not GCC-H - make sure to complete the script options listed in [Set up tenants for Windows 365 Government](set-up-tenants-windows-365-gcc.md).
+- For Windows 365 Government - Government Community Cloud (GCC) only and not GCC-High - make sure to complete the script options listed in [Set up tenants for Windows 365 Government](set-up-tenants-windows-365-gcc.md).
+- Make sure that your PowerShell execution policy is configured to allow RemoteSigned scripts. If you use Group Policy to set execution policy, make sure that the Group Policy Object (GPO) targeted at the Organizational Unit (OU) defined in the ANC is configured to allow RemoteSigned scripts. For more information, see [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy).
 
-When planning your ANC VNets with ExpressRoute as the on-premises connectivity model, refer to [Azure’s documentation on VM limits](/azure/expressroute/expressroute-about-virtual-network-gateways#performance-results). For the ExpressRoute Gateway SKU, make sure that you have the correct sized Gateway for the number of Cloud PCs planned within the VNet. Exceeding this limit could cause instability in your connectivity.
+When planning your ANC vNets with ExpressRoute as the on-premises connectivity model, refer to [Azure’s documentation on virtual machines limits](/azure/expressroute/expressroute-about-virtual-network-gateways#performance-results). For the ExpressRoute Gateway SKU, make sure that you have the correct sized Gateway for the number of Cloud PCs planned within the vNet. Exceeding this limit could cause instability in your connectivity.
 
 ## Create an ANC
 
@@ -69,7 +70,7 @@ When planning your ANC VNets with ExpressRoute as the on-premises connectivity m
 5. Select a **Virtual network** and **Subnet**. When selecting a vNET:
 
     - To maintain a stable and performant connection, make sure the vNET is in the region closest to the Windows 365 users.
-    - Make sure there are enough IP addresses in the vNET subnet to accommodate all required Cloud PCs. Also, consider future growth and [resizing](resize-cloud-pc.md) needs.
+    - To accommodate all required Cloud PCs, make sure there are enough IP addresses in the vNET subnet. Also, consider future growth and [resizing](resize-cloud-pc.md) needs.
     - Make sure the vNET has line of sight to a domain controller. This line of sight is required for initial provisioning and successful sign in for hybrid joined Cloud PCs.
     - Make sure all [required endpoints](requirements-network.md) are allowed through the vNET and aren't blocked by any firewall, proxy, or Software Gateways.
 

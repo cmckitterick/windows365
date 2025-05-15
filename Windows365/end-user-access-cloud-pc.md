@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2025
+ms.date: 05/05/2025
 ms.topic: how-to
 ms.service: windows-365
 ms.subservice:
@@ -45,7 +45,7 @@ For information on hardware requirements, see [End user hardware requirements](e
 
 ## Windows App
 
-For more information about the requirements of running and using Windows App, see [What is Windows App?](/windows-app/overview).
+Windows App is the recommended application to connect to Windows 365 Cloud PCs and can be used on any device. For more information about the requirements of running and using Windows App, see [What is Windows App?](/windows-app/overview)
 
 ## Windows 365 web site
 
@@ -85,7 +85,7 @@ While on windows365.microsoft.com, users can take actions on their Cloud PCs by 
     > [!IMPORTANT]  
     > Before resetting your Cloud PC, make sure to back up any important files you need to keep to a cloud storage service or external storage. Resetting your Cloud PC deletes these files.
 
-- **Restart**: Restarts the Cloud PC. For Cloud PCs created after 1/31/2024, you can also restart or shut down by using the keyboard combination CTRL+ALT+DEL.
+- **Restart**: Restarts the Cloud PC. For Cloud PCs created after January 31, 2024, you can also restart or shut down by using the keyboard combination CTRL+ALT+DEL.
 - **Troubleshoot**: Troubleshoot and attempt to resolve any issues that may be preventing a user from connecting to their Cloud PC. The checks run include:
     - Check whether any files or agents required for connectivity are correctly installed.
     - Make sure that the Azure resources are available.
@@ -171,7 +171,7 @@ To turn hardware acceleration on or off, in the client, select the gear icon > *
 
 ### High DPI
 
-You can use the **High DPI** toggle to render the web client using the native resolution of the physical device. This is a good option to turn on if you're using a high resolution screen, like 4K or UHD monitors.
+You can use the **High DPI** toggle to render the web client using the native resolution of the physical device. High DPI is a good option to turn on if you're using a high resolution screen, like 4K or UHD monitors.
 
 The High Dots Per Inch (DPI) setting adjusts the display resolution to match the physical size of the screen and the distance between the user and the screen.
 
@@ -245,9 +245,14 @@ The following Windows 365 features aren't available on LG TV:
 
 ## Remote Desktop
 
-The Microsoft Remote Desktop app lets users access and control a remote PC, including a Cloud PC.
+The Microsoft Remote Desktop app is an alternative to Windows App that lets users access and control a remote PC, including a Cloud PC.
 
 For a list of clients by operating system, see [Remote Desktop clients](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients). For a comparison of features by client, see [Compare the clients: features](/azure/virtual-desktop/compare-remote-desktop-clients).
+
+> [!IMPORTANT]  
+> Starting March 27, 2026, the Remote Desktop client for Windows (MSI) will no longer be supported. Users should begin migrating to Windows App to make sure they have continued access to their Azure Virtual Desktop and Windows 365 resources after this date. For more information on known limitations of Windows App, see [Known issues and limitations of Windows App](/windows-app/troubleshoot-known-issues-limitations?tabs=windows). This list is updated as Remote Desktop client features are supported in Windows App.
+> Starting May 27, 2025, the Remote Desktop app for Windows from the Microsoft Store will no longer be supported or available for download and installation. Users must transition to Windows App to make sure they have continued access to Windows 365, Azure Virtual Desktop, and Microsoft Dev Box.
+> For more information, see [Get started with Windows App to connect to devices and apps](/windows-app/get-started-connect-devices-desktops-apps).
 
 ### Install the Microsoft Remote Desktop app
 
