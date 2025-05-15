@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2025
+ms.date: 05/15/2025
 ms.topic: overview
 ms.service: windows-365-link
 ms.subservice:
@@ -31,7 +31,7 @@ ms.collection:
 
 # Troubleshooting Windows 365 Link
 
-This article provides suggestions for troubleshooting Windows 365 Link issues. For more troubleshooting help, see [Windows 365 Troubleshooting](../enterprise/troubleshooting.md).
+This article provides suggestions for troubleshooting Windows 365 Link issues. For more troubleshooting help, see [Windows 365 Troubleshooting](../enterprise/troubleshooting.md) and the [Windows 365 troubleshooting library](/troubleshoot/windows-365/welcome-windows-365).
 
 ## Contact help/support
 
