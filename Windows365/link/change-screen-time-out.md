@@ -1,8 +1,8 @@
 ---
 # required metadata
-title: Change screen time out for Windows 365 Link devices
+title: Change screen time-out for Windows 365 Link devices
 titleSuffix:
-description: Learn how to change screen time out for Windows 365 Link devices
+description: Learn how to change screen time-out for Windows 365 Link devices
 keywords:
 author: ErikjeMS  
 ms.author: erikje
@@ -29,9 +29,9 @@ ms.collection:
 - tier2
 ---
 
-# Change screen time otu for Windows 365 Link devices
+# Change screen time-out for Windows 365 Link devices
 
-By default, Windows 365 Link has a default screen time out that turns off the display after about five minutes of inactivity. This acts like a [local Lock event](sign-in.md), and when the user wakes the device, it opens on the sign-in screen. You can change this time out by using Intune's **Turn off the display (plugged in)** setting.
+By default, Windows 365 Link has a default screen time-out that turns off the display after about five minutes of inactivity. This time-out acts like a [local Lock event](sign-in.md), and when the user wakes the device, it opens on the sign-in screen. You can change this time-out by using Intune's **Turn off the display (plugged in)** setting.
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Devices** > **Configuration** (under **Manage devices**) > **Create** > **New Policy**.
 2. Under **Create a profile**, select the following options:
@@ -41,7 +41,7 @@ By default, Windows 365 Link has a default screen time out that turns off the di
 4. Enter a **Name** for the policy, like "Windows 365 Link Screen Timeout" and a useful **Description**.
 5. Select **Next**.
 6. On the **Configuration settings** page, select **Add settings**.
-7. Search for **Video and Display** and select the that category.
+7. Search for **Video and Display** and select that category.
 8. Select **Turn off the display (plugged in)** and close the **Settings picker**.
 9. Expand **Administrative Templates** and set **Turn off the display (plugged in)** to **Enabled**.
 10. Set **When plugged in, turn display off after (seconds)** to your preferred value.
