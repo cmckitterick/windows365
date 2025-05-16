@@ -70,7 +70,6 @@ You can disconnect the device from your Cloud PC using any of these methods:
 
 \* This method locks the remote session on the Cloud PC. Single sign-on connections are also disconnected (but admins can configure policies to behave differently). Disconnecting from the Cloud PC brings the Windows 365 Link back to the sign-in screen.
 
-
 ## Data
 
 Your data and account information aren't stored on the Windows 365 Link. If someone else signs into their account on the Windows 365 Link, the previous user's Cloud PC connection is automatically disconnected and the new user has no access to the previous user's data.
