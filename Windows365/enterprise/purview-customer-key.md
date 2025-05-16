@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2024
+ms.date: 05/16/2025
 ms.topic: how-to
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -39,6 +39,8 @@ When you use Customer Key with Windows 365 Cloud PCs:
 - Your Cloud PC disks, snapshots, and images are encrypted at rest with customer-managed keys instead of Microsoft-managed keys.
 - These keys are supplied by you and managed using Azure Key Vault.
 - Microsoft manages all other keys, supporting a secure and controlled environment.
+
+You can also [set up Customer Key with managed HSM](/purview/customer-key-managedhsm#set-up-customer-key-with-managed-hsm).
 
 ## Set up Customer Keys for your Windows 365 Cloud PCs
 
