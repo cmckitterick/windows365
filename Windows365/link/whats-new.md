@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/24/2025
+ms.date: 05/16/2025
 ms.topic: whats-new
 ms.service: windows-365-link
 ms.subservice:
@@ -31,9 +31,18 @@ ms.collection:
 
 # What's new in Windows 365 Link
 
-Learn what new features are available in Windows 365 Link. 
+Learn what new features are available in Windows 365 Link.
 
 For information about Windows 365 Enterprise new features, see [What's new in Windows 365 Enterprise](../enterprise/whats-new.md).
+
+<!-- ########################## -->
+## Week of May 12, 2025
+
+### Windows 365 Link builds
+
+### New build released - 26100.4061<!--57541477-->
+
+Build number 26100.4061 was released on May 13. This build includes various bug fixes.
 
 <!-- ########################## -->
 ## Week of April 7, 2025
