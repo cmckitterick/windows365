@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 05/14/2025
+ms.date: 05/16/2025
 ms.topic: overview
 ms.service: windows-365-link
 ms.subservice:
@@ -42,25 +42,34 @@ When you want to use the Windows 365 Link, complete the following steps to sign 
 
 To sign out of your Windows 365 Link:
 
-1. Press control-alt-delete.
-2. Select **Sign out**.
+- Press control-alt-delete and select **Sign out**, or
+- Select Start > your account > **Sign out**.
 
 Signing out disconnects the current signed in user from their Cloud PC and brings Windows 365 Link back to the sign-in screen.
 
-## Lock or disconnect your Windows 365 Link
+## Lock your Windows 365 Link
 
 Lock the device using any of these methods:
 
 - Press the **Windows key + L** on your keyboard.
-- Select **Start** > **Power** > **Lock**.
-- In your Cloud PC, select start > **Power** > **Disconnect**.
-- In your Cloud PC, select start > **Power** > **Lock**.\*
+- Press control-alt-delete and select **Lock**.
 
-\* This method lock the remote session on the Cloud PC. Single sign-on connections are also disconnected (but admins can [configure policies to behave differently](/azure/virtual-desktop/configure-session-lock-behavior?tabs=intune)).
+After the user locks the device, the user is redirected back to the **Sign in** screen.
 
-After the user locks the device, the user is redirected back to the **Sign in** screen. The previous user's Cloud PC connection persists for 15 minutes by default, allowing for quick reconnection if the user had to temporarily step away, returns to the device, and signs in again.
+If Windows 365 Link is locked, the current signed in user’s connection to their Cloud PC is maintained until Cloud PC’s idle time-out expires (Intune admins can configure the time-out duration which defaults to 15 minutes). Within this time window, if the user unlocks Windows 365 Link by completing the authentication experience again, they're taken directly on their Cloud PC without the need for re-establishing the connection.
 
-If Windows 365 Link is locked, the current signed in user’s connection to their Cloud PC is maintained until Cloud PC’s idle time-out expires. Within this time window, if the user unlocks Windows 365 Link by completing the authentication experience again, they're taken directly on their Cloud PC without the need for re-establishing the connection.
+If a new user signs into the device during this time, the previous user’s Cloud CP connection is disconnected and a new connection is established from the device to the new user’s Cloud PC.
+
+## Disconnect Windows 365 Link from your Cloud PC
+
+You can disconnect the device from your Cloud PC using any of these methods:
+
+- Press control-alt-delete and select **Sign out**.
+- In your Cloud PC, select Start > **Power** > **Disconnect**.
+- In your Cloud PC, select Start > **Power** > **Lock**.\*
+
+\* This method locks the remote session on the Cloud PC. Single sign-on connections are also disconnected (but admins can configure policies to behave differently). Disconnecting from the Cloud PC brings the Windows 365 Link back to the sign-in screen.
+
 
 ## Data
 
