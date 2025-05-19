@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/30/2025
+ms.date: 05/19/2025
 ms.topic: whats-new
 ms.service: windows-365
 
@@ -83,6 +83,13 @@ TURN relay support will be improved by expanding from 14 to over 40 regions glob
 ### End user manual connectivity check<!--37679345 -->
 
 End users will be able to manually run connectivity checks on their Cloud PCs from [windows365.microsoft.com](https://windows365.microsoft.com).
+
+### Cloud PC utilization report: new options for aggregated time connected<!--56384777-->
+
+You'll be able to:
+
+- Pick time spans of 28, 60, and 90 days for the aggregated time connected data.
+- See Cloud PCs that no one has connected to yet.
 
 <!-- ***********************************************-->
 <!--## Provisioning-->
