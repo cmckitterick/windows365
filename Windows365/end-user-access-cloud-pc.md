@@ -254,15 +254,6 @@ For a list of clients by operating system, see [Remote Desktop clients](/windows
 > Starting May 27, 2025, the Remote Desktop app for Windows from the Microsoft Store will no longer be supported or available for download and installation. Users must transition to Windows App to make sure they have continued access to Windows 365, Azure Virtual Desktop, and Microsoft Dev Box.
 > For more information, see [Get started with Windows App to connect to devices and apps](/windows-app/get-started-connect-devices-desktops-apps).
 
-### Install the Microsoft Remote Desktop app
-
-To set up their Remote Desktop client, users follow these steps:
-
-1. Download the Remote Desktop app from the [Remote Desktop clients page](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients).
-2. Select **Subscribe**. (If using macOS, iOS, iPadOS, or Android/Chrome OS, select **Add Workspace** and then enter the URL `https://rdweb.wvd.microsoft.com`).
-3. Enter their Microsoft Entra credentials.
-4. The Cloud PC appears in the list, and they can double-click it to launch.
-
 <!-- ########################## -->
 ## Next steps
 
