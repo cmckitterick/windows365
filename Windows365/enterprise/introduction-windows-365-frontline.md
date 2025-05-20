@@ -162,6 +162,7 @@ The following features aren't yet supported for Windows 365 Frontline.
 
 - Resize a Cloud PC remote action
 - Cross region disaster recovery
+- [Microsoft Purview Customer Key](purview-customer-key.md)
 
 Windows 365 Frontline in shared mode can only be provisioned in the following Azure regions:
 
