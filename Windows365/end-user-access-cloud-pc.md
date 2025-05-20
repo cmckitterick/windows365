@@ -35,11 +35,12 @@ Users can access their Cloud PCs in accordance with the following matrix:
 
 | Windows 365 Edition | [Windows App](/windows-app/overview) | [windows365.microsoft.com](https://windows365.microsoft.com) web client | [Microsoft Remote Desktop](#remote-desktop) | [LG Web OS](#lg-webos-23) |
 |--|--|--|--|--|
-| Windows 365 Business | X | X | X | X |
-| Windows 365 Enterprise | X | X | X | X |
-| Windows 365 Frontline | X | X\* | | |
+| Windows 365 Business | X |  | X\* | X |
+| Windows 365 Enterprise | X |  | X\* | X |
+| Windows 365 Frontline | X |  | | |
+| Windows 365 Government |  | X | | |
 
-\* Frontline Cloud PCs in shared mode can't be accessed using [windows365.microsoft.com](https://windows365.microsoft.com). You must use [windows.cloud.microsoft](https://windows.cloud.microsoft) to access your Frontline Cloud PC in shared mode. 
+*\ Microsoft Remote Desktop support will end in March, 2026. For more information, see [Remote Desktop](#remote-desktop).
 
 For information on hardware requirements, see [End user hardware requirements](end-user-hardware-requirements.md).
 
@@ -253,15 +254,6 @@ For a list of clients by operating system, see [Remote Desktop clients](/windows
 > Starting March 27, 2026, the Remote Desktop client for Windows (MSI) will no longer be supported. Users should begin migrating to Windows App to make sure they have continued access to their Azure Virtual Desktop and Windows 365 resources after this date. For more information on known limitations of Windows App, see [Known issues and limitations of Windows App](/windows-app/troubleshoot-known-issues-limitations?tabs=windows). This list is updated as Remote Desktop client features are supported in Windows App.
 > Starting May 27, 2025, the Remote Desktop app for Windows from the Microsoft Store will no longer be supported or available for download and installation. Users must transition to Windows App to make sure they have continued access to Windows 365, Azure Virtual Desktop, and Microsoft Dev Box.
 > For more information, see [Get started with Windows App to connect to devices and apps](/windows-app/get-started-connect-devices-desktops-apps).
-
-### Install the Microsoft Remote Desktop app
-
-To set up their Remote Desktop client, users follow these steps:
-
-1. Download the Remote Desktop app from the [Remote Desktop clients page](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients).
-2. Select **Subscribe**. (If using macOS, iOS, iPadOS, or Android/Chrome OS, select **Add Workspace** and then enter the URL `https://rdweb.wvd.microsoft.com`).
-3. Enter their Microsoft Entra credentials.
-4. The Cloud PC appears in the list, and they can double-click it to launch.
 
 <!-- ########################## -->
 ## Next steps
