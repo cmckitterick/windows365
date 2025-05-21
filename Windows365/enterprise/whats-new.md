@@ -65,7 +65,7 @@ For more information about public preview items, see [Public preview in Windows 
 
 Adhere to SEC Rule 17a-4 by configuring Azure Blob storage for immutability. For more information, see [Place a Cloud PC under review](place-cloud-pc-under-review.md) and [Azure - Cohasset Assessment - WORM Storage (2024) Report](https://servicetrust.microsoft.com/DocumentPage/19b08fd4-d276-43e8-9461-715981d0ea20).
 
-#### Resize Windows 365 Frontline Cloud PCs in designated mode<!--54353038-->
+#### Resize Windows 365 Frontline Cloud PCs in designated mode (preview)<!--54353038-->
 
 Admins can now resize Windows 365 Frontline Cloud PCs in designated mode. For more information, see [Resize Windows 365 Frontline Cloud PCs in dedicated mode](resize-cloud-pc-frontline.md).
 
@@ -1044,7 +1044,7 @@ Windows 365 Boot is now available for US Government Community Cloud (GCC) custom
 
 #### UI change in web client<!--46838016-->
 
-The gear icon menu has been updated. For details on the new menu, see [Windows 365 web client](../end-user-access-cloud-pc.md#windows-365-web-client).
+The gear icon menu has been updated.
 
 #### New Microsoft Teams app is now generally available for Windows 365<!--47459639-->
 

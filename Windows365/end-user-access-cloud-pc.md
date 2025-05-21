@@ -50,7 +50,7 @@ Windows App is the recommended application to connect to Windows 365 Cloud PCs a
 
 ## Windows 365 web site
 
-Users can navigate to [windows365.microsoft.com](https://windows365.microsoft.com) to access their Cloud PCs.  
+Windows 365 Government users can navigate to [windows365.microsoft.com](https://windows365.microsoft.com) to access their Cloud PCs.  
 
 ### Software requirements
 
@@ -67,7 +67,7 @@ On their Windows 365 home page, users see the Cloud PCs they have access to in t
 
 From this page, users have two options to connect to your Cloud PC:
 
-- Select **Open in browser** to open their Cloud PC in the web client (not available for mobile devices). For more information, see [Windows 365 web client](#windows-365-web-client).
+- Select **Open in browser** to open their Cloud PC in the web client (not available for mobile devices).
 - Select **Open in Remote Desktop app** to open their Cloud PC in Remote Desktop. For more information, see [Remote Desktop](#remote-desktop).
 
 ### User actions
@@ -108,7 +108,7 @@ To switch the windows365.microsoft.com site to dark mode:
 
      ![Screenshot of dark mode option.](media/end-user-access-cloud-pc/dark-mode.png)
 
-## Windows 365 web client
+### In session settings
 
 When you select **Open in browser** for a Cloud PC on the windows365.microsoft.com [web site](#windows-365-web-site), the **In Session Settings** window appears, where you can choose multiple options before connecting to your Cloud PC:
 
