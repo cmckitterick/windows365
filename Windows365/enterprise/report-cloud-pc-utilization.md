@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 02/24/2025
+ms.date: 05/28/2025
 ms.topic: overview
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -46,13 +46,13 @@ To get to the **Cloud PC utilization** report, sign in to [Microsoft Intune admi
 
 ## Cloud PC utilization report page (tenant data)
 
-The report shows the following tenant data aggregated for the last four weeks:
+The report shows the following tenant data aggregated for the chosen timespan (28, 60, or 90 days):
 
 - This histogram shows the number of Cloud PCs connected for each range:
   - **High time connected**: More than 80 hours.
   - **Average time connected**: 40-80 hours.
   - **Low time connected**: Less than 40 hours.
-  - **No active time connected**: Zero hours.
+  - **None**: Zero hours.
 - List of individual Cloud PCs with the following columns:
   - **Device name**
   - **User UPN**: The user's identifier in Active Directory in the form of an email address.
