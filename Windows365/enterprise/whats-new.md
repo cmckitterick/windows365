@@ -74,14 +74,14 @@ For more information, see [Cloud PC utilization report](report-cloud-pc-utilizat
 
 The following feature has moved out of preview and into general availability:
 
-The Cloud PC action status report shows batches of devices on which actions were triggered. You can see the batch current progress. For more information, see [Cloud PC actions report ](report-cloud-pc-actions.md).
+The Cloud PC action status report shows batches of devices on which actions were triggered. You can see the batch current progress. For more information, see [Cloud PC actions report](report-cloud-pc-actions.md).
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### End user experience
 
 ### windows365.microsoft.com being replaced by Windows App<!--55921219-->
 
-The windows365.microsoft.com end user portal is currently being deprecated. Navigation to windows365.microsoft.com is automatically redirected to Windows App on the web. This deprecation will be complete on June 1, 2025.
+The windows365.microsoft.com end user portal is currently being deprecated. Navigation to windows365.microsoft.com is automatically redirected to Windows App on the web. This deprecation will be complete on June 1, 2025. (Windows 365 Government users can still access the end user portal.)
 
 <!-- ########################## -->
 ## Week of April 28, 2025 (Service release 2504)
