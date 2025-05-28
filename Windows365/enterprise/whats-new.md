@@ -70,6 +70,12 @@ You can now:
 
 For more information, see [Cloud PC utilization report](report-cloud-pc-utilization.md).
 
+### Cloud PC action status report batch progress now generally available<!--54859265-->
+
+The following feature has moved out of preview and into general availability:
+
+The Cloud PC action status report shows batches of devices on which actions were triggered. You can see the batch current progress. For more information, see [Cloud PC actions report ](report-cloud-pc-actions.md).
+
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### End user experience
 
