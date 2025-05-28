@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 05/01/2025
+ms.date: 05/28/2025
 ms.topic: whats-new
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -54,6 +54,34 @@ For more information about public preview items, see [Public preview in Windows 
 ### Windows 365 Government
 ### Windows 365 app 
 -->
+
+<!-- ########################## -->
+## Week of May 28, 2025 (Service release 2505)
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Monitor and troubleshoot
+
+#### Cloud PC utilization report: new options for aggregated time connected<!--56384777-->
+
+You can now:
+
+- Pick time spans of 28, 60, and 90 days for the aggregated time connected data.
+- See Cloud PCs that no one has connected to yet.
+
+For more information, see [Cloud PC utilization report](report-cloud-pc-utilization.md).
+
+### Cloud PC action status report batch progress now generally available<!--54859265-->
+
+The following feature has moved out of preview and into general availability:
+
+The Cloud PC action status report shows batches of devices on which actions were triggered. You can see the batch current progress. For more information, see [Cloud PC actions report](report-cloud-pc-actions.md).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### End user experience
+
+### windows365.microsoft.com being replaced by Windows App<!--55921219-->
+
+The windows365.microsoft.com end user portal is currently being deprecated. Navigation to windows365.microsoft.com is automatically redirected to Windows App on the web. This deprecation will be complete on June 1, 2025. (Windows 365 Government users can still access the end user portal.)
 
 <!-- ########################## -->
 ## Week of April 28, 2025 (Service release 2504)
