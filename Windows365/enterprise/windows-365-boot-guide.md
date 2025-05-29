@@ -165,8 +165,8 @@ If you've already completed the Guided Scenario, a **User-Driven Autopilot** pro
    
    1. Take note of the name of the currently assigned group, then click __Remove__ to unassign the profile.  Click __Review+Save__ then __Save__.
    
-   1. Open the new **Self-Deploying** profile created in Step 1.
-   
+   1. Open the new **Self-Deploying** profile you just created.
+      
    1. Under __Properties__ > __Assignments__ click __Edit__ then add the same group to assign the new profile.
       
 <!-- ########################## -->
