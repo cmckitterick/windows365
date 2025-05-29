@@ -137,6 +137,38 @@ A summary of the settings and the values you configured are shown. You can go ba
 
 When you're satisfied with the settings, select **Create**.
 
+Step 7 (Optional) - Self-deployment mode
+
+Self-deployment mode is a configuration in Windows Autopilot that allows a device to deploy without user interaction. It's ideal for scenarios like shared devices or kiosk-style setups.
+
+If you've already completed the Guided Scenario, a **User-Driven Autopilot** profile is created to provision Windows 365 Boot devices.  Follow these steps to switch to **Self-Deploying mode**:
+
+1. Create a new Autopilot deployment profile:
+
+   1. In the Microsoft Intune admin center, go to **Devices** > **Enrollment** > **Windows Autopilot** **>** **Deployment Profiles**.
+
+   1. Select **+ Create profile**, then choose **Windows PC**.
+
+   1. Enter a name for the profile.
+
+   1. Under **Deployment mode**, select **Self-Deploying** from the dropdown.
+
+   1. Complete the rest of the profile settings as needed and select **Next**, 
+
+   1. Under **Assignments** leave the Included groups set to "No groups selected" for now, click __Next__ then **Create**.
+
+1. Change group assignment:
+
+   1. Go back to the **User-Driven** profile created previously using the Guided Scenario.
+   
+   1. Under __Properties__ > __Assignments__ click __Edit__.
+   
+   1. Take note of the name of the currently assigned group, then click __Remove__ to unassign the profile.  Click __Review+Save__ then __Save__.
+   
+   1. Open the new **Self-Deploying** profile created in Step 1.
+   
+   1. Under __Properties__ > __Assignments__ click __Edit__ then add the same group to assign the new profile.
+   
 <!-- ########################## -->
 ## Next steps
 
