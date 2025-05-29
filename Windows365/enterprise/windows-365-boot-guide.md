@@ -137,7 +137,7 @@ A summary of the settings and the values you configured are shown. You can go ba
 
 When you're satisfied with the settings, select **Create**.
 
-Step 7 (Optional) - Self-deployment mode
+## Step 7 (Optional) - Self-deployment mode
 
 Self-deployment mode is a configuration in Windows Autopilot that allows a device to deploy without user interaction. It's ideal for scenarios like shared devices or kiosk-style setups.
 
