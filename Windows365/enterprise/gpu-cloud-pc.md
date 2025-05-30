@@ -98,6 +98,8 @@ For optimal performance of GPU-enabled Cloud PCs, consider these recommendations
 - Don’t use the Multimedia Redirection extension for the browser or for Teams. By default, this extension is uninstalled for GPU-enabled Cloud PCs during provisioning.
 - GPU offerings aren't designed for game development. These offerings are optimized for graphics applications typically used in Enterprise scenarios. For more information with game development scenarios, see [Create a Game Development Virtual Machine with other Game Engines](/gaming/azure/).
 - If you want to guarantee that all your users have the exact same BPU configuration, instead of using Cloud PCs, you can use Azure Virtual Desktop (AVD). AVD can help customers who prefer hardware specific configurations over workload focused configurations. For a complete list of Azure’s GPU offerings, see [Sizes for virtual machines in Azure - GPU accelerated](/azure/virtual-machines/sizes/overview?tabs=breakdownseries%2Cgeneralsizelist%2Ccomputesizelist%2Cmemorysizelist%2Cstoragesizelist%2Cgpusizelist%2Cfpgasizelist%2Chpcsizelist#gpu-accelerated).
+- By default, GPU-enabled Cloud PCs are provisioned to use hardware accelerated graphics encoding.  To learn more about different hardware-accelerated graphics encoding profiles and how to manage them on your GPU-enabled Cloud PCs, visit the following Azure Virtual Desktop documentation page: [Enable GPU Acceleration](/azure/virtual-desktop/graphics-enable-gpu-acceleration?tabs=intune) 
+# Recommendations when using GPU Cloud PCs
 
 <!-- ########################## -->
 ## Next steps
