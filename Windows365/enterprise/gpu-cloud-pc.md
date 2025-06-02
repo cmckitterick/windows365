@@ -57,7 +57,7 @@ Microsoft hosts Windows 365 GPU-enabled Cloud PCs using the latest version of Mi
 
 Each of these Cloud PCs comes with an SSD storage drive (c:) for  data and applications plus a large ephemeral disk (d:).
 
-The ephemeral disk (d: drive) is deleted and recreated every time the Cloud PC reboots. Never use it to store your data. Instead, you can use it as a cache drive to store temporary files. This is helpful to improve the performance of applications that need scratch disks to process large data sets.
+The ephemeral disk (d: drive) is deleted and recreated every time the Cloud PC reboots. Never use it to store your data. Instead, you can use it as a cache drive to store temporary files. This strategy is helpful to improve the performance of applications that need scratch disks to process large data sets.
 
 ## Registry keys and drivers on GPU Cloud PCs
 
@@ -78,7 +78,7 @@ You must allow the following URLs on each Windows 365 GPU Cloud PC:
 
 ## Supported regions
 
-The GPU offerings are available in all [Windows 365 supported regions](requirements.md?tabs=enterprise%2Cent#supported-azure-regions-for-cloud-pc-provisioning) except for the following:
+The GPU offerings are available in all [Windows 365 supported regions](requirements.md?tabs=enterprise%2Cent#supported-azure-regions-for-cloud-pc-provisioning) except for the following regions:
 
 - Central US
 - Norway East
