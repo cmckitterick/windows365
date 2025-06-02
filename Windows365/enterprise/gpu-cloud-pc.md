@@ -108,8 +108,6 @@ For optimal performance of GPU-enabled Cloud PCs, consider these recommendations
 | Super |HEVC/H.265<br />AVC/H.264   |
 | Standard |AVC/H.264   |
 
-# Recommendations when using GPU Cloud PCs
-
 <!-- ########################## -->
 ## Next steps
 
