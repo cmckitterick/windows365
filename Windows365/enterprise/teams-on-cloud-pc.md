@@ -61,7 +61,7 @@ Media optimization for Microsoft Teams is only available for the Windows and mac
 
 - Windows App for macOS, version 10.7.7 or later ([beta client](https://aka.ms/rdmacbeta)). If you upgrade from versions earlier than 10.7.7, you'll also need to go to Microsoft **Remote Desktop Preferences** > **General** and turn on Teams optimizations. If you're using the client for the first time and already have version 10.7.7 or later installed, you won't need to turn that on. In that case, Teams optimizations are turned on by default.
 
-- Windows App for iOS and iPadOS, version 11.1.7
+- Windows App for iOS and iPadOS, version 11.1.7 (preview)
 
 > [!NOTE]
 > Microsoft Teams installs during the first sign in to the Cloud PC. Installation can take a couple of minutes. Make sure to restart Teams to activate the AV optimizations that redirect audio and video. You can also sign out and in again to your Cloud PC to gain the same result.
