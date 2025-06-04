@@ -74,6 +74,28 @@ To access these experiences:
 4. Select the **Open Additional Settings** button.
 5. Make your desired changes on the quick settings control that appears.
 
+## Display redirections
+
+You can manage available display settings from within your Cloud PC session on Windows 365 Link devices. Available display settings will look and work as they do in a local Windows 11 session. You must have OS build version 26100.4333 (KB5060842) or later installed to see this feature.
+
+Supported Display settings include:
+
+- Identify
+- Duplicate
+- Extend
+- Rearrange
+- Orientation
+- Resolution
+- Scale
+
+To access these Display settings:
+
+1. Sign into your Cloud PC session.
+2. Open the **Settings** app.
+3. Navigate to the **Display** page.
+4. Make your desired changes with the available settings.
+5. Changes you make are unique to the physical endpoint you're using to connect to your Cloud PC. If you sign into your Cloud PC from a different device, you may need to adjust available Display settings to accommodate distinctions from your previous device.
+
 <!-- ########################## -->
 ## Next steps
 
