@@ -96,7 +96,7 @@ To access these Display settings:
 2. Open the **Settings** app.
 3. Go to the **Display** page.
 4. Adjust settings as needed.
-5. Changes you make are unique to the physical endpoint you're using to connect to your Cloud PC. If you sign into your Cloud PC from a different device, you may need to adjust available Display settings to accommodate distinctions from your previous device.
+5. Important: Display settings are specific to the physical device used to access the Cloud PC. If users switch to a different device, they may need to reconfigure display settings to match the new hardware setup.
 
 <!-- ########################## -->
 ## Next steps
