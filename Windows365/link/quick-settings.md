@@ -76,7 +76,9 @@ To access these experiences:
 
 ## Display redirections
 
-You can manage available display settings from within your Cloud PC session on Windows 365 Link devices. Available display settings will look and work as they do in a local Windows 11 session. You must have OS build version 26100.4333 (KB5060842) or later installed to see this feature.
+You can manage available display settings from within your Cloud PC session when using Windows 365 Link devices. Available display settings will look and work as they do in a local Windows 11 session.
+
+Note: This feature requires OS build version 26100.4333 (KB5060842) or later installed.
 
 Supported Display settings include:
 
