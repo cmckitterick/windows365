@@ -82,7 +82,7 @@ Note: This feature requires OS build version 26100.4333 (KB5060842) or later ins
 
 Supported Display settings include:
 
-- Identify
+- Identify displays
 - Duplicate
 - Extend
 - Rearrange
