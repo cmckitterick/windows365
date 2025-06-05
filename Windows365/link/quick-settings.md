@@ -86,7 +86,7 @@ Supported Display settings include:
 - Duplicate displays
 - Extend displays
 - Rearrange displays
-- Orientation
+- Change orientation
 - Resolution
 - Scale
 
