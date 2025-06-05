@@ -84,6 +84,8 @@ The bottom of the device supports Video Electronics Standards Association (VESA)
 
 HDMI, Display Port, and Type C can support monitors up to 4k in resolution (two 4K monitors maximum).
 
+Touch features for monitors are not supported.
+
 ## Peripheral support
 
 USB and Bluetooth support for:

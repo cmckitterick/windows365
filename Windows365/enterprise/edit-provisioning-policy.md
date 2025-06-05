@@ -34,7 +34,9 @@ ms.collection:
 You can update provisioning policies to change assignments or key attributes, like image and network connection.
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Windows 365** (under **Provisioning**) > **Provisioning policies** > select a policy.
-![Screenshot of edit policy](./media/edit-provisioning-policy/edit-policy.png)
+
+   ![Screenshot of edit policy](./media/edit-provisioning-policy/edit-policy.png)
+
 2. On the policy page, you can edit the **General** information, **Image**, and **Assignments** by selecting **Edit** next to each header.
 
 If you change the network, image, region or single sign-on configuration in a provisioning policy, no change will occur for previously provisioned Cloud PCs. Newly provisioned or reprovisioned Cloud PCs will honor the changes in your provisioning policy. To change the network or image of previously provisioned Cloud PCs to align with the changes, you must reprovision those Cloud PCs. To change the region or single sign-on of previously provisioned Cloud PCs to align with the changes, you must apply the current configuration.
