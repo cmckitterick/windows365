@@ -69,8 +69,7 @@ For more information, see [GPU Cloud PCs in Windows 365](gpu-cloud-pc.md) and 
 
 #### Windows 365 Frontline dedicated mode concurrency management now generally available<!--56225850-->
 
-Windows 365 Frontline dedicated mode concurrency management has moved out of preview and into generally availability. For more information, see [Concurrency management](create-provisioning-policy.md#concurrency-management-public-preview).
-
+Windows 365 Frontline dedicated mode concurrency management has moved out of preview and into generally availability. For more information, see [Concurrency management](create-provisioning-policy.md).
 
 <!-- ########################## -->
 ## Week of May 28, 2025 (Service release 2505)
