@@ -67,6 +67,10 @@ Windows 365 GPU-enabled Super and Max SKUs now support graphics processing unit 
 
 For more information, see [GPU Cloud PCs in Windows 365](gpu-cloud-pc.md) and [Enable GPU acceleration for Azure Virtual Desktop](/azure/virtual-desktop/graphics-enable-gpu-acceleration?tabs=intune).
 
+#### Windows 365 Frontline dedicated mode concurrency management now generally available<!--56225850-->
+
+Windows 365 Frontline dedicated mode concurrency management has moved out of preview and into generally availability. For more information, see [Concurrency management](create-provisioning-policy.md).
+
 <!-- ########################## -->
 ## Week of May 28, 2025 (Service release 2505)
 
