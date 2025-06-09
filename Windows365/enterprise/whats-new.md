@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 06/06/2025
+ms.date: 06/09/2025
 ms.topic: whats-new
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -70,6 +70,10 @@ For more information, see [GPU Cloud PCs in Windows 365](gpu-cloud-pc.md) and 
 #### Windows 365 Frontline dedicated mode concurrency management now generally available<!--56225850-->
 
 Windows 365 Frontline dedicated mode concurrency management has moved out of preview and into generally availability. For more information, see [Concurrency management](create-provisioning-policy.md).
+
+#### Teams VDI 1.0 support on iOS(preview)<!--54097469-->
+
+Windows 365 now supports Teams VDI 1.0 on iOS. For more information, see [Microsoft Teams on a Cloud PC](teams-on-cloud-pc.md).
 
 <!-- ########################## -->
 ## Week of May 28, 2025 (Service release 2505)
