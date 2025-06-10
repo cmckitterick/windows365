@@ -40,7 +40,7 @@ items:
     - name: What is Windows 365 Frontline
       href: introduction-windows-365-frontline.md
     - name:  Windows 365 Frontline licensing
-      href: frontline-licensing.md
+      href: frontline-license.md
     - name: Managing Windows 365 Frontline
       href: windows-365-frontline-manage.md
     - name: Concurrency buffer

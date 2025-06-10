@@ -33,7 +33,7 @@ ms.collection:
 
 Windows 365 Frontline Cloud PCs can be managed using Microsoft Intune, alongside other Cloud PCs and devices in your tenant. Windows 365 Frontline supports:
 
-- Provisioning Cloud PCs after [licenses](frontline-licensing.md) are purchased.
+- Provisioning Cloud PCs after [licenses](frontline-license.md) are purchased.
 - Managing Cloud PCs.
 - Configuring and applying policies.
 - Deploying applications.

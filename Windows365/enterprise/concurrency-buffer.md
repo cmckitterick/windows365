@@ -62,4 +62,4 @@ You can monitor the use of concurrency buffer with the Frontline connection hour
 For more information about Windows 365 Frontline, see:
 
 - [What is Windows 365 Frontline?](introduction-windows-365-frontline.md)
-- [Windows 365 Frontline licensing](frontline-licensing.md)
+- [Windows 365 Frontline licensing](frontline-license.md)

@@ -57,8 +57,8 @@ The maximum number of active Windows 365 Frontline Cloud PC sessions in your org
 
 > [!NOTE]
 >
-> Windows 365 Frontline Cloud PCs in dedicated mode will automatically power off after the user signs off from the Cloud PC, and will be powered on when the user attempts to connect. It may take more time for the user to connect when the Cloud PC is being powered on. This connection time does not include executing logon scripts set by organizations.
-> After the user signs off, the Cloud PC remains powered on for two hours. If the user attempts to reconnect while the Cloud PC is powered on, the connection time will be same as Windows 365 Enterprise Cloud PCs.
+> Windows 365 Frontline Cloud PCs in dedicated mode automatically powers off after the user signs off from the Cloud PC, and is powered on when the user attempts to connect. It may take more time for the user to connect when the Cloud PC is being powered on. This connection time doesn't include executing logon scripts set by organizations.
+> After the user signs off, the Cloud PC remains powered on for two hours. If the user attempts to reconnect while the Cloud PC is powered on, the connection time is the same as Windows 365 Enterprise Cloud PCs.
 
 ## Windows 365 Frontline in shared mode
 
@@ -115,4 +115,4 @@ For more information about Windows 365 Frontline, see:
 
 - [Bulk reprovision Windows 365 Frontline Cloud PCs in shared mode](frontline-shared-bulk-reprovision.md)
 - [Connected Frontline Cloud PCs report](report-connected-frontline-cloud-pcs.md)
-- [Windows 365 Frontline licensing](frontline-licensing.md)
+- [Windows 365 Frontline licensing](frontline-license.md)
