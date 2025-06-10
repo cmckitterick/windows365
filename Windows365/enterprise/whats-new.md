@@ -809,7 +809,7 @@ For Windows 365, step-up licenses now support storage. For more information, see
 
 #### Concurrency buffer for Windows 365 Frontline Cloud PCs<!--48929001-->
 
-A new concurrency buffer lets you exceed the max concurrency count for a limited time under certain circumstances, like during shift changes. For more information, see [Exceeding the maximum concurrency limit](introduction-windows-365-frontline.md#exceeding-the-maximum-concurrency-limit).
+A new concurrency buffer lets you exceed the max concurrency count for a limited time under certain circumstances, like during shift changes. For more information, see [Concurrency buffer](concurrency-buffer.md).
 
 #### Maintenance windows (public preview)<!--48851694-->
 
