@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/24/2025
+ms.date: 06/11/2025
 ms.topic: overview
 ms.service: windows-365-link
 ms.subservice:
@@ -73,6 +73,32 @@ To access these experiences:
 3. Navigate to the **Display** page or the **Bluetooth** page.
 4. Select the **Open Additional Settings** button.
 5. Make your desired changes on the quick settings control that appears.
+
+## Display redirections
+
+You can manage available display settings from within your Cloud PC session when using Windows 365 Link devices. Available display settings will look and work as they do in a local Windows 11 session.
+
+> [!NOTE]
+>
+> On Windows 11 OS version 24H2, this feature requires OS build 26100.4333 (KB 5060842) or later installed. On Windows 11 OS version 23H2, this feature requires OS build 22621.5469 (KB 5060999) or later installed. This feature also depends on the Azure Virtual Desktop Side-by-Side (SxS) Network Stack, which is automatically maintained and updated by the service. For more infoirmation, see [What's new in the Azure Virtual Desktop SxS Network Stack?](/azure/virtual-desktop/whats-new-sxs).
+
+Supported Display settings include:
+
+- Identify displays
+- Duplicate displays
+- Extend displays
+- Rearrange displays
+- Change orientation
+- Adjust resolution
+- Adjust scale
+
+To access these Display settings:
+
+1. Sign into your Cloud PC session.
+2. Open the **Settings** app.
+3. Go to the **Display** page.
+4. Adjust settings as needed.
+5. Important: Display settings are specific to the physical device used to access the Cloud PC. If users switch to a different device, they may need to reconfigure display settings to match the new hardware setup.
 
 <!-- ########################## -->
 ## Next steps
