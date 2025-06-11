@@ -57,7 +57,7 @@ Microsoft hosts Windows 365 GPU-enabled Cloud PCs using the latest version of Mi
 
 Each of these Cloud PCs comes with an SSD storage drive (c:) for  data and applications plus a large ephemeral disk (d:).
 
-The ephemeral disk (d: drive) is deleted and recreated every time the Cloud PC reboots. Never use it to store your data. Instead, you can use it as a cache drive to store temporary files. This is helpful to improve the performance of applications that need scratch disks to process large data sets.
+The ephemeral disk (d: drive) is deleted and recreated every time the Cloud PC reboots. Never use it to store your data. Instead, you can use it as a cache drive to store temporary files. This strategy is helpful to improve the performance of applications that need scratch disks to process large data sets.
 
 ## Registry keys and drivers on GPU Cloud PCs
 
@@ -78,7 +78,7 @@ You must allow the following URLs on each Windows 365 GPU Cloud PC:
 
 ## Supported regions
 
-The GPU offerings are available in all [Windows 365 supported regions](requirements.md?tabs=enterprise%2Cent#supported-azure-regions-for-cloud-pc-provisioning) except for the following:
+The GPU offerings are available in all [Windows 365 supported regions](requirements.md?tabs=enterprise%2Cent#supported-azure-regions-for-cloud-pc-provisioning) except for the following regions:
 
 - Central US
 - Norway East
@@ -98,6 +98,15 @@ For optimal performance of GPU-enabled Cloud PCs, consider these recommendations
 - Don’t use the Multimedia Redirection extension for the browser or for Teams. By default, this extension is uninstalled for GPU-enabled Cloud PCs during provisioning.
 - GPU offerings aren't designed for game development. These offerings are optimized for graphics applications typically used in Enterprise scenarios. For more information with game development scenarios, see [Create a Game Development Virtual Machine with other Game Engines](/gaming/azure/).
 - If you want to guarantee that all your users have the exact same BPU configuration, instead of using Cloud PCs, you can use Azure Virtual Desktop (AVD). AVD can help customers who prefer hardware specific configurations over workload focused configurations. For a complete list of Azure’s GPU offerings, see [Sizes for virtual machines in Azure - GPU accelerated](/azure/virtual-machines/sizes/overview?tabs=breakdownseries%2Cgeneralsizelist%2Ccomputesizelist%2Cmemorysizelist%2Cstoragesizelist%2Cgpusizelist%2Cfpgasizelist%2Chpcsizelist#gpu-accelerated).
+- By default, GPU-enabled Cloud PCs are provisioned to use GPU-accelerated remote frame encoding. For more information about different hardware-accelerated graphics encoding profiles and how to manage them on your GPU-enabled Cloud PCs, see [Enable GPU Acceleration](/azure/virtual-desktop/graphics-enable-gpu-acceleration?tabs=intune).
+
+  - The following table lists compatibility of Windows 365 Cloud PC SKUs with our two different GPU-accelerated graphics encoding profiles:    
+  
+| Windows 365 Enterprise GPU | Supported GPU-accelerated remote frame encoders|
+| -------- | -------- |
+| Max |HEVC/H.265<br />AVC/H.264   |
+| Super |HEVC/H.265<br />AVC/H.264   |
+| Standard |AVC/H.264   |
 
 <!-- ########################## -->
 ## Next steps
