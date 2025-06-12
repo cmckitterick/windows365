@@ -51,12 +51,6 @@ Windows 365 Link now supports additional display settings in the Cloud PC Displa
 
 For more information, see [Display redirections](quick-settings.md#display-redirections).
 
-#### Bug fixes and performance improvements
-
-- Fixed an issue that could cause Keyboard Language settings to not persist correctly during locked sessions and after profile updates.
-- Fixed an issue that could sometimes prevent Task Manager from launching correctly.
-- Fixed issue with inadvertent timeouts on certain actions in the security key sign-in process.
-
 #### Connection Center<!-- 57895367-->
 
 If a user is assigned more than one Windows 365 Cloud PC, the new Connection Center screen now appears when a user first signs in to their Windows 365 Link device. On the Connection Center scree, users can:
@@ -64,6 +58,12 @@ If a user is assigned more than one Windows 365 Cloud PC, the new Connection Cen
 - Choose which of their Cloud PCs to connect to.
 - Troubleshoot connection errors.
 - Reboot and restore their Cloud PCs.
+
+#### Bug fixes and performance improvements
+
+- Fixed an issue that could cause Keyboard Language settings to not persist correctly during locked sessions and after profile updates.
+- Fixed an issue that could sometimes prevent Task Manager from launching correctly.
+- Fixed issue with inadvertent timeouts on certain actions in the security key sign-in process.
 
 <!-- ########################## -->
 ## Week of May 12, 2025
