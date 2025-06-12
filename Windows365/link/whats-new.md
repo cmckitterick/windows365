@@ -53,12 +53,7 @@ Windows 365 Link now supports additional display settings in the Cloud PC Displa
 - Duplicate and extended modes.
 - Adjust the resolution, scale, and orientation of each monitor.
 
-The following operating system versions are required for this additional settings:
-
-| Operating system | Build version required for these monitor settings |
-| --- | --- |
-| Windows 11 OS version 24H2 | OS build 26100.4333 (KB 5060842) or later installed on the Cloud PC. |
-| Windows 11 OS version 23H2 | OS build 22621.5469 (KB 5060999) or later installed on the Cloud PC. |
+For more information, see [Display redirections](quick-settings.md#display-redirections).
 
 #### Connection Center<!-- 57895367-->
 
