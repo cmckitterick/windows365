@@ -42,10 +42,6 @@ For information about Windows 365 Enterprise new features, see [What's new in Wi
 
 Windows 365 Link June Quality Update build version 26100.4349 released on Tuesday June 10th, 2025.
 
-- Fixed an issue that could cause Keyboard Language settings to not persist correctly during locked sessions and after profile updates.
-- Fixed an issue that could sometimes prevent Task Manager from launching correctly.
-- Fixed issue with inadvertent timeouts on certain actions in the security key sign-in process.
-
 #### Multi-monitor support (preview)<!--57895367 -->
 
 Windows 365 Link now supports additional display settings in the Cloud PC Display Settings menu:
@@ -54,6 +50,12 @@ Windows 365 Link now supports additional display settings in the Cloud PC Displa
 - Adjust the resolution, scale, and orientation of each monitor.
 
 For more information, see [Display redirections](quick-settings.md#display-redirections).
+
+#### Bug fixes and performance improvements
+
+- Fixed an issue that could cause Keyboard Language settings to not persist correctly during locked sessions and after profile updates.
+- Fixed an issue that could sometimes prevent Task Manager from launching correctly.
+- Fixed issue with inadvertent timeouts on certain actions in the security key sign-in process.
 
 #### Connection Center<!-- 57895367-->
 
@@ -66,18 +68,14 @@ If a user is assigned more than one Windows 365 Cloud PC, the new Connection Cen
 <!-- ########################## -->
 ## Week of May 12, 2025
 
-### Windows 365 Link builds
-
-### New build released - 26100.4061<!--57541477-->
+## New build released - 26100.4061<!--57541477-->
 
 Build number 26100.4061 was released on May 13. This build includes various bug fixes.
 
 <!-- ########################## -->
 ## Week of April 7, 2025
 
-### Windows 365 Link builds
-
-#### New build released<!--57279555-->
+### New build released<!--57279555-->
 
 4B build number 26100.3775 released. This build includes various bug fixes.
 
