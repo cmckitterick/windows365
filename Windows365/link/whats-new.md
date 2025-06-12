@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 05/16/2025
+ms.date: 06/12/2025
 ms.topic: whats-new
 ms.service: windows-365-link
 ms.subservice:
@@ -34,6 +34,15 @@ ms.collection:
 Learn what new features are available in Windows 365 Link.
 
 For information about Windows 365 Enterprise new features, see [What's new in Windows 365 Enterprise](../enterprise/whats-new.md).
+
+<!-- ########################## -->
+## Week of June 9, 2025
+
+### Windows 365 Link builds
+
+#### New build released: Windows 365 Link June Quality Update version 26100.4349<!--57895367-->
+
+Windows 365 Link June Quality Update build version 26100.4349 released Tuesday June 10th, 2025.
 
 <!-- ########################## -->
 ## Week of May 12, 2025
