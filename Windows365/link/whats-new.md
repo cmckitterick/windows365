@@ -61,9 +61,9 @@ If a user is assigned more than one Windows 365 Cloud PC, the new Connection Cen
 
 #### Bug fixes and performance improvements
 
-- Fixed an issue that could cause Keyboard Language settings to not persist correctly during locked sessions and after profile updates.
-- Fixed an issue that could sometimes prevent Task Manager from launching correctly.
-- Fixed issue with inadvertent timeouts on certain actions in the security key sign-in process.
+- Fixed an issue that could cause Keyboard Language settings to not persist correctly during locked sessions and after profile updates (56347820).
+- Fixed an issue that could sometimes prevent Task Manager from launching correctly (57115154).
+- Fixed issue with inadvertent timeouts on certain actions in the security key sign-in process (57007130).
 
 <!-- ########################## -->
 ## Week of May 12, 2025
