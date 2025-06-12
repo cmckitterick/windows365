@@ -44,6 +44,10 @@ For information about Windows 365 Enterprise new features, see [What's new in Wi
 
 Windows 365 Link June Quality Update build version 26100.4349 released Tuesday June 10th, 2025.
 
+- Fixed an issue that could cause Keyboard Language settings to not persist correctly during locked sessions and after profile updates.
+- Fixed an issue that could sometimes prevent Task Manager from launching correctly.
+- Fixed issue with inadvertent timeouts on certain actions in the security key sign-in process.
+
 <!-- ########################## -->
 ## Week of May 12, 2025
 
