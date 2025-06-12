@@ -60,6 +60,14 @@ The following operating system versions are required for this additional setting
 | Windows 11 OS version 24H2 | OS build 26100.4333 (KB 5060842) or later installed on the Cloud PC. |
 | Windows 11 OS version 23H2 | OS build 22621.5469 (KB 5060999) or later installed on the Cloud PC. |
 
+#### Connection Center<!-- 57895367-->
+
+If a user is assigned more than one Windows 365 Cloud PC, the new Connection Center screen now appears when a user first signs in to their Windows 365 Link device. On the Connection Center scree, users can:
+
+- Choose which of their Cloud PCs to connect to.
+- Troubleshoot connection errors.
+- Reboot and restore their Cloud PCs.
+
 <!-- ########################## -->
 ## Week of May 12, 2025
 
