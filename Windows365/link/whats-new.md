@@ -53,7 +53,7 @@ For more information, see [Display redirections](quick-settings.md#display-redir
 
 #### Connection Center<!-- 57895367-->
 
-If a user is assigned more than one Windows 365 Cloud PC, the new Connection Center screen now appears when a user first signs in to their Windows 365 Link device. On the Connection Center scree, users can:
+If a user is assigned more than one Windows 365 Cloud PC, the new Connection Center screen now appears when a user first signs in to their Windows 365 Link device. On the Connection Center screen, users can:
 
 - Choose which of their Cloud PCs to connect to.
 - Troubleshoot connection errors.
