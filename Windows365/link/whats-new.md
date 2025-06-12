@@ -44,7 +44,7 @@ Windows 365 Link June Quality Update build version 26100.4349 released on Tuesda
 
 #### Multi-monitor support (preview)<!--57895367 -->
 
-Windows 365 Link now supports additional display settings in the Cloud PC Display Settings menu: 
+Windows 365 Link now supports additional display settings in the Cloud PC Display Settings menu:
 
 - Duplicate and extended modes.
 - Adjust the resolution, scale, and orientation of each monitor.
