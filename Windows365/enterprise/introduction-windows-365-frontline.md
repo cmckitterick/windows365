@@ -64,7 +64,7 @@ The maximum number of active Windows 365 Frontline Cloud PC sessions in your org
 
 A single license:
 
-- Lets you provision one Cloud PC that can be shared noncurrently among a group of users.
+- Lets you provision one Cloud PC that can be shared nonconcurrently among a group of users.
 - Provides one concurrent session.
 
 Windows 365 Frontline in shared mode is designed specifically for workers who
