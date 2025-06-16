@@ -51,7 +51,7 @@ In such cases, you can do any of the following to unblock users:
 - Redistribute licenses across the Microsoft Entra group assignment.
 - Purchase more licenses.
 
-If the total number of connections exceeds the maximum concurrency limit, it means that you're using the [concurrency buffer](introduction-windows-365-frontline.md#exceeding-the-maximum-concurrency-limit) (for Frontline Cloud PCs in dedicated mode only).
+If the total number of connections exceeds the maximum concurrency limit, it means that you're using the [concurrency buffer](concurrency-buffer.md) (for Frontline Cloud PCs in dedicated mode only).
 
 ## Requirements
 
@@ -86,7 +86,7 @@ The report shows the following data aggregated for the last 28 days:
 - **Limit**: Maximum concurrency limit, which is equal to the number of licenses purchased.
 - **Reached concurrency limit**: Warnings for approaching and reaching the maximum concurrency limit.
 
-The **Concurrent connection history** chart shows when you reach or exceed the max concurrency limit for your tenant or selected group assignment. If you see the total number of connections exceed the max concurrency limit, you're using your concurrency buffer (Frontline dedicated mode only). For more information, see [Exceeding the maximum concurrency limit](introduction-windows-365-frontline.md#exceeding-the-maximum-concurrency-limit).
+The **Concurrent connection history** chart shows when you reach or exceed the max concurrency limit for your tenant or selected group assignment. If you see the total number of connections exceed the max concurrency limit, you're using your concurrency buffer (Frontline dedicated mode only). For more information, see [Concurrency buffer](concurrency-buffer.md).
 
 ### Connected devices
 
