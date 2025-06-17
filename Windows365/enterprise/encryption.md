@@ -37,7 +37,7 @@ Windows 365 encrypts data at rest and in transit as explained in this article.
 
 ## Encryption of data at rest
 
-To help you protect your organization's data, Windows 365 Enterprise and Business Cloud PC disks are encrypted with [Azure Storage server-side encryption (SSE)](/azure/storage/common/storage-service-encryption).
+To help you protect your organization's data, Windows 365 Enterprise and Business Cloud PC disks are encrypted with [Azure Storage server-side encryption (SSE)](/azure/storage/common/storage-service-encryption) and [host-based encryption](/azure/virtual-machines/disk-encryption-overview#comparison).
 
 This storage layer encryption provides the following benefits:
 

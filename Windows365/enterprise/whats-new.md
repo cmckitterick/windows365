@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 05/28/2025
+ms.date: 06/09/2025
 ms.topic: whats-new
 ms.service: windows-365
 ms.subservice: windows-365-enterprise
@@ -54,6 +54,26 @@ For more information about public preview items, see [Public preview in Windows 
 ### Windows 365 Government
 ### Windows 365 app 
 -->
+
+<!-- ########################## -->
+## Week of June 2, 2025
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device management
+
+#### High Efficiency Video Coding (H.265) hardware acceleration support<!-- 54118351 -->
+
+Windows 365 GPU-enabled Super and Max SKUs now support graphics processing unit (GPU) acceleration for frame encoding using HEVC/H.265. GPU acceleration improves graphical experiences when using the Remote Desktop Protocol (RDP) with a compatible GPU-enabled Cloud PCs.
+
+For more information, see [GPU Cloud PCs in Windows 365](gpu-cloud-pc.md) and [Enable GPU acceleration for Azure Virtual Desktop](/azure/virtual-desktop/graphics-enable-gpu-acceleration?tabs=intune).
+
+#### Windows 365 Frontline dedicated mode concurrency management now generally available<!--56225850-->
+
+Windows 365 Frontline dedicated mode concurrency management has moved out of preview and into generally availability. For more information, see [Concurrency management](create-provisioning-policy.md).
+
+#### Teams VDI 1.0 support on iOS(preview)<!--54097469-->
+
+Windows 365 now supports Teams VDI 1.0 on iOS. For more information, see [Microsoft Teams on a Cloud PC](teams-on-cloud-pc.md).
 
 <!-- ########################## -->
 ## Week of May 28, 2025 (Service release 2505)
@@ -789,7 +809,7 @@ For Windows 365, step-up licenses now support storage. For more information, see
 
 #### Concurrency buffer for Windows 365 Frontline Cloud PCs<!--48929001-->
 
-A new concurrency buffer lets you exceed the max concurrency count for a limited time under certain circumstances, like during shift changes. For more information, see [Exceeding the maximum concurrency limit](introduction-windows-365-frontline.md#exceeding-the-maximum-concurrency-limit).
+A new concurrency buffer lets you exceed the max concurrency count for a limited time under certain circumstances, like during shift changes. For more information, see [Concurrency buffer](concurrency-buffer.md).
 
 #### Maintenance windows (public preview)<!--48851694-->
 
