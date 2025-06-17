@@ -54,7 +54,7 @@ Some of the key benefits of the optimizations are:
 
 ### Supported endpoints
 
-Media optimization for Microsoft Teams is only available for the Windows and macOS endpoints. Media optimizations require:
+Media optimization for Microsoft Teams is available for Windows, macOS, iOS and iPadOS endpoints. Media optimizations require:
 
 - [Windows App for Windows](/azure/virtual-desktop/teams-on-avd) via the Microsoft Store (ideally the latest version).
 - Windows App for Windows, version 1.2.1026.0 or later (ideally the latest version).
