@@ -37,6 +37,8 @@ Admins must manually activate and deactivate cross region disaster recovery.
 
 The ability to restore in an alternate region depends on available capacity in that region at the time of the outage. Regardless of whether the device is able to restore at any given time, restore points are resilient in the alternate region.
 
+Windows 365 cross region disaster recovery is available as an optional service for Windows 365 Frontline dedicated mode (in public preview).
+
 ## Licensing
 
 The following Windows 365 Enterprise add-on license is required for each user added to the service:
