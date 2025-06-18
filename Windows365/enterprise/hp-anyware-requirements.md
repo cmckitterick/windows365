@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Requirements for using HP Anyware for Windows 365 Enterprise
+title: Requirements to set up HP Anyware for Windows 365 Enterprise
 titleSuffix:
 description: Learn about requirements for using HP Anyware with Windows 365 Enterprise.
 keywords:
@@ -35,7 +35,7 @@ To use HP Anyware for Windows 365, you must meet the following requirements:
 
 ## HP Anyware requirements
 
-- HP Anyware Standard or HP Anyware Professional
+- HP Anyware Standard license
 - Cloud PCs must have access to:
   - https://cas.teradici.com on TCP 443 for Broker connectivity.
 - Consult the [Anyware Session Planning Guide](https://www.teradici.com/web-help/pcoip/session_planning_guide/2023.12/network/network_requirements/) for more requirements.
