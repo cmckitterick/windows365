@@ -36,7 +36,7 @@ The following partner integration scenarios support partner protocols on top of 
 | Partner | Supported clients | Gateway service | Connection protocol | Supported service plans |
 | --- | --- | --- | --- | --- |
 | Citrix | Citrix Workspace web client<br>Citrix Workspace desktop clients for supported platforms | Citrix Cloud Gateway Service | Citrix HDX | Enterprise, Frontline
-| HP | HP Anyware web client<br>HP Anyware desktop clients for supported platforms | HP Anyware Cloud Gateway Service | HP Anyware | Enterprise |
+| HP | HP Anyware web client<br>HP Anyware desktop clients for supported platforms | HP Anyware Cloud Gateway Service | HP Anyware | Enterprise, GPU-enabled Enterprise |
 | Omnissa | Omnissa Workspace ONE web client<br>Omnissa ONE desktop clients for supported platforms | Omnissa Cloud Gateway Service |  Omnissa Blast | Enterprise |
 
 While scenarios not listed here might still work in customers’ production environment, they aren't supported by Microsoft.
@@ -52,7 +52,7 @@ While scenarios not listed here might still work in customers’ production envi
 1. A user authenticates using Microsoft Entra ID, on-premises Active Directory, or a third party identity provider.
 2. Windows 365 establishes a connection to the partner cloud gateway using partner protocols.
 3. A Cloud PC is assigned to the user and is accessible from the web/workspace portals.
-4. Windows 365 establishes a connection to the Cloud PC using partner protocols. 
+4. Windows 365 establishes a connection to the Cloud PC using partner protocols.
 
 <!-- ########################## -->
 ## Next steps
