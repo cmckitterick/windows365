@@ -56,5 +56,11 @@
     "Pdf": {
       "template_folder": "_themes.pdf"
     }
-  }
+  },
+
+  "redirection_files": [
+    ".openpublishing.redirection.windows365.json",
+    ".openpublishing.redirection.virtual-desktop.json"
+  ]
+
 }
