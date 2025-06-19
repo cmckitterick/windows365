@@ -118,9 +118,9 @@ Here are the identity providers you can use with App Attach:
 
 ## File share
 
-App Attach requires that your application images are stored on an SMB file share, which is then mounted on each session host during sign-in. App Attach doesn't have dependencies on the type of storage fabric the file share uses. We recommend using [Azure Files](../storage/files/storage-files-introduction.md) as it's compatible with Microsoft Entra ID or Active Directory Domain Services, and offers great value between cost and management overhead.
+App Attach requires that your application images are stored on an SMB file share, which is then mounted on each session host during sign-in. App Attach doesn't have dependencies on the type of storage fabric the file share uses. We recommend using [Azure Files](/azure/storage/files/storage-files-introduction.md) as it's compatible with Microsoft Entra ID or Active Directory Domain Services, and offers great value between cost and management overhead.
 
-You can also use [Azure NetApp Files](../azure-netapp-files/azure-netapp-files-introduction.md), but that requires your session hosts to be joined to Active Directory Domain Services.
+You can also use [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction.md), but that requires your session hosts to be joined to Active Directory Domain Services.
 
 The following sections provide some guidance on the permissions, performance, and availability required for the file share.
 
@@ -128,20 +128,20 @@ The following sections provide some guidance on the permissions, performance, an
 
 Each session host mounts application images from the file share. You need to configure NTFS and share permissions to allow each session host computer object read access to the files and file share. How you configure the correct permission depends on which storage provider and identity provider you're using for your file share and session hosts.
 
-- To use Azure Files when your session hosts joined to Microsoft Entra ID, you need to assign the [Reader and Data Access](../role-based-access-control/built-in-roles.md#reader-and-data-access) Azure role-based access control (RBAC) role to both the **Azure Virtual Desktop** and **Azure Virtual Desktop ARM Provider** service principals. This RBAC role assignment allows your session hosts to access the storage account using access keys or Microsoft Entra.
+- To use Azure Files when your session hosts joined to Microsoft Entra ID, you need to assign the [Reader and Data Access](/azure/role-based-access-control/built-in-roles.md#reader-and-data-access) Azure role-based access control (RBAC) role to both the **Azure Virtual Desktop** and **Azure Virtual Desktop ARM Provider** service principals. This RBAC role assignment allows your session hosts to access the storage account using access keys or Microsoft Entra.
 
 - To learn how to assign an Azure RBAC role to the Azure Virtual Desktop service principals, see [Assign RBAC roles to the Azure Virtual Desktop service principals](service-principal-assign-roles.md). In a future update, you won't need to assign the **Azure Virtual Desktop ARM Provider** service principal.
 
-   For more information about using Azure Files with session hosts that are joined to Microsoft Entra ID, Active Directory Domain Services, or Microsoft Entra Domain Services, see [Overview of Azure Files identity-based authentication options for SMB access](../storage/files/storage-files-active-directory-overview.md).
+   For more information about using Azure Files with session hosts that are joined to Microsoft Entra ID, Active Directory Domain Services, or Microsoft Entra Domain Services, see [Overview of Azure Files identity-based authentication options for SMB access](/azure/storage/files/storage-files-active-directory-overview.md).
 
    > [!WARNING]
    > Assigning the **Azure Virtual Desktop ARM Provider** service principal to the storage account grants the Azure Virtual Desktop service to all data inside the storage account. We recommended you only store apps to use with App Attach in this storage account and rotate the access keys regularly.
 
-- For Azure Files with Active Directory Domain Services, you need to assign the [Storage File Data SMB Share Reader](../role-based-access-control/built-in-roles.md#storage-file-data-smb-share-reader) Azure role-based access control (RBAC) role as the [default share-level permission](../storage/files/storage-files-identity-ad-ds-assign-permissions.md#share-level-permissions-for-all-authenticated-identities), and [configure NTFS permissions](../storage/files/storage-files-identity-ad-ds-configure-permissions.md) to give read access to each session host's computer object.
+- For Azure Files with Active Directory Domain Services, you need to assign the [Storage File Data SMB Share Reader](/azure/role-based-access-control/built-in-roles.md#storage-file-data-smb-share-reader) Azure role-based access control (RBAC) role as the [default share-level permission](/azure/storage/files/storage-files-identity-ad-ds-assign-permissions.md#share-level-permissions-for-all-authenticated-identities), and [configure NTFS permissions](/azure/storage/files/storage-files-identity-ad-ds-configure-permissions.md) to give read access to each session host's computer object.
 
-   For more information about using Azure Files with session hosts that are joined to Microsoft Entra ID, Active Directory Domain Services, or Microsoft Entra Domain Services, see [Overview of Azure Files identity-based authentication options for SMB access](../storage/files/storage-files-active-directory-overview.md).
+   For more information about using Azure Files with session hosts that are joined to Microsoft Entra ID, Active Directory Domain Services, or Microsoft Entra Domain Services, see [Overview of Azure Files identity-based authentication options for SMB access](/azure/storage/files/storage-files-active-directory-overview.md).
 
-- For Azure NetApp Files, you can [create an SMB volume](../azure-netapp-files/azure-netapp-files-create-volumes-smb.md) and configure NTFS permissions to give read access to each session host's computer object. Your session hosts need to be joined to Active Directory Domain Services or Microsoft Entra Domain Services.
+- For Azure NetApp Files, you can [create an SMB volume](/azure/azure-netapp-files/azure-netapp-files-create-volumes-smb.md) and configure NTFS permissions to give read access to each session host's computer object. Your session hosts need to be joined to Active Directory Domain Services or Microsoft Entra Domain Services.
 
 You can verify the permissions are correct by using [PsExec](/sysinternals/downloads/psexec). For more information, see [Check file share access](/troubleshoot/azure/virtual-desktop/troubleshoot-app-attach#check-file-share-access).
 
@@ -165,11 +165,11 @@ To optimize the performance of your applications, we recommend:
 
 ### Availability
 
-Any disaster recovery plans for Azure Virtual Desktop must include replicating the file share to your secondary failover location. You also need to ensure your file share path is accessible in the secondary location. For example, you can use [Distributed File System (DFS) Namespaces with Azure Files](../storage/files/files-manage-namespaces.md) to provide a single share name across different file shares. To learn more about disaster recovery for Azure Virtual Desktop, see [Set up a business continuity and disaster recovery plan](disaster-recovery.md).
+Any disaster recovery plans for Azure Virtual Desktop must include replicating the file share to your secondary failover location. You also need to ensure your file share path is accessible in the secondary location. For example, you can use [Distributed File System (DFS) Namespaces with Azure Files](/azure/storage/files/files-manage-namespaces.md) to provide a single share name across different file shares. To learn more about disaster recovery for Azure Virtual Desktop, see [Set up a business continuity and disaster recovery plan](disaster-recovery.md).
 
 ### Azure Files
 
-Azure Files has limits on the number of open handles per root directory, directory, and file. VHDX or CimFS disk images are mounted using the computer account of the session host, meaning one handle is opened per session host per disk image, rather than per user. For more information on the limits and sizing guidance, see [Azure Files scalability and performance targets](../storage/files/storage-files-scale-targets.md#file-scale-targets) and [Azure Files sizing guidance for Azure Virtual Desktop](../storage/files/storage-files-scale-targets.md#azure-files-sizing-guidance-for-azure-virtual-desktop).
+Azure Files has limits on the number of open handles per root directory, directory, and file. VHDX or CimFS disk images are mounted using the computer account of the session host, meaning one handle is opened per session host per disk image, rather than per user. For more information on the limits and sizing guidance, see [Azure Files scalability and performance targets](/azure/storage/files/storage-files-scale-targets.md#file-scale-targets) and [Azure Files sizing guidance for Azure Virtual Desktop](/azure/storage/files/storage-files-scale-targets.md#azure-files-sizing-guidance-for-azure-virtual-desktop).
 
 ## MSIX and Appx package certificates
 

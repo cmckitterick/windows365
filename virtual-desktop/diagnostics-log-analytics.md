@@ -68,12 +68,12 @@ To set up Log Analytics for a new object:
      >[!IMPORTANT]
      >Remember to enable diagnostics for each Azure Resource Manager object that you want to monitor. Data will be available for activities after diagnostics has been enabled. It might take a few hours after first set-up.
 
-5. Enter a name for your settings configuration, then select **Send to Log Analytics**. The name you use shouldn't have spaces and should conform to [Azure naming conventions](../azure-resource-manager/management/resource-name-rules.md). As part of the logs, you can select all the options that you want added to your Log Analytics, such as Checkpoint, Error, Management, and so on.
+5. Enter a name for your settings configuration, then select **Send to Log Analytics**. The name you use shouldn't have spaces and should conform to [Azure naming conventions](/azure/azure-resource-manager/management/resource-name-rules.md). As part of the logs, you can select all the options that you want added to your Log Analytics, such as Checkpoint, Error, Management, and so on.
 
 6. Select **Save**.
 
 >[!NOTE]
->Log Analytics gives you the option to stream data to [Event Hubs](../event-hubs/event-hubs-about.md) or archive it in a storage account. To learn more about this feature, see [Stream Azure monitoring data to an event hub](/azure/azure-monitor/essentials/stream-monitoring-data-event-hubs) and [Archive Azure resource logs to storage account](/azure/azure-monitor/essentials/resource-logs#send-to-azure-storage).
+>Log Analytics gives you the option to stream data to [Event Hubs](/azure/event-hubs/event-hubs-about.md) or archive it in a storage account. To learn more about this feature, see [Stream Azure monitoring data to an event hub](/azure/azure-monitor/essentials/stream-monitoring-data-event-hubs) and [Archive Azure resource logs to storage account](/azure/azure-monitor/essentials/resource-logs#send-to-azure-storage).
 
 ## How to access Log Analytics
 

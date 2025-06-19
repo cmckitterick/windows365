@@ -65,6 +65,6 @@ To use the Azure Virtual Desktop Agent URL Tool:
 
 - Review the list of the [Required FQDNs and endpoints for Azure Virtual Desktop](required-fqdn-endpoint.md).
 
-- To learn how to unblock these FQDNs and endpoints in Azure Firewall, see [Use Azure Firewall to protect Azure Virtual Desktop](../firewall/protect-azure-virtual-desktop.md).
+- To learn how to unblock these FQDNs and endpoints in Azure Firewall, see [Use Azure Firewall to protect Azure Virtual Desktop](/azure/firewall/protect-azure-virtual-desktop.md).
 
 - For more information about network connectivity, see [Understanding Azure Virtual Desktop network connectivity](network-connectivity.md)

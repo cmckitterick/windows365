@@ -634,7 +634,7 @@ To learn more about autoscale for personal host pools, see [Autoscale scaling pl
 
 Confidential virtual machines and Trusted Launch virtual machines for Azure Virtual Desktop are now generally available. You can select these options when you create a new host pool with machines or add a new virtual machine to an existing host pool.
 
-Azure confidential virtual machines (VMs) offer VM memory encryption with integrity protection, which strengthens guest protections to deny the hypervisor and other host management components code access to the VM memory and state. For more information about the security benefits of confidential VMs, see our [confidential computing documentation](../confidential-computing/confidential-vm-overview.md).  
+Azure confidential virtual machines (VMs) offer VM memory encryption with integrity protection, which strengthens guest protections to deny the hypervisor and other host management components code access to the VM memory and state. For more information about the security benefits of confidential VMs, see our [confidential computing documentation](/azure/confidential-computing/confidential-vm-overview.md).  
 
 Trusted Launch protects against advanced and persistent attack techniques. This feature allows you to securely deploy your VMs with verified boot loaders, OS kernels, and drivers. Trusted Launch also protects keys, certificates, and secrets in VMs. For more information about the benefits of Trusted Launch, see our [Trusted Launch documentation](/azure/virtual-machines/trusted-launch). Trusted Launch is now enabled by default for all Windows images used with Azure Virtual Desktop.
 
@@ -1582,7 +1582,7 @@ Last month, we introduced Azure Virtual Desktop with Azure Resource Manager inte
 
 ### Azure Virtual Desktop is now integrated with Azure Resource Manager
 
-Azure Virtual Desktop is now integrated into Azure Resource Manager. In the latest update, all Azure Virtual Desktop objects are now Azure Resource Manager resources. This update is also integrated with Azure role-based access control (Azure RBAC). See [What is Azure Resource Manager?](../azure-resource-manager/management/overview.md) to learn more.
+Azure Virtual Desktop is now integrated into Azure Resource Manager. In the latest update, all Azure Virtual Desktop objects are now Azure Resource Manager resources. This update is also integrated with Azure role-based access control (Azure RBAC). See [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview.md) to learn more.
 
 Here's what this change does for you:
 
@@ -1590,7 +1590,7 @@ Here's what this change does for you:
 
 - Before this update, you could only publish desktops and applications to individual users. With Azure Resource Manager, you can now publish resources to Azure Active Directory groups.
 
-- The earlier version of Azure Virtual Desktop had four built-in admin roles that you could assign to a tenant or host pool. These roles are now in [Azure role-based access control (Azure RBAC)](../role-based-access-control/overview.md). You can apply these roles to every Azure Virtual Desktop Azure Resource Manager object, which lets you have a full, rich delegation model.
+- The earlier version of Azure Virtual Desktop had four built-in admin roles that you could assign to a tenant or host pool. These roles are now in [Azure role-based access control (Azure RBAC)](/azure/role-based-access-control/overview.md). You can apply these roles to every Azure Virtual Desktop Azure Resource Manager object, which lets you have a full, rich delegation model.
 
 - In this update, you no longer need to run Azure Marketplace or the GitHub template repeatedly to expand a host pool. All you need to expand a host pool is to go to your host pool in the Azure portal and select **+ Add** to deploy additional session hosts.
 

@@ -47,7 +47,7 @@ To ensure your Azure Virtual Desktop environment follows best practices:
 
    - Azure Files permissions should match permissions described in [Configure SMB Storage Permissions for FSLogix](/fslogix/fslogix-storage-config-ht).
 
-   - Azure Files has limits on the number of open handles per root directory, directory, and file. For more information on the limits and sizing guidance, see [Azure Files scalability and performance targets](../storage/files/storage-files-scale-targets.md#file-scale-targets) and [Azure Files sizing guidance for Azure Virtual Desktop](../storage/files/storage-files-scale-targets.md#azure-files-sizing-guidance-for-azure-virtual-desktop).
+   - Azure Files has limits on the number of open handles per root directory, directory, and file. For more information on the limits and sizing guidance, see [Azure Files scalability and performance targets](/azure/storage/files/storage-files-scale-targets.md#file-scale-targets) and [Azure Files sizing guidance for Azure Virtual Desktop](/azure/storage/files/storage-files-scale-targets.md#azure-files-sizing-guidance-for-azure-virtual-desktop).
 
 - Each host pool VM must be built of the same type and size VM based on the same VM image.
 

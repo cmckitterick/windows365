@@ -64,7 +64,7 @@ Before you enable RDP Shortpath, you need:
       - iOS/iPadOS
       - Android/Chrome OS
 
-- For **RDP Shortpath for managed networks**, you need direct connectivity between the client and the session host. This means that the client can connect directly to the session host on port 3390 (default) and isn't blocked by firewalls (including the Windows Firewall) or a Network Security Group. Examples of a managed network are [ExpressRoute private peering](../expressroute/expressroute-circuit-peerings.md) or a site-to-site or point-to-site VPN (IPsec), such as [Azure VPN Gateway](../vpn-gateway/vpn-gateway-about-vpngateways.md).
+- For **RDP Shortpath for managed networks**, you need direct connectivity between the client and the session host. This means that the client can connect directly to the session host on port 3390 (default) and isn't blocked by firewalls (including the Windows Firewall) or a Network Security Group. Examples of a managed network are [ExpressRoute private peering](/azure/expressroute/expressroute-circuit-peerings.md) or a site-to-site or point-to-site VPN (IPsec), such as [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways.md).
 
 - For **RDP Shortpath for public networks**, you need:
 
@@ -72,7 +72,7 @@ Before you enable RDP Shortpath, you need:
 
    - Make sure session hosts and clients can connect to the STUN and TURN servers. You can find details of the IP subnets, ports, and protocols used by the STUN and TURN servers at [Network configuration](rdp-shortpath.md#network-configuration).
 
-- If you want to use Azure PowerShell locally, see [Use Azure CLI and Azure PowerShell with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [Az.DesktopVirtualization](/powershell/module/az.desktopvirtualization) PowerShell module installed. Alternatively, use the [Azure Cloud Shell](../cloud-shell/overview.md).
+- If you want to use Azure PowerShell locally, see [Use Azure CLI and Azure PowerShell with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [Az.DesktopVirtualization](/powershell/module/az.desktopvirtualization) PowerShell module installed. Alternatively, use the [Azure Cloud Shell](/azure/cloud-shell/overview.md).
 
 - Parameters to configure RDP Shortpath using Azure PowerShell are added in version 5.2.1 preview of the Az.DesktopVirtualization module. You can download and install it from the [PowerShell Gallery](https://www.powershellgallery.com/packages/Az.DesktopVirtualization/5.2.1-preview).
 

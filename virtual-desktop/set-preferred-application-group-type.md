@@ -31,7 +31,7 @@ Before you can set the preferred application group type for a pooled host pool, 
 
 - An Azure account you can use that has the [Desktop Virtualization Host Pool Contributor](rbac.md#desktop-virtualization-host-pool-contributor) role-based access control (RBAC) role assigned.
 
-- If you want to use Azure PowerShell or Azure CLI locally, see [Use Azure PowerShell and Azure CLI with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [Az.DesktopVirtualization](/powershell/module/az.desktopvirtualization) PowerShell module or the [desktopvirtualization](/cli/azure/desktopvirtualization) Azure CLI extension installed. Alternatively, use the [Azure Cloud Shell](../cloud-shell/overview.md).
+- If you want to use Azure PowerShell or Azure CLI locally, see [Use Azure PowerShell and Azure CLI with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [Az.DesktopVirtualization](/powershell/module/az.desktopvirtualization) PowerShell module or the [desktopvirtualization](/cli/azure/desktopvirtualization) Azure CLI extension installed. Alternatively, use the [Azure Cloud Shell](/azure/cloud-shell/overview.md).
 
 ## Set the preferred application group type
 

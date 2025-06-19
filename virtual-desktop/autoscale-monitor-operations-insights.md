@@ -29,7 +29,7 @@ Before you can monitor Autoscale operations with Insights, you need:
    | Scenario | RBAC roles | Scope |
    |--|--|--|
    | Configure diagnostic settings | [Desktop Virtualization Contributor](rbac.md#desktop-virtualization-contributor) | Assigned on the resource group or subscription for your host pools, workspaces, and session hosts. |
-   | View and query data | [Desktop Virtualization Reader](../role-based-access-control/built-in-roles.md#desktop-virtualization-reader)<br /><br />[Log Analytics Reader](../role-based-access-control/built-in-roles.md#log-analytics-reader) | - Desktop Virtualization Reader assigned on the resource group or subscription where the host pools, workspaces, and session hosts are.<br /><br />- Log Analytics Reader assigned on any Log Analytics workspace used for Azure Virtual Desktop Insights.<sup>1</sup>|
+   | View and query data | [Desktop Virtualization Reader](/azure/role-based-access-control/built-in-roles.md#desktop-virtualization-reader)<br /><br />[Log Analytics Reader](/azure/role-based-access-control/built-in-roles.md#log-analytics-reader) | - Desktop Virtualization Reader assigned on the resource group or subscription where the host pools, workspaces, and session hosts are.<br /><br />- Log Analytics Reader assigned on any Log Analytics workspace used for Azure Virtual Desktop Insights.<sup>1</sup>|
 
    <sup>1. You can also create a custom role to reduce the scope of assignment on the Log Analytics workspace. For more information, see [Manage access to Log Analytics workspaces](/azure/azure-monitor/logs/manage-access).</sup>
 
