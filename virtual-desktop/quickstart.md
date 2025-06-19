@@ -45,7 +45,7 @@ Before you can use quickstart to deploy a sample Azure Virtual Desktop environme
 
 - An active Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/).
 
-- An Azure account with the following role-based access control (RBAC) roles assigned to the subscription as a minimum. To learn how to assign roles, see [Assign Azure roles using the Azure portal](../role-based-access-control/role-assignments-portal.yml).
+- An Azure account with the following role-based access control (RBAC) roles assigned to the subscription as a minimum. To learn how to assign roles, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal.yml).
 
    | Role | Description |
    |--|--|

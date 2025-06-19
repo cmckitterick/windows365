@@ -39,7 +39,7 @@ For Microsoft Entra joined VMs in host pools without a session host configuratio
 - Assign your users the **Virtual Machine User Login** role so they can sign in to the VMs.
 - Assign administrators who need local administrative privileges the **Virtual Machine Administrator Login** role.
 
-To grant users access to Microsoft Entra joined VMs, you must [configure role assignments for the VM](../active-directory/devices/howto-vm-sign-in-azure-ad-windows.md#configure-role-assignments-for-the-vm). You can assign the **Virtual Machine User Login** or **Virtual Machine Administrator Login** role either on the VMs, the resource group containing the VMs, or the subscription. We recommend assigning the Virtual Machine User Login role to the same user group you used for the application group at the resource group level to make it apply to all the VMs in the host pool.
+To grant users access to Microsoft Entra joined VMs, you must [configure role assignments for the VM](/entra/identity/devices/howto-vm-sign-in-azure-ad-windows#configure-role-assignments-for-the-vm). You can assign the **Virtual Machine User Login** or **Virtual Machine Administrator Login** role either on the VMs, the resource group containing the VMs, or the subscription. We recommend assigning the Virtual Machine User Login role to the same user group you used for the application group at the resource group level to make it apply to all the VMs in the host pool.
 
 <a name='access-azure-ad-joined-vms'></a>
 
@@ -75,7 +75,7 @@ To access Microsoft Entra joined VMs using the web, Android, macOS and iOS clien
 
 You can use Microsoft Entra multifactor authentication with Microsoft Entra joined VMs. Follow the steps to [Enforce Microsoft Entra multifactor authentication for Azure Virtual Desktop using Conditional Access](set-up-mfa.md) and note the extra steps for [Microsoft Entra joined session host VMs](set-up-mfa.md#azure-ad-joined-session-host-vms).
 
-If you're using Microsoft Entra multifactor authentication and you don't want to restrict signing in to strong authentication methods like Windows Hello for Business, you'll need to [exclude the Azure Windows VM Sign-In app](../active-directory/devices/howto-vm-sign-in-azure-ad-windows.md#mfa-sign-in-method-required) from your Conditional Access policy.
+If you're using Microsoft Entra multifactor authentication and you don't want to restrict signing in to strong authentication methods like Windows Hello for Business, you'll need to [exclude the Azure Windows VM Sign-In app](/entra/identity/devices/howto-vm-sign-in-azure-ad-windows#mfa-sign-in-method-required) from your Conditional Access policy.
 
 ## User profiles
 
@@ -83,7 +83,7 @@ You can use FSLogix profile containers with Microsoft Entra joined VMs when you 
 
 ## Accessing on-premises resources
 
-While you don't need an Active Directory to deploy or access your Microsoft Entra joined VMs, an Active Directory and line-of-sight to it are needed to access on-premises resources from those VMs. To learn more about accessing on-premises resources, see [How SSO to on-premises resources works on Microsoft Entra joined devices](../active-directory/devices/azuread-join-sso.md).
+While you don't need an Active Directory to deploy or access your Microsoft Entra joined VMs, an Active Directory and line-of-sight to it are needed to access on-premises resources from those VMs. To learn more about accessing on-premises resources, see [How SSO to on-premises resources works on Microsoft Entra joined devices](/entra/identity/devices/azuread-join-sso).
 
 ## Next steps
 

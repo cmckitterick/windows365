@@ -21,7 +21,7 @@ Here are the names of the Azure CLI extension and Azure PowerShell module, and l
 
 - Azure PowerShell: [`Az.DesktopVirtualization`](/powershell/module/az.desktopvirtualization)
 
-Both Azure CLI and Azure PowerShell are available to use in the [Azure Cloud Shell](../cloud-shell/overview.md) natively in the Azure portal with no installation, or you can install them locally on your device for Windows, macOS, and Linux.
+Both Azure CLI and Azure PowerShell are available to use in the [Azure Cloud Shell](/azure/cloud-shell/overview) natively in the Azure portal with no installation, or you can install them locally on your device for Windows, macOS, and Linux.
 
 To learn how to install Azure CLI and Azure PowerShell across all supported platforms, see the following links:
 

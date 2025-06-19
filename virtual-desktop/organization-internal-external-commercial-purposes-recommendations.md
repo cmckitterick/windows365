@@ -26,7 +26,7 @@ These components are the most basic requirements for an Azure Virtual Desktop de
 
 However, you can also deploy Azure Virtual Desktop with multiple host pools that offer different applications to different groups of users.
 
-Some customers choose to create separate Azure subscriptions to store each Azure Virtual Desktop deployment in. This practice lets you distinguish the cost of each deployment from each other based on the sub-organizations they provide resources to. Others choose to use Azure billing scopes to distinguish costs at a more granular level. To learn more, see [Understand and work with scopes](../cost-management-billing/costs/understand-work-scopes.md).
+Some customers choose to create separate Azure subscriptions to store each Azure Virtual Desktop deployment in. This practice lets you distinguish the cost of each deployment from each other based on the sub-organizations they provide resources to. Others choose to use Azure billing scopes to distinguish costs at a more granular level. To learn more, see [Understand and work with scopes](/azure/cost-management-billing/costs/understand-work-scopes).
 
 Licensing Azure Virtual Desktop works differently for internal and external commercial purposes. If you're providing Azure Virtual Desktop access for internal commercial purposes, you must purchase an eligible license for each user that accesses Azure Virtual Desktop. You can't use per-user access pricing for internal commercial purposes. To learn more about the different licensing options, see [License Azure Virtual Desktop](licensing.md).
 

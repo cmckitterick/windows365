@@ -22,7 +22,7 @@ Before you start setting up the scaling tool, make sure you have the following t
 
 - An [Azure Virtual Desktop host pool](create-host-pools-azure-marketplace.md).
 - Session host pool VMs configured and registered with the Azure Virtual Desktop service.
-- A user with the [*Contributor*](../role-based-access-control/role-assignments-portal.yml) role-based access control (RBAC) role assigned on the Azure subscription to create the resources. You'll also need the *Application administrator* and/or *Owner* RBAC role to create a managed identity.
+- A user with the [*Contributor*](/azure/role-based-access-control/role-assignments-portal.yml) role-based access control (RBAC) role assigned on the Azure subscription to create the resources. You'll also need the *Application administrator* and/or *Owner* RBAC role to create a managed identity.
 - A Log Analytics workspace (optional).
 
 The machine you use to deploy the tool must have:
@@ -79,7 +79,7 @@ First, you'll need an Azure Automation account to run the PowerShell runbook. Th
     >[!NOTE]
     >If your policy doesn't let you create scaling script resources in a specific region, update the policy assignment and add the region you want to the list of allowed regions.
 
-1. If you haven't created an automation account before, the cmdlet's output will include an encrypted webhook URI in the automation account variable. Make sure to keep a record of the URI because you'll use it as a parameter when you set up the execution schedule for the Azure Logic App. If you're updating an existing automation account, you can retrieve the webhook URI using [PowerShell to access variables](../automation/shared-resources/variables.md#powershell-cmdlets-to-access-variables).
+1. If you haven't created an automation account before, the cmdlet's output will include an encrypted webhook URI in the automation account variable. Make sure to keep a record of the URI because you'll use it as a parameter when you set up the execution schedule for the Azure Logic App. If you're updating an existing automation account, you can retrieve the webhook URI using [PowerShell to access variables](/azure/automation/shared-resources/variables#powershell-cmdlets-to-access-variables).
 
 1. If you specified the parameter **WorkspaceName** for Log Analytics, the cmdlet's output will also include the Log Analytics Workspace ID and its Primary Key. Make a note of the Workspace ID and Primary Key because you'll need to use them again later with parameters when you set up the execution schedule for the Azure Logic App.
 
@@ -92,9 +92,9 @@ First, you'll need an Azure Automation account to run the PowerShell runbook. Th
 
 ## Create a managed identity
 
-Now that you have an Azure Automation account, you'll also need to set up a [managed identity](../automation/automation-security-overview.md#managed-identities) if you haven't already. Managed identities will help your runbook access other Microsoft Entra related resources as well as authenticate important automation processes.
+Now that you have an Azure Automation account, you'll also need to set up a [managed identity](/azure/automation/automation-security-overview#managed-identities) if you haven't already. Managed identities will help your runbook access other Microsoft Entra related resources as well as authenticate important automation processes.
 
-To set up a managed identity, follow the directions in [Using a system-assigned managed identity for an Azure Automation account](../automation/enable-managed-identity-for-automation.md). Once you've created a managed identity, assign it with appropriate contributor permissions to Azure Virtual Desktop resources such as host pools, VMs, etc. Once you're done, return to this article and [Create the Azure Logic App and execution schedule](#create-the-azure-logic-app-and-execution-schedule) to finish the initial setup process.
+To set up a managed identity, follow the directions in [Using a system-assigned managed identity for an Azure Automation account](/azure/automation/enable-managed-identity-for-automation). Once you've created a managed identity, assign it with appropriate contributor permissions to Azure Virtual Desktop resources such as host pools, VMs, etc. Once you're done, return to this article and [Create the Azure Logic App and execution schedule](#create-the-azure-logic-app-and-execution-schedule) to finish the initial setup process.
 
 ## Create the Azure Logic App and execution schedule
 

@@ -11,13 +11,13 @@ ms.custom: docs_inherited
 
 # Tag Azure Virtual Desktop resources to manage costs
 
-Tagging is a tool available across Azure services that helps you organize resources inside their Azure subscription. Organizing resources makes it easier to track costs across multiple services. Tags also help you understand how much each grouping of Azure resources costs per billing cycle. If you'd like to learn more about tagging in general, see [Use tags to organize your Azure resources and management hierarchy](../azure-resource-manager/management/tag-resources.md). You can also watch a [quick video](https://www.youtube.com/watch?v=dUft4FZ40O8) about some other ways to use Azure tags.
+Tagging is a tool available across Azure services that helps you organize resources inside their Azure subscription. Organizing resources makes it easier to track costs across multiple services. Tags also help you understand how much each grouping of Azure resources costs per billing cycle. If you'd like to learn more about tagging in general, see [Use tags to organize your Azure resources and management hierarchy](/azure/azure-resource-manager/management/tag-resources). You can also watch a [quick video](https://www.youtube.com/watch?v=dUft4FZ40O8) about some other ways to use Azure tags.
 
 ## How tagging works
 
 You can tag Azure services you manage in the Azure portal or through PowerShell. The tags will appear as key-value pairs of text. As you use tagged Azure resources, the associated tag key-value pair will be attached to the resource usage.
 
-Once your deployment reports tagged usage information to [Azure Cost Management](../cost-management-billing/cost-management-billing-overview.md), you can use your tagging structure to filter cost data. To learn how to filter by tags in Azure Cost Management, see [Quickstart: Explore and analyze costs with cost analysis](../cost-management-billing/costs/quick-acm-cost-analysis.md).
+Once your deployment reports tagged usage information to [Azure Cost Management](/azure/cost-management-billing/cost-management-billing-overview), you can use your tagging structure to filter cost data. To learn how to filter by tags in Azure Cost Management, see [Quickstart: Explore and analyze costs with cost analysis](/azure/cost-management-billing/costs/quick-acm-cost-analysis).
 
 ### Add, edit, or delete tags
 
@@ -38,9 +38,9 @@ You can view all existing tags for your Azure services by going to the Azure por
 
 Tags only report usage and cost data for Azure resources they're directly assigned to. If you've tagged a resource without tagging the other resources in it, then Azure Virtual Desktop will only report activity related to the top-level tagged resource. You'll also need to tag every resource under that top-level resource if you want your billing data to be accurate.
 
-To learn more about how tags work in Azure Cost Management, see [How tags are used in cost and usage data](../cost-management-billing/costs/understand-cost-mgt-data.md#how-tags-are-used-in-cost-and-usage-data).
+To learn more about how tags work in Azure Cost Management, see [How tags are used in cost and usage data](/azure/cost-management-billing/costs/understand-cost-mgt-data#how-tags-are-used-in-cost-and-usage-data).
 
-For a list of known Azure tag limitations, see [Use tags to organize your Azure resources and management hierarchy](../azure-resource-manager/management/tag-resources.md#limitations).
+For a list of known Azure tag limitations, see [Use tags to organize your Azure resources and management hierarchy](/azure/azure-resource-manager/management/tag-resources#limitations).
 
 ## Using tags in Azure Virtual Desktop
 
@@ -78,7 +78,7 @@ Like with the [general suggestions](#suggested-tags-for-azure-virtual-desktop), 
 
 ### Use the cm-resource-parent tag to automatically group costs by host pool
 
-You can group costs by host pool by using the cm-resource-parent tag. This tag won't impact billing but will let you review tagged costs in Microsoft Cost Management without having to use filters. The key for this tag is **cm-resource-parent** and its value is the resource ID of the Azure resource you want to group costs by. For example, you can group costs by host pool by entering the host pool resource ID as the value. To learn more about how to use this tag, see [Group related resources in the cost analysis (preview)](../cost-management-billing/costs/group-filter.md#group-related-resources-in-the-resources-view).
+You can group costs by host pool by using the cm-resource-parent tag. This tag won't impact billing but will let you review tagged costs in Microsoft Cost Management without having to use filters. The key for this tag is **cm-resource-parent** and its value is the resource ID of the Azure resource you want to group costs by. For example, you can group costs by host pool by entering the host pool resource ID as the value. To learn more about how to use this tag, see [Group related resources in the cost analysis (preview)](/azure/cost-management-billing/costs/group-filter#group-related-resources-in-the-resources-view).
 
 ## Suggested tags for other Azure Virtual Desktop resources
 
@@ -101,11 +101,11 @@ If you’d like to learn more about common Azure Virtual Desktop related costs, 
 
 If you’d like to learn more about Azure tags, check out the following resources:
 
-- [Use tags to organize your Azure resources and management hierarchy](../azure-resource-manager/management/tag-resources.md)
+- [Use tags to organize your Azure resources and management hierarchy](/azure/azure-resource-manager/management/tag-resources)
 
 - [A video explaining the value of using Azure tags](https://www.youtube.com/watch?v=dUft4FZ40O8)
 
-- [How tags are used in cost and usage data](../cost-management-billing/costs/understand-cost-mgt-data.md#how-tags-are-used-in-cost-and-usage-data)
+- [How tags are used in cost and usage data](/azure/cost-management-billing/costs/understand-cost-mgt-data#how-tags-are-used-in-cost-and-usage-data)
 
 - [Develop your naming and tagging strategy for Azure resources](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging)
 
@@ -116,6 +116,6 @@ If you’d like to learn more about Azure tags, check out the following resource
 If you’d like to learn more about Azure Cost Management, check out the following
 articles:
 
-- [What is Azure Cost Management + Billing?](../cost-management-billing/cost-management-billing-overview.md)
+- [What is Azure Cost Management + Billing?](/azure/cost-management-billing/cost-management-billing-overview)
 
-- [Quickstart: Explore and analyze costs with cost analysis](../cost-management-billing/costs/quick-acm-cost-analysis.md)
+- [Quickstart: Explore and analyze costs with cost analysis](/azure/cost-management-billing/costs/quick-acm-cost-analysis)

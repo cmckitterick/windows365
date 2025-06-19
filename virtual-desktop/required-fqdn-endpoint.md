@@ -11,7 +11,7 @@ ms.date: 11/21/2024
 
 In order to deploy Azure Virtual Desktop and for your users to connect, you must allow specific FQDNs and endpoints. Users also need to be able to connect to certain FQDNs and endpoints to access their Azure Virtual Desktop resources. This article lists the required FQDNs and endpoints you need to allow for your session hosts and users.
 
-These FQDNs and endpoints could be blocked if you're using a firewall, such as [Azure Firewall](../firewall/protect-azure-virtual-desktop.md), or proxy service. For guidance on using a proxy service with Azure Virtual Desktop, see [Proxy service guidelines for Azure Virtual Desktop](proxy-server-support.md).
+These FQDNs and endpoints could be blocked if you're using a firewall, such as [Azure Firewall](/azure/firewall/protect-azure-virtual-desktop), or proxy service. For guidance on using a proxy service with Azure Virtual Desktop, see [Proxy service guidelines for Azure Virtual Desktop](proxy-server-support.md).
 
 You can check that your session host VMs can connect to these FQDNs and endpoints by following the steps to run the *Azure Virtual Desktop Agent URL Tool* in [Check access to required FQDNs and endpoints for Azure Virtual Desktop](check-access-validate-required-fqdn-endpoint.md). The Azure Virtual Desktop Agent URL Tool validates each FQDN and endpoint and show whether your session hosts can access them.
 
@@ -22,9 +22,9 @@ You can check that your session host VMs can connect to these FQDNs and endpoint
 
 ## Service tags and FQDN tags
 
-[Service tags](../virtual-network/service-tags-overview.md) represent groups of IP address prefixes from a given Azure service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change, minimizing the complexity of frequent updates to network security rules. Service tags can be used in rules for [Network Security Groups](../virtual-network/network-security-groups-overview.md) (NSGs) and [Azure Firewall](../firewall/service-tags.md) to restrict outbound network access. Service tags can be also used in [User Defined Routes](../virtual-network/virtual-networks-udr-overview.md#user-defined) (UDRs) to customize traffic routing behavior. 
+[Service tags](/azure/virtual-network/service-tags-overview) represent groups of IP address prefixes from a given Azure service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change, minimizing the complexity of frequent updates to network security rules. Service tags can be used in rules for [Network Security Groups](/azure/virtual-network/network-security-groups-overview) (NSGs) and [Azure Firewall](/azure/firewall/service-tags) to restrict outbound network access. Service tags can be also used in [User Defined Routes](/azure/virtual-network/virtual-networks-udr-overview#user-defined) (UDRs) to customize traffic routing behavior. 
 
-Azure Firewall also supports [FQDN tags](../firewall/fqdn-tags.md), which represent a group of fully qualified domain names (FQDNs) associated with well known Azure and other Microsoft services. Azure Virtual Desktop doesn't have a list of IP address ranges that you can unblock instead of FQDNs to allow network traffic. If you're using a Next Generation Firewall (NGFW), you need to use a dynamic list made for Azure IP addresses to make sure you can connect. For more information, see [Use Azure Firewall to protect Azure Virtual Desktop deployments](../firewall/protect-azure-virtual-desktop.md).
+Azure Firewall also supports [FQDN tags](/azure/firewall/fqdn-tags), which represent a group of fully qualified domain names (FQDNs) associated with well known Azure and other Microsoft services. Azure Virtual Desktop doesn't have a list of IP address ranges that you can unblock instead of FQDNs to allow network traffic. If you're using a Next Generation Firewall (NGFW), you need to use a dynamic list made for Azure IP addresses to make sure you can connect. For more information, see [Use Azure Firewall to protect Azure Virtual Desktop deployments](/azure/firewall/protect-azure-virtual-desktop).
 
 Azure Virtual Desktop has both a service tag and FQDN tag entry available. We recommend you use service tags and FQDN tags to simplify your Azure network configuration. 
 
@@ -45,7 +45,7 @@ The following table is the list of FQDNs and endpoints your session host VMs nee
 | `mrsglobalsteus2prod.blob.core.windows.net` | TCP | 443 | Agent and side-by-side (SXS) stack updates | `Storage` |
 | `wvdportalstorageblob.blob.core.windows.net` | TCP | 443 | Azure portal support | `AzureCloud` |
 | `169.254.169.254` | TCP | 80 | [Azure Instance Metadata service endpoint](/azure/virtual-machines/windows/instance-metadata-service) | N/A |
-| `168.63.129.16` | TCP | 80 | [Session host health monitoring](../virtual-network/network-security-groups-overview.md#azure-platform-considerations) | N/A |
+| `168.63.129.16` | TCP | 80 | [Session host health monitoring](/azure/virtual-network/network-security-groups-overview#azure-platform-considerations) | N/A |
 | `oneocsp.microsoft.com` | TCP | 80 | Certificates | `AzureFrontDoor.FirstParty` |
 | `www.microsoft.com` | TCP | 80 | Certificates | N/A |
 |`ctldl.windowsupdate.com`| TCP| 80| Certificates|N/A|
@@ -77,7 +77,7 @@ The following table lists optional FQDNs and endpoints that your session host vi
 | `mrsglobalstugviffx.blob.core.usgovcloudapi.net` | TCP | 443 | Agent and side-by-side (SXS) stack updates | `AzureCloud` |
 | `wvdportalstorageblob.blob.core.usgovcloudapi.net` | TCP | 443 | Azure portal support | `AzureCloud` |
 | `169.254.169.254` | TCP | 80 | [Azure Instance Metadata service endpoint](/azure/virtual-machines/windows/instance-metadata-service) | N/A |
-| `168.63.129.16` | TCP | 80 | [Session host health monitoring](../virtual-network/network-security-groups-overview.md#azure-platform-considerations) | N/A |
+| `168.63.129.16` | TCP | 80 | [Session host health monitoring](/azure/virtual-network/network-security-groups-overview#azure-platform-considerations) | N/A |
 | `ctldl.windowsupdate.com` | TCP | 80 | Certificates | N/A |
 | `ocsp.msocsp.com` | TCP | 80 | Certificates | N/A |
 
@@ -148,12 +148,12 @@ Select the relevant tab based on which cloud you're using.
 
 ---
 
-If you're on a closed network with restricted internet access, you might also need to allow the FQDNs listed here for certificate checks: [Azure Certificate Authority details | Microsoft Learn](../security/fundamentals/azure-CA-details.md#certificate-downloads-and-revocation-lists).
+If you're on a closed network with restricted internet access, you might also need to allow the FQDNs listed here for certificate checks: [Azure Certificate Authority details | Microsoft Learn](/azure/security/fundamentals/azure-CA-details#certificate-downloads-and-revocation-lists).
 
 ## Next steps
 
 - [Check access to required FQDNs and endpoints for Azure Virtual Desktop](check-access-validate-required-fqdn-endpoint.md).
 
-- To learn how to unblock these FQDNs and endpoints in Azure Firewall, see [Use Azure Firewall to protect Azure Virtual Desktop](../firewall/protect-azure-virtual-desktop.md).
+- To learn how to unblock these FQDNs and endpoints in Azure Firewall, see [Use Azure Firewall to protect Azure Virtual Desktop](/azure/firewall/protect-azure-virtual-desktop).
 
 - For more information about network connectivity, see [Understanding Azure Virtual Desktop network connectivity](network-connectivity.md)

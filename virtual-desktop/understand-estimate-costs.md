@@ -11,7 +11,7 @@ ms.date: 01/09/2024
 
 Azure Virtual Desktop costs come from two sources: underlying Azure resource consumption and licensing. Azure Virtual Desktop costs are charged to the organization that owns the Azure Virtual Desktop deployment, not the end-users accessing the deployment resources. Some licensing charges must be paid in advance. Azure meters track other licenses and the underlying resource consumption charges based on your usage.
 
-The organization who pays for Azure Virtual Desktop is responsible for handling the resource management and costs. If the owner no longer needs resources connected to their Azure Virtual Desktop deployment, they should ensure those resources are properly removed. For more information, see [How to manage Azure resources by using the Azure portal](../azure-resource-manager/management/manage-resources-portal.md).
+The organization who pays for Azure Virtual Desktop is responsible for handling the resource management and costs. If the owner no longer needs resources connected to their Azure Virtual Desktop deployment, they should ensure those resources are properly removed. For more information, see [How to manage Azure resources by using the Azure portal](/azure/azure-resource-manager/management/manage-resources-portal).
 
 This article explains consumption and licensing costs, and how to estimate service costs before deploying Azure Virtual Desktop.
 
@@ -27,7 +27,7 @@ Session hosts are based on virtual machines (VMs), so the same Azure Compute cha
 - Storage for managed disks for the operating system and any extra data disks.
 - Network bandwidth.
 
-Of the charges for these components, virtual machine instances usually cost the most. To mitigate compute costs and optimize resource demand with availability, you can use [autoscale](autoscale-scenarios.md) to automatically scale session hosts based on demand and time. You can also use [Azure savings plans](../cost-management-billing/savings-plan/savings-plan-compute-overview.md) or [Azure reserved VM instances](/azure/virtual-machines/prepay-reserved-vm-instances) to reduce compute costs.
+Of the charges for these components, virtual machine instances usually cost the most. To mitigate compute costs and optimize resource demand with availability, you can use [autoscale](autoscale-scenarios.md) to automatically scale session hosts based on demand and time. You can also use [Azure savings plans](/azure/cost-management-billing/savings-plan/savings-plan-compute-overview) or [Azure reserved VM instances](/azure/virtual-machines/prepay-reserved-vm-instances) to reduce compute costs.
 
 ### Identity provider costs
 
@@ -86,7 +86,7 @@ You can use the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/c
 
 ## View costs after deploying Azure Virtual Desktop
 
-Once you deploy Azure Virtual Desktop, you can use [Microsoft Cost Management](../cost-management-billing/cost-management-billing-overview.md) to view your billing invoices. Users in your organization like billing admins can use [cost analysis tools](../cost-management-billing/costs/cost-analysis-common-uses.md) and find Azure billing invoices through Microsoft Cost Management to track monthly Azure Virtual Desktop consumption costs under your Azure subscription or subscriptions. You can also [Tag Azure Virtual Desktop resources to manage costs](tag-virtual-desktop-resources.md).
+Once you deploy Azure Virtual Desktop, you can use [Microsoft Cost Management](/azure/cost-management-billing/cost-management-billing-overview) to view your billing invoices. Users in your organization like billing admins can use [cost analysis tools](/azure/cost-management-billing/costs/cost-analysis-common-uses) and find Azure billing invoices through Microsoft Cost Management to track monthly Azure Virtual Desktop consumption costs under your Azure subscription or subscriptions. You can also [Tag Azure Virtual Desktop resources to manage costs](tag-virtual-desktop-resources.md).
 
 If you're using per-user access pricing, costs appear each billing cycle on the Azure billing invoice for any enrolled subscription, alongside consumption costs and other Azure charges.
 

@@ -219,7 +219,7 @@ To create a power management scaling plan using the Azure portal:
     > [!NOTE]
     > - When you create or update a scaling plan that's already assigned to host pools, its changes apply immediately.
 
-1. After that, you'll need to enter **tags**. Tags are name and value pairs that categorize resources for consolidated billing. You can apply the same tag to multiple resources and resource groups. To learn more about tagging resources, see [Use tags to organize your Azure resources](../azure-resource-manager/management/tag-resources.md).
+1. After that, you'll need to enter **tags**. Tags are name and value pairs that categorize resources for consolidated billing. You can apply the same tag to multiple resources and resource groups. To learn more about tagging resources, see [Use tags to organize your Azure resources](/azure/azure-resource-manager/management/tag-resources).
 
     > [!NOTE] 
     > If you change resource settings on other tabs after creating tags, your tags are automatically updated.
@@ -443,7 +443,7 @@ To create a dynamic scaling plan using the Azure portal:
     > [!NOTE]
     > - When you create or update a scaling plan that's already assigned to host pools, its changes apply immediately.
 
-1. After that, you'll need to enter **tags**. Tags are name and value pairs that categorize resources for consolidated billing. You can apply the same tag to multiple resources and resource groups. To learn more about tagging resources, see [Use tags to organize your Azure resources](../azure-resource-manager/management/tag-resources.md).
+1. After that, you'll need to enter **tags**. Tags are name and value pairs that categorize resources for consolidated billing. You can apply the same tag to multiple resources and resource groups. To learn more about tagging resources, see [Use tags to organize your Azure resources](/azure/azure-resource-manager/management/tag-resources).
 
     > [!NOTE] 
     > If you change resource settings on other tabs after creating tags, your tags will be automatically updated.
