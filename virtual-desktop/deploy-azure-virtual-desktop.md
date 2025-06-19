@@ -63,7 +63,7 @@ In addition to the general prerequisites, you need:
 
 - If you're joining session hosts to an Active Directory domain or using [Microsoft Entra hybrid join](/entra/identity/devices/concept-hybrid-join) you need additional permissions:
 
-   - For Microsoft Entra Domain Services domain, you need to be a member of the [*AAD DC Administrators* group](../active-directory-domain-services/tutorial-create-instance-advanced.md#configure-an-administrative-group).
+   - For Microsoft Entra Domain Services domain, you need to be a member of the [*AAD DC Administrators* group](/entra/identity/domain-services/tutorial-create-instance-advanced#configure-an-administrative-group).
 
    - For an Active Directory Domain Services (AD DS) domain, you need to use an account with more permissions than typically required for joining a domain because the new OS image reuses the existing computer object. The permissions and properties in the following table need to be applied to the account on the Organizational Unit (OU) containing your session hosts:
 
@@ -1110,7 +1110,7 @@ In the same CLI session, use the `az role assignment create` command with the fo
 
 # [Azure portal](#tab/portal)
 
-After you deploy Azure Virtual Desktop, your users can connect from several platforms, including a web browser. For more information, see [Remote Desktop clients for Azure Virtual Desktop](users/remote-desktop-clients-overview.md) and [Connect to Azure Virtual Desktop with the Remote Desktop Web client](users/connect-web.md).
+After you deploy Azure Virtual Desktop, your users can connect from several platforms, including a web browser. For more information, see [Remote Desktop clients for Azure Virtual Desktop](/previous-versions/remote-desktop-client/overview) and [Connect to Azure Virtual Desktop with the Remote Desktop Web client](users/connect-web.md).
 
 Here are some extra tasks that you might want to do:
 

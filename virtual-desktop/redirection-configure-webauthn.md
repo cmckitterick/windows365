@@ -58,7 +58,7 @@ Before you can configure WebAuthn redirection, you need:
    - A domain account that has permission to create or edit Group Policy objects.
    - A security group or organizational unit (OU) containing the devices you want to configure.
 
-- You need to connect to a remote session from a supported app and platform. To view redirection support in Windows App and the Remote Desktop app, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](compare-remote-desktop-clients.md#redirection).
+- You need to connect to a remote session from a supported app and platform. To view redirection support in Windows App and the Remote Desktop app, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](/previous-versions/remote-desktop-client/compare-remote-desktop-clients#redirection).
 
 ## WebAuthn redirection
 
@@ -190,7 +190,7 @@ Once you enable WebAuthn redirection, to test it:
 
 1. If you're using a USB security key, make sure it's plugged in first.
 
-1. Connect to a remote session using Window App or the Remote Desktop app on a platform that supports WebAuthn redirection. For more information, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](compare-remote-desktop-clients.md#redirection).
+1. Connect to a remote session using Window App or the Remote Desktop app on a platform that supports WebAuthn redirection. For more information, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](/previous-versions/remote-desktop-client/compare-remote-desktop-clients#redirection).
 
 1. In the remote session, open a website in an **InPrivate window** that uses WebAuthn authentication, such as Windows App for web browsers at [https://windows.cloud.microsoft/](https://windows.cloud.microsoft/). 
 

@@ -472,7 +472,7 @@ For more information, see [Azure Virtual Desktop for Azure Stack HCI now availab
 
 We've updated the Azure Virtual Desktop web client to the new web client. All users automatically migrate to this new version of the web client to access their resources.
 
-For more information about the new features available in the new web client, see [Use features of the Remote Desktop Web client](./users/client-features-web.md).  
+For more information about the new features available in the new web client, see [Use features of the Remote Desktop Web client](/previous-versions/remote-desktop-client/client-features-web-cloud).  
 
 ## January 2024
 
@@ -678,7 +678,7 @@ Here's what changed in April 2023:
 
 The [Azure Virtual Desktop Store app for Windows](users/connect-windows-azure-virtual-desktop-app.md?toc=%2Fazure%2Fvirtual-desktop%2Ftoc.json&bc=%2Fazure%2Fvirtual-desktop%2Fbreadcrumb%2Ftoc.json) is now in preview for Windows 10 and 11. With the Store App, you can now automatically update the client, unlike with the Remote Desktop client. You can also pin a RemoteApp to your Start menu to personalize your desktop and reduce clutter.
 
-For more information about the preview release version, check out [Use features of the Azure Virtual Desktop Store app for Windows when connecting to Azure Virtual Desktop (preview)](users/client-features-windows.md?toc=%2Fazure%2Fvirtual-desktop%2Ftoc.json&bc=%2Fazure%2Fvirtual-desktop%2Fbreadcrumb%2Ftoc.json), [What's new in the Azure Virtual Desktop Store App (preview)](whats-new-client-windows-azure-virtual-desktop-app.md), or read [our blog post](https://techcommunity.microsoft.com/t5/azure-virtual-desktop-blog/announcing-public-preview-of-the-new-azure-virtual-desktop-app/ba-p/3785698).
+For more information about the preview release version, check out [Use features of the Azure Virtual Desktop Store app for Windows when connecting to Azure Virtual Desktop (preview)](/previous-versions/remote-desktop-client/client-features-windows-msrdc?toc=%2Fazure%2Fvirtual-desktop%2Ftoc.json&bc=%2Fazure%2Fvirtual-desktop%2Fbreadcrumb%2Ftoc.json), [What's new in the Azure Virtual Desktop Store App (preview)](whats-new-client-windows-azure-virtual-desktop-app.md), or read [our blog post](https://techcommunity.microsoft.com/t5/azure-virtual-desktop-blog/announcing-public-preview-of-the-new-azure-virtual-desktop-app/ba-p/3785698).
 
 ### Intune user-scope configuration for Windows 10 Enterprise multi-session VMs now generally available
 
@@ -696,7 +696,7 @@ Here's what changed in March 2023:
 
 ### Redesigned connection bar for the Windows Desktop client
 
-The latest version of the Windows Desktop client includes a redesigned connection bar. For more information, see [Updates for version 1.2.4159](whats-new-client-windows.md#updates-for-version-124159). 
+The latest version of the Windows Desktop client includes a redesigned connection bar. For more information, see [Updates for version 1.2.4159](/previous-versions/remote-desktop-client/whats-new-windows#updates-for-version-124159). 
 
 ### Shutdown session host status
 
@@ -728,7 +728,7 @@ Multimedia redirection is now generally available. Multimedia redirection enable
 
 ### New User Interface for Azure Virtual Desktop web client now in preview
 
-The Azure Virtual Desktop web client has a new user interface (UI) that's now in preview. This new UI gives the web client a cleaner, more modern look and feel. For more information, see [our blog post](https://techcommunity.microsoft.com/t5/azure-virtual-desktop-blog/announcing-public-preview-of-the-new-azure-virtual-desktop-web/ba-p/3731165) or [Use features of the Remote Desktop Web client](./users/client-features-web.md?toc=%2Fazure%2Fvirtual-desktop%2Ftoc.json#display-preferences).
+The Azure Virtual Desktop web client has a new user interface (UI) that's now in preview. This new UI gives the web client a cleaner, more modern look and feel. For more information, see [our blog post](https://techcommunity.microsoft.com/t5/azure-virtual-desktop-blog/announcing-public-preview-of-the-new-azure-virtual-desktop-web/ba-p/3731165) or [Use features of the Remote Desktop Web client](/previous-versions/remote-desktop-client/client-features-web-cloud?toc=%2Fazure%2Fvirtual-desktop%2Ftoc.json#display-preferences).
 
 ## January 2023
 

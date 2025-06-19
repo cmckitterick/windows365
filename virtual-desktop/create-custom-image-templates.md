@@ -197,4 +197,4 @@ Now you've created a custom image, you can use it when creating session host VMs
 
 ## Next steps
 
-[Connect to Azure Virtual Desktop](users/remote-desktop-clients-overview.md?toc=%2Fazure%2Fvirtual-desktop%2Ftoc.json)
+[Connect to Azure Virtual Desktop](/previous-versions/remote-desktop-client/overview?toc=%2Fazure%2Fvirtual-desktop%2Ftoc.json)

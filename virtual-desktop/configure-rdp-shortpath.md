@@ -58,7 +58,7 @@ Before you enable RDP Shortpath, you need:
       - iOS/iPadOS
       - Android/Chrome OS (preview)
    
-   - [Remote Desktop app](users/remote-desktop-clients-overview.md) on the following platforms:
+   - [Remote Desktop app](/previous-versions/remote-desktop-client/overview) on the following platforms:
       - Windows, version 1.2.3488 or later
       - macOS
       - iOS/iPadOS

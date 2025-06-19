@@ -133,7 +133,7 @@ If you want to use certain optional features for Teams on Azure Virtual Desktop,
 
 ### Enable hardware encode for Teams on Azure Virtual Desktop
 
-Hardware encode lets you increase video quality for the outgoing camera during Teams calls. In order to enable this feature, your client needs to be running version 1.2.3213 or later of the [Windows Desktop client](whats-new-client-windows.md). You need to repeat the following instructions for every client device. 
+Hardware encode lets you increase video quality for the outgoing camera during Teams calls. In order to enable this feature, your client needs to be running version 1.2.3213 or later of the [Windows Desktop client](/previous-versions/remote-desktop-client/whats-new-windows). You need to repeat the following instructions for every client device. 
 
 To enable hardware encode:
 
@@ -145,7 +145,7 @@ To enable hardware encode:
 
 ### Enable content sharing for Teams for RemoteApp
 
-Enabling content sharing for Teams on Azure Virtual Desktop lets you share your screen or application window. To enable this feature, your session host VM needs to be running version 1.31.2211.15001 or later of [the WebRTC Redirector Service](whats-new-webrtc.md) and version 1.2.3401 or later of the [Windows Desktop client](whats-new-client-windows.md).
+Enabling content sharing for Teams on Azure Virtual Desktop lets you share your screen or application window. To enable this feature, your session host VM needs to be running version 1.31.2211.15001 or later of [the WebRTC Redirector Service](whats-new-webrtc.md) and version 1.2.3401 or later of the [Windows Desktop client](/previous-versions/remote-desktop-client/whats-new-windows).
 
 To enable content sharing:
 
@@ -156,7 +156,7 @@ To enable content sharing:
 
 ### Disable desktop screen share for Teams for RemoteApp
 
-You can disable desktop screen sharing for Teams on Azure Virtual Desktop. To enable this feature, your session host VM needs to be running version 1.31.2211.15001 or later of [the WebRTC service](whats-new-webrtc.md) and version 1.2.3401 or later of the [Windows Desktop client](whats-new-client-windows.md).
+You can disable desktop screen sharing for Teams on Azure Virtual Desktop. To enable this feature, your session host VM needs to be running version 1.31.2211.15001 or later of [the WebRTC service](whats-new-webrtc.md) and version 1.2.3401 or later of the [Windows Desktop client](/previous-versions/remote-desktop-client/whats-new-windows).
 
 >[!NOTE]
 >You must [enable the ShareClientDesktop key](#enable-content-sharing-for-teams-for-remoteapp) before you can use this key.
@@ -170,7 +170,7 @@ To disable desktop screen share:
 
 ### Disable application window sharing for Teams for RemoteApp
 
-You can disable application window sharing for Teams on Azure Virtual Desktop. To enable this feature, your session host VM needs to be running version 1.31.2211.15001 or later of [the WebRTC service](whats-new-webrtc.md) and version 1.2.3401 or later of the [Windows Desktop client](whats-new-client-windows.md).
+You can disable application window sharing for Teams on Azure Virtual Desktop. To enable this feature, your session host VM needs to be running version 1.31.2211.15001 or later of [the WebRTC service](whats-new-webrtc.md) and version 1.2.3401 or later of the [Windows Desktop client](/previous-versions/remote-desktop-client/whats-new-windows).
 
 >[!NOTE]
 >You must [enable the ShareClientDesktop key](#enable-content-sharing-for-teams-for-remoteapp) before you can use this key.

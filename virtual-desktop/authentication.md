@@ -55,7 +55,7 @@ When accessing Azure Virtual Desktop resources, there are three separate authent
 - **Remote session authentication**: Authenticating to the remote VM. There are multiple ways to authenticate to the remote session, including the recommended single sign-on (SSO).
 - **In-session authentication**: Authenticating to applications and web sites within the remote session.
 
-For the list of credential available on the different clients for each of the authentication phase, [compare the clients across platforms](compare-remote-desktop-clients.md?pivots=azure-virtual-desktop#authentication).
+For the list of credential available on the different clients for each of the authentication phase, [compare the clients across platforms](/previous-versions/remote-desktop-client/compare-remote-desktop-clients?pivots=azure-virtual-desktop#authentication).
 
 >[!IMPORTANT]
 >In order for authentication to work properly, your local machine must also be able to access the [required URLs for Remote Desktop clients](safe-url-list.md#remote-desktop-clients).
@@ -120,7 +120,7 @@ To access Microsoft Entra resources with Windows Hello for Business or security 
 
 #### In-session smart card authentication
 
-To use a smart card in your session, make sure you've installed the smart card drivers on the session host and enabled [smart card redirection](redirection-configure-smart-cards.md). Review the comparison charts for [Windows App](/windows-app/compare-platforms-features?pivots=azure-virtual-desktop#device-redirection) and the [Remote Desktop app](compare-remote-desktop-clients.md?pivots=azure-virtual-desktop#device-redirection) to make you can use smart card redirection.
+To use a smart card in your session, make sure you've installed the smart card drivers on the session host and enabled [smart card redirection](redirection-configure-smart-cards.md). Review the comparison charts for [Windows App](/windows-app/compare-platforms-features?pivots=azure-virtual-desktop#device-redirection) and the [Remote Desktop app](/previous-versions/remote-desktop-client/compare-remote-desktop-clients?pivots=azure-virtual-desktop#device-redirection) to make you can use smart card redirection.
 
 ## Next steps
 

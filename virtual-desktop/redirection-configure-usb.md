@@ -96,7 +96,7 @@ Before you can configure USB redirection using opaque low-level redirection, you
    - A domain account that has permission to create or edit Group Policy objects.
    - A security group or organizational unit (OU) containing the devices you want to configure.
 
-- You need to connect to a remote session from a supported app and platform. To view redirection support in Windows App and the Remote Desktop app, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](compare-remote-desktop-clients.md#redirection).
+- You need to connect to a remote session from a supported app and platform. To view redirection support in Windows App and the Remote Desktop app, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](/previous-versions/remote-desktop-client/compare-remote-desktop-clients#redirection).
 
 ::: zone pivot="azure-virtual-desktop"
 ## Session host configuration
@@ -438,7 +438,7 @@ To test USB redirection:
 
 1. Plug in the supported USB peripherals you want to use in a remote session.
 
-1. Connect to a remote session using Window App or the Remote Desktop app on a platform that supports USB redirection. For more information, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](compare-remote-desktop-clients.md#redirection).
+1. Connect to a remote session using Window App or the Remote Desktop app on a platform that supports USB redirection. For more information, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](/previous-versions/remote-desktop-client/compare-remote-desktop-clients#redirection).
 
 1. Check the peripherals are connected to the remote session. With the display in full screen, on the status bar select the icon to select devices to use. This icon only shows when USB redirection is correctly configured.
 
