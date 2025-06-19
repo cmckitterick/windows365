@@ -58,7 +58,7 @@ Before you can configure smart card redirection, you need:
    - A domain account that has permission to create or edit Group Policy objects.
    - A security group or organizational unit (OU) containing the devices you want to configure.
 
-- You need to connect to a remote session from a supported app and platform. To view redirection support in Windows App and the Remote Desktop app, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](compare-remote-desktop-clients.md#redirection).
+- You need to connect to a remote session from a supported app and platform. To view redirection support in Windows App and the Remote Desktop app, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](/previous-versions/remote-desktop-client/compare-remote-desktop-clients#redirection).
 
 ## Smart card redirection
 
@@ -192,7 +192,7 @@ To allow or disable smart card device redirection using Group Policy:
 
 To test smart card redirection:
 
-1. Connect to a remote session using Window App or the Remote Desktop app on a platform that supports smart card redirection. For more information, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](compare-remote-desktop-clients.md#redirection).
+1. Connect to a remote session using Window App or the Remote Desktop app on a platform that supports smart card redirection. For more information, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](/previous-versions/remote-desktop-client/compare-remote-desktop-clients#redirection).
 
 1. Check your smart cards are available in the remote session. Run the following command in the remote session in Command Prompt or from a PowerShell prompt.
 

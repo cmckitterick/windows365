@@ -178,7 +178,7 @@ Here are the highlights of documentation changes in June 2024:
 
 - Rewrote [Configure RDP Shortpath](configure-rdp-shortpath.md) to include host pool settings and a better flow.
 
-- Rewrote [Compare Remote Desktop app features across platforms and devices](compare-remote-desktop-clients.md) to include more comprehensive information. This article is shared for Azure Virtual Desktop, Windows 365, Microsoft Dev Box, Remote Desktop Services, and remote PC connections.
+- Rewrote [Compare Remote Desktop app features across platforms and devices](/previous-versions/remote-desktop-client/compare-remote-desktop-clients) to include more comprehensive information. This article is shared for Azure Virtual Desktop, Windows 365, Microsoft Dev Box, Remote Desktop Services, and remote PC connections.
 
 - Combined host pool load balancing information to the single article [Configure host pool load balancing](configure-host-pool-load-balancing.md) and added Azure CLI steps.
 
@@ -266,7 +266,7 @@ Here are the highlights of documentation changes in October 2023:
 
 - Published a new article about the service architecture for Azure Virtual Desktop and how it provides a resilient, reliable, and secure service for organizations and users. Most components are Microsoft-managed, but some are customer-managed. You can learn more at [Azure Virtual Desktop service architecture and resilience](service-architecture-resilience.md).
 
-- Updated [Connect to Azure Virtual Desktop with the Remote Desktop Web client](./users/connect-web.md) and [Use features of the Remote Desktop Web client when connecting to Azure Virtual Desktop](./users/client-features-web.md) for the general availability of the updated user interface for the Remote Desktop Web client.
+- Updated [Connect to Azure Virtual Desktop with the Remote Desktop Web client](./users/connect-web.md) and [Use features of the Remote Desktop Web client when connecting to Azure Virtual Desktop](/previous-versions/remote-desktop-client/client-features-web-cloud) for the general availability of the updated user interface for the Remote Desktop Web client.
 
 ## September 2023
 

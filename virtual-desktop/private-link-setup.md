@@ -999,7 +999,7 @@ To check the connection state of each private endpoint, select the relevant tab 
 
 To test that your users can connect to their remote resources:
 
-1. Use the Remote Desktop client and make sure you can [subscribe to and refresh workspaces](users/remote-desktop-clients-overview.md).
+1. Use the Remote Desktop client and make sure you can [subscribe to and refresh workspaces](/previous-versions/remote-desktop-client/overview).
 
 1. Finally, make sure your users can connect to a remote session.
 

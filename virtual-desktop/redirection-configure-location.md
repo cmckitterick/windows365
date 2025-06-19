@@ -64,7 +64,7 @@ Before you can configure location redirection, you need:
    - A domain account that has permission to create or edit Group Policy objects.
    - A security group or organizational unit (OU) containing the devices you want to configure.
 
-- You need to connect to a remote session from a supported app and platform. To view redirection support in Windows App and the Remote Desktop app, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](compare-remote-desktop-clients.md#redirection).
+- You need to connect to a remote session from a supported app and platform. To view redirection support in Windows App and the Remote Desktop app, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](/previous-versions/remote-desktop-client/compare-remote-desktop-clients#redirection).
 
 ::: zone pivot="azure-virtual-desktop"
 ## Session host configuration
@@ -217,7 +217,7 @@ To configure location redirection using host pool RDP properties:
 
 You need to use a supported app and platform connect to a remote session and enable location services on a local device. How you achieve this depends on your requirements, the platform you're using, and whether the device is managed or unmanaged.
 
-To view redirection support in Windows App and the Remote Desktop app, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](compare-remote-desktop-clients.md#redirection).
+To view redirection support in Windows App and the Remote Desktop app, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](/previous-versions/remote-desktop-client/compare-remote-desktop-clients#redirection).
 
 On Windows, you can enable location services in the Windows Settings app. For more information, see [Windows location service and privacy](https://support.microsoft.com/windows/windows-location-service-and-privacy-3a8eee0a-5b0b-dc07-eede-2a5ca1c49088). The steps in this article to enable location services in a remote session using Intune and Group Policy can also be applied to local Windows devices.
 
@@ -239,7 +239,7 @@ Once you configure your dev boxes and local devices, you can test location redir
 
 To test location redirection:
 
-1. Connect to a remote session using Window App or the Remote Desktop app on a platform that supports location redirection. For more information, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](compare-remote-desktop-clients.md#redirection).
+1. Connect to a remote session using Window App or the Remote Desktop app on a platform that supports location redirection. For more information, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](/previous-versions/remote-desktop-client/compare-remote-desktop-clients#redirection).
 
 1. Check the user's location information is available in the remote session. Here are some ways to check:
 

@@ -35,7 +35,7 @@ When you design a disaster recovery plan, you should keep the following three th
 
 Azure Virtual Desktop doesn't have any native features for managing disaster recovery scenarios, but you can use many other Azure services for each scenario depending on your requirements, such as [Availability sets](/azure/virtual-machines/availability-set-overview), [availability zones](/azure/reliability/availability-zones-overview), Azure Site Recovery, and [Azure Files data redundancy](/azure/storage/files/files-redundancy) options for user profiles and data.
 
-You can also distribute session hosts across multiple [Azure regions](../best-practices-availability-paired-regions.md) provides even more geographical distribution, which further reduces outage impact. All these and other Azure features provide a certain level of protection within Azure Virtual Desktop, and you should carefully consider them along with any cost implications.
+You can also distribute session hosts across multiple [Azure regions](/azure/reliability/regions-overview) provides even more geographical distribution, which further reduces outage impact. All these and other Azure features provide a certain level of protection within Azure Virtual Desktop, and you should carefully consider them along with any cost implications.
 
 We have further documentation that goes into much more detail about each of the technology areas you need to consider as part of your business continuity and disaster recovery strategy and how to plan for and mitigate disruption to your organization based on your requirements. The following table lists the technology areas you need to consider as part of your disaster recovery strategy and links to other Microsoft documentation that provides guidance for each area:
 

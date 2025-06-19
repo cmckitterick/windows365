@@ -56,7 +56,7 @@ To use session hosts on Azure Local with Azure Virtual Desktop, you also need to
 
 - Install the [Azure Connected Machine agent](/azure/azure-arc/servers/agent-overview) on the virtual machines so they can communicate with [Azure Instance Metadata Service](/azure/virtual-machines/instance-metadata-service), which is a [required endpoint for Azure Virtual Desktop](../virtual-desktop/required-fqdn-endpoint.md). The Azure Connected Machine agent is automatically installed when you add session hosts using the Azure portal as part of the process to [Deploy Azure Virtual Desktop](deploy-azure-virtual-desktop.md) or [Add session hosts to a host pool](add-session-hosts-host-pool.md).
 
-Finally, users can connect using the same [Remote Desktop clients](users/remote-desktop-clients-overview.md) as Azure Virtual Desktop.
+Finally, users can connect using the same [Remote Desktop clients](/previous-versions/remote-desktop-client/overview) as Azure Virtual Desktop.
 
 ## Licensing and pricing
 

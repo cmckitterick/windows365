@@ -58,7 +58,7 @@ Before you can configure serial or COM port redirection, you need:
    - A domain account that has permission to create or edit Group Policy objects.
    - A security group or organizational unit (OU) containing the devices you want to configure.
 
-- You need to connect to a remote session from a supported app and platform. To view redirection support in Windows App and the Remote Desktop app, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](compare-remote-desktop-clients.md#redirection).
+- You need to connect to a remote session from a supported app and platform. To view redirection support in Windows App and the Remote Desktop app, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](/previous-versions/remote-desktop-client/compare-remote-desktop-clients#redirection).
 
 ## Serial or COM port redirection
 
@@ -205,7 +205,7 @@ To test serial or COM port redirection from a local Windows device:
 
 1. Plug in the supported peripherals you want to use in a remote session to a serial or COM port.
 
-1. Connect to a remote session using Window App or the Remote Desktop app on a platform that supports drive redirection. For more information, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](compare-remote-desktop-clients.md#redirection).
+1. Connect to a remote session using Window App or the Remote Desktop app on a platform that supports drive redirection. For more information, see [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection) and [Compare Remote Desktop app features across platforms and devices](/previous-versions/remote-desktop-client/compare-remote-desktop-clients#redirection).
 
 1. Check the device is functioning correctly in the remote session. As serial or COM ports are redirected using opaque low-level redirection, the correct driver needs to be installed in the remote session, which you need to do if it's not installed automatically.
 

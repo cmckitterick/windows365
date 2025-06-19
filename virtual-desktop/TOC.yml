@@ -183,7 +183,7 @@
           href: proxy-server-support.md
         - name: Use Azure Firewall to protect Azure Virtual Desktop
           displayName: network
-          href: ../firewall/protect-azure-virtual-desktop.md?context=/azure/virtual-desktop/context/context
+          href: /azure/firewall/protect-azure-virtual-desktop?context=/azure/virtual-desktop/context/context
     - name: Session hosts
       items:
         - name: Azure Virtual Desktop Agent

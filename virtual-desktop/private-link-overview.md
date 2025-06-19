@@ -75,7 +75,7 @@ Private Link with Azure Virtual Desktop has the following limitations:
 
 - Before you use Private Link for Azure Virtual Desktop, you need to [enable Private Link with Azure Virtual Desktop](private-link-setup.md#enable-private-link-with-azure-virtual-desktop-on-a-subscription) on each Azure subscription you want to Private Link with Azure Virtual Desktop.
 
-- All [Remote Desktop clients to connect to Azure Virtual Desktop](users/remote-desktop-clients-overview.md) can be used with Private Link. If you're using the [Remote Desktop client for Windows](./users/connect-windows.md) on a private network without internet access and you're subscribed to both public and private feeds, you aren't able to access your feed.
+- All [Remote Desktop clients to connect to Azure Virtual Desktop](/previous-versions/remote-desktop-client/overview) can be used with Private Link. If you're using the [Remote Desktop client for Windows](./users/connect-windows.md) on a private network without internet access and you're subscribed to both public and private feeds, you aren't able to access your feed.
 
 - After you've changed a private endpoint to a host pool, you must restart the *Remote Desktop Agent Loader* (*RDAgentBootLoader*) service on each session host in the host pool. You also need to restart this service whenever you change a host pool's network configuration. Instead of restarting the service, you can restart each session host.
 

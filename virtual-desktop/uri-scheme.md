@@ -86,7 +86,7 @@ ms-rd:subscribe?url=https://rdweb.wvd.microsoft.com
 
 Here are known limitations with the URI schemes:
 
-- Display properties cannot be configured via URI. You can configure display properties as an admin [on a host pool](customize-rdp-properties.md) or end users can configure display properties in the [Azure Virtual Desktop client](users/remote-desktop-clients-overview.md).
+- Display properties cannot be configured via URI. You can configure display properties as an admin [on a host pool](customize-rdp-properties.md) or end users can configure display properties in the [Azure Virtual Desktop client](/previous-versions/remote-desktop-client/overview).
 
 
 ## Next steps

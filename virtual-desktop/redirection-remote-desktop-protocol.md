@@ -161,4 +161,4 @@ However, certain settings can be overridden on the local device where a more res
 - [Configure WebAuthn redirection over the Remote Desktop Protocol](redirection-configure-webauthn.md).
 - [Supported RDP properties](rdp-properties.md).
 - [Compare Windows App features across platforms and devices](/windows-app/compare-platforms-features#redirection).
-- [Compare Remote Desktop app features across platforms and devices](compare-remote-desktop-clients.md#redirection).
+- [Compare Remote Desktop app features across platforms and devices](/previous-versions/remote-desktop-client/compare-remote-desktop-clients#redirection).
