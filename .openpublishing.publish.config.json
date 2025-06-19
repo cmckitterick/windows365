@@ -34,6 +34,12 @@
   "need_preview_pull_request": true,
   "dependent_repositories": [
     {
+      "path_to_root": "azure-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-docs-pr/",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "main",
