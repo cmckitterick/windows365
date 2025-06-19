@@ -9,7 +9,7 @@ ms.custom: devx-track-azurepowershell, docs_inherited
 ---
 # Delegated access in Azure Virtual Desktop
 
-Azure Virtual Desktop has a delegated access model that lets you define the amount of access a particular user is allowed to have by assigning them a role. A role assignment has three components: security principal, role definition, and scope. The Azure Virtual Desktop delegated access model is based on the Azure RBAC model. To learn more about specific role assignments and their components, see [the Azure role-based access control overview](/azure/role-based-access-control/built-in-roles.md).
+Azure Virtual Desktop has a delegated access model that lets you define the amount of access a particular user is allowed to have by assigning them a role. A role assignment has three components: security principal, role definition, and scope. The Azure Virtual Desktop delegated access model is based on the Azure RBAC model. To learn more about specific role assignments and their components, see [the Azure role-based access control overview](/azure/role-based-access-control/built-in-roles).
 
 Azure Virtual Desktop delegated access supports the following values for each element of the role assignment:
 
@@ -47,6 +47,6 @@ New-AzRoleAssignment -ObjectId <usergroupobjectid> -RoleDefinitionName "Desktop 
 
 For a more complete list of PowerShell cmdlets each role can use, see the [PowerShell reference](/powershell/module/az.desktopvirtualization).
 
-For a complete list of roles supported in Azure RBAC, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles.md).
+For a complete list of roles supported in Azure RBAC, see [Azure built-in roles](/azure/role-based-access-control/built-in-roles).
 
 For guidelines for how to set up an Azure Virtual Desktop environment, see [Azure Virtual Desktop environment](environment-setup.md).

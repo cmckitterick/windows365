@@ -25,9 +25,9 @@ Learn how to enforce MFA for Azure Virtual Desktop and optionally configure sign
 
 Here's what you need to get started:
 
-- Assign users a license that includes [Microsoft Entra ID P1 or P2](/entra/identity/authentication/concept-mfa-licensing.md).
-- A [Microsoft Entra group](/entra/identity/fundamentals/active-directory-groups-create-azure-portal.md) with your Azure Virtual Desktop users assigned as group members.
-- [Enable Microsoft Entra multifactor authentication](/entra/identity/authentication/tutorial-enable-azure-mfa.md).
+- Assign users a license that includes [Microsoft Entra ID P1 or P2](/entra/identity/authentication/concept-mfa-licensing).
+- A [Microsoft Entra group](/entra/identity/fundamentals/active-directory-groups-create-azure-portal) with your Azure Virtual Desktop users assigned as group members.
+- [Enable Microsoft Entra multifactor authentication](/entra/identity/authentication/tutorial-enable-azure-mfa).
 
 ## Create a Conditional Access policy
 
@@ -133,9 +133,9 @@ To configure the time period after which a user is asked to sign-in again:
 
 ## Microsoft Entra joined session host VMs
 
-For connections to succeed, you must [disable the legacy per-user multifactor authentication sign-in method](/entra/identity/devices/howto-vm-sign-in-azure-ad-windows.md#mfa-sign-in-method-required). If you don't want to restrict signing in to strong authentication methods like Windows Hello for Business, you need to [exclude the Azure Windows VM Sign-In app](/entra/identity/devices/howto-vm-sign-in-azure-ad-windows.md#enforce-conditional-access-policies) from your Conditional Access policy.
+For connections to succeed, you must [disable the legacy per-user multifactor authentication sign-in method](/entra/identity/devices/howto-vm-sign-in-azure-ad-windows#mfa-sign-in-method-required). If you don't want to restrict signing in to strong authentication methods like Windows Hello for Business, you need to [exclude the Azure Windows VM Sign-In app](/entra/identity/devices/howto-vm-sign-in-azure-ad-windows#enforce-conditional-access-policies) from your Conditional Access policy.
 
 ## Next steps
 
-- [Learn more about Conditional Access policies](/entra/identity/conditional-access/concept-conditional-access-policies.md)
-- [Learn more about user sign in frequency](/entra/identity/conditional-access/howto-conditional-access-session-lifetime.md#user-sign-in-frequency)
+- [Learn more about Conditional Access policies](/entra/identity/conditional-access/concept-conditional-access-policies)
+- [Learn more about user sign in frequency](/entra/identity/conditional-access/howto-conditional-access-session-lifetime#user-sign-in-frequency)

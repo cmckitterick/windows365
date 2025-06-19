@@ -17,7 +17,7 @@ This article shows you how to create a custom image template, then create a cust
 
 Before you can create a custom image template, you need to meet the following prerequisites:
 
-- The following resource providers registered on your subscription. For information on how you can check their registration status and how to register them if needed, see [Azure resource providers and types](/azure/azure-resource-manager/management/resource-providers-and-types.md).
+- The following resource providers registered on your subscription. For information on how you can check their registration status and how to register them if needed, see [Azure resource providers and types](/azure/azure-resource-manager/management/resource-providers-and-types).
 
    - Microsoft.DesktopVirtualization
    - Microsoft.VirtualMachineImages
@@ -29,9 +29,9 @@ Before you can create a custom image template, you need to meet the following pr
 
 - A resource group to store custom image templates, and images. If you specify your own resource group for Azure Image Builder to use, then it needs to be empty before the image build starts.
 
-- A [user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities.md). We recommend you create one specifically to use with custom image templates.
+- A [user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities). We recommend you create one specifically to use with custom image templates.
 
-- [Create a custom role](/azure/role-based-access-control/custom-roles.md) in Azure role-based access control (RBAC) with the following permissions as *actions*:
+- [Create a custom role](/azure/role-based-access-control/custom-roles) in Azure role-based access control (RBAC) with the following permissions as *actions*:
 
    ```json
    "Microsoft.Compute/galleries/read",
@@ -123,7 +123,7 @@ To create a custom image using the Azure portal:
       | Run output name | Enter a run output name for the image. This is a free text field. |
       | Replicated regions | Select which Azure regions to store and replicate the image. The region you selected for the custom image template is automatically selected. |
       | Excluded from latest | Select **Yes** to prevent this image version from being used where you specify `latest` as the version of the [*ImageReference* element](/azure/templates/microsoft.compute/virtualmachines?pivots=deployment-language-arm-template#imagereference-1) when you create a VM. Otherwise, select **No**.<br /><br />To change this later, see [List, update, and delete gallery resources](/azure/virtual-machines/update-image-resources). |
-      | Storage account type | Select the storage account [type](/azure/storage/common/storage-account-overview.md) and [redundancy](/azure/storage/common/storage-redundancy.md) from the list. |
+      | Storage account type | Select the storage account [type](/azure/storage/common/storage-account-overview) and [redundancy](/azure/storage/common/storage-redundancy) from the list. |
 
    Once you've completed this tab, select **Next**.
 

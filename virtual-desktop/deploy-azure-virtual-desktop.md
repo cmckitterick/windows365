@@ -56,8 +56,8 @@ In addition to the general prerequisites, you need:
    | Resource type | RBAC role | Scope |
    |--|--|--|
    | Host pool, workspace, and application group | [Desktop Virtualization Contributor](rbac.md#desktop-virtualization-contributor) | Resource group or subscription |
-   | Session hosts (Azure) | [Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles.md#virtual-machine-contributor) | Resource group or subscription |
-   | Key Vault | [Key Vault Secrets User](/azure/role-based-access-control/built-in-roles.md#key-vault-secrets-user) | Key vault containing local and/or domain credentials|
+   | Session hosts (Azure) | [Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) | Resource group or subscription |
+   | Key Vault | [Key Vault Secrets User](/azure/role-based-access-control/built-in-roles#key-vault-secrets-user) | Key vault containing local and/or domain credentials|
 
    For ongoing management of host pools, workspaces, and application groups, you can use more granular roles for each resource type. For more information, see [Built-in Azure RBAC roles for Azure Virtual Desktop](rbac.md).
 
@@ -85,11 +85,11 @@ In addition to the general prerequisites, you need:
 
    - Provide the Azure Virtual Desktop service principal the ability to read the secrets. See [Assign Azure RBAC roles or Microsoft Entra roles to the Azure Virtual Desktop service principals](service-principal-assign-roles.md) to make sure you're using the correct service principal. Your key vault can be configured to use either:
 
-      - [The Azure RBAC permission model](/azure/key-vault/general/rbac-guide) with the role [Key Vault Secrets User](/azure/role-based-access-control/built-in-roles.md#key-vault-secrets-user) assigned to the Azure Virtual Desktop service principal.
+      - [The Azure RBAC permission model](/azure/key-vault/general/rbac-guide) with the role [Key Vault Secrets User](/azure/role-based-access-control/built-in-roles#key-vault-secrets-user) assigned to the Azure Virtual Desktop service principal.
 
       - [An access policy](/azure/key-vault/general/assign-access-policy) with the *Get* secret permission assigned to the Azure Virtual Desktop service principal.
 
-   - Configure the key vault access configuration to allow [Azure Resource Manager for template deployment](/azure/azure-resource-manager/managed-applications/key-vault-access.md#enable-template-deployment).
+   - Configure the key vault access configuration to allow [Azure Resource Manager for template deployment](/azure/azure-resource-manager/managed-applications/key-vault-access#enable-template-deployment).
 
    - Configure the key vault network settings to [Allow public access from all networks](/azure/key-vault/general/how-to-azure-key-vault-network-security).
 
@@ -97,7 +97,7 @@ In addition to the general prerequisites, you need:
 
 - Don't disable [Windows Remote Management](/windows/win32/winrm/about-windows-remote-management) (WinRM) when creating session hosts using the Azure portal, as [PowerShell DSC](/powershell/dsc/overview) requires it.
 
-- If you want to use Azure PowerShell locally, see [Use Azure CLI and Azure PowerShell with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [Az.DesktopVirtualization](/powershell/module/az.desktopvirtualization) PowerShell module installed. Alternatively, use the [Azure Cloud Shell](/azure/cloud-shell/overview.md).
+- If you want to use Azure PowerShell locally, see [Use Azure CLI and Azure PowerShell with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [Az.DesktopVirtualization](/powershell/module/az.desktopvirtualization) PowerShell module installed. Alternatively, use the [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 - Azure PowerShell cmdlets for Azure Virtual Desktop that support host pools with a session host configuration are in preview. You need to download and install the [preview version of the Az.DesktopVirtualization module](https://www.powershellgallery.com/packages/Az.DesktopVirtualization/) to use these cmdlets, which were added in version 5.3.0.
 ::: zone-end
@@ -116,12 +116,12 @@ For more prerequisites, including role-based access control (RBAC) roles, select
    | Resource type | RBAC role |
    |--|--|
    | Host pool, workspace, and application group | [Desktop Virtualization Contributor](rbac.md#desktop-virtualization-contributor) |
-   | Session hosts (Azure and Azure Extended Zones) | [Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles.md#virtual-machine-contributor) |
+   | Session hosts (Azure and Azure Extended Zones) | [Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) |
    | Session hosts (Azure Local) | [Azure Stack HCI VM Contributor](/azure-stack/hci/manage/assign-vm-rbac-roles) |
 
    For ongoing management of host pools, workspaces, and application groups, you can use more granular roles for each resource type. For more information, see [Built-in Azure RBAC roles for Azure Virtual Desktop](rbac.md).
 
-- To assign users to the application group, you also need `Microsoft.Authorization/roleAssignments/write` permissions on the application group. Built-in RBAC roles that include this permission are [User Access Administrator](/azure/role-based-access-control/built-in-roles.md#user-access-administrator) and [Owner](/azure/role-based-access-control/built-in-roles.md#owner).
+- To assign users to the application group, you also need `Microsoft.Authorization/roleAssignments/write` permissions on the application group. Built-in RBAC roles that include this permission are [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) and [Owner](/azure/role-based-access-control/built-in-roles#owner).
 
 - Don't disable [Windows Remote Management](/windows/win32/winrm/about-windows-remote-management) when you're creating session hosts by using the Azure portal, because [PowerShell DSC](/powershell/dsc/overview) requires it.
 
@@ -137,9 +137,9 @@ For more prerequisites, including role-based access control (RBAC) roles, select
 
 - To deploy session hosts to [Azure Extended Zones](/azure/virtual-desktop/azure-extended-zones), you also need:
 
-  - Your Azure subscription registered with the respective Azure Extended Zone. For more information, see [Request access to an Azure Extended Zone](/azure/extended-zones/request-access.md).
+  - Your Azure subscription registered with the respective Azure Extended Zone. For more information, see [Request access to an Azure Extended Zone](/azure/extended-zones/request-access).
 
-  - An [Azure load balancer](/azure/load-balancer/load-balancer-outbound-connections.md) with an outbound rule on the virtual network to which you're deploying session hosts. You can use an existing load balancer or you create a new one when adding session hosts.
+  - An [Azure load balancer](/azure/load-balancer/load-balancer-outbound-connections) with an outbound rule on the virtual network to which you're deploying session hosts. You can use an existing load balancer or you create a new one when adding session hosts.
 
 # [Azure PowerShell](#tab/powershell-standard)
 
@@ -148,11 +148,11 @@ For more prerequisites, including role-based access control (RBAC) roles, select
    | Resource type | RBAC role |
    |--|--|
    | Host pool, workspace, and application group | [Desktop Virtualization Contributor](rbac.md#desktop-virtualization-contributor) |
-   | Session hosts | [Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles.md#virtual-machine-contributor) |
+   | Session hosts | [Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) |
 
    For ongoing management of host pools, workspaces, and application groups, you can use more granular roles for each resource type. For more information, see [Built-in Azure RBAC roles for Azure Virtual Desktop](rbac.md).
 
-- If you want to use Azure PowerShell locally, see [Use the Azure CLI and Azure PowerShell with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [Az.DesktopVirtualization](/powershell/module/az.desktopvirtualization) Azure PowerShell module installed. Alternatively, use [Azure Cloud Shell](/azure/cloud-shell/overview.md).
+- If you want to use Azure PowerShell locally, see [Use the Azure CLI and Azure PowerShell with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [Az.DesktopVirtualization](/powershell/module/az.desktopvirtualization) Azure PowerShell module installed. Alternatively, use [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 > [!IMPORTANT]
 > If you want to create Microsoft Entra joined session hosts, we only support this using the [`AADLoginForWindows`](/entra/identity/devices/howto-vm-sign-in-azure-ad-windows) VM extension, which is added and configured automatically when using the Azure portal or ARM template with the Azure Virtual Desktop service.
@@ -164,11 +164,11 @@ For more prerequisites, including role-based access control (RBAC) roles, select
    | Resource type | RBAC role |
    |--|--|
    | Host pool, workspace, and application group | [Desktop Virtualization Contributor](rbac.md#desktop-virtualization-contributor) |
-   | Session hosts | [Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles.md#virtual-machine-contributor) |
+   | Session hosts | [Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) |
 
    For ongoing management of host pools, workspaces, and application groups, you can use more granular roles for each resource type. For more information, see [Built-in Azure RBAC roles for Azure Virtual Desktop](rbac.md).
 
-- If you want to use the Azure CLI locally, see [Use the Azure CLI and Azure PowerShell with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [desktopvirtualization](/cli/azure/desktopvirtualization) Azure CLI extension installed. Alternatively, use [Azure Cloud Shell](/azure/cloud-shell/overview.md).
+- If you want to use the Azure CLI locally, see [Use the Azure CLI and Azure PowerShell with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [desktopvirtualization](/cli/azure/desktopvirtualization) Azure CLI extension installed. Alternatively, use [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 > [!IMPORTANT]
 > If you want to create Microsoft Entra joined session hosts, we only support this using the [`AADLoginForWindows`](/entra/identity/devices/howto-vm-sign-in-azure-ad-windows) VM extension, which is added and configured automatically when using the Azure portal or ARM template with the Azure Virtual Desktop service.
@@ -211,13 +211,13 @@ Here's how to create a host pool with a session host configuration using the Azu
 
    | Parameter | Value/Description |
    |--|--|
-   | Number of session hosts | Enter the number of session hosts you want to create when creating the host pool. You can enter **0** to not create any session hosts at this point, but a session host configuration is still created with the values you specify for when you do create session hosts.<br /><br />You can deploy up to 500 session host VMs at this point if you wish (depending on your [subscription quota](/azure/quotas/view-quotas)), or you can add more later.<br /><br />For more information, see [Azure Virtual Desktop service limits](/azure/azure-resource-manager/management/azure-subscription-service-limits.md#azure-virtual-desktop-service-limits) and [Virtual Machines limits](/azure/azure-resource-manager/management/azure-subscription-service-limits.md#azure-virtual-machines-limits---azure-resource-manager). |
+   | Number of session hosts | Enter the number of session hosts you want to create when creating the host pool. You can enter **0** to not create any session hosts at this point, but a session host configuration is still created with the values you specify for when you do create session hosts.<br /><br />You can deploy up to 500 session host VMs at this point if you wish (depending on your [subscription quota](/azure/quotas/view-quotas)), or you can add more later.<br /><br />For more information, see [Azure Virtual Desktop service limits](/azure/azure-resource-manager/management/azure-subscription-service-limits#azure-virtual-desktop-service-limits) and [Virtual Machines limits](/azure/azure-resource-manager/management/azure-subscription-service-limits#azure-virtual-machines-limits---azure-resource-manager). |
    | **Session host configuration** |  |
    | Resource group | Automatically defaults to the resource group you chose your host pool to be in on the *Basics* tab, but you can also select an alternative from the drop-down list. |
    | Name prefix | Enter a name for your session hosts, for example **hp01-sh**.<br /><br />This value is used as the prefix for your session host VMs. Each session host has a suffix of a hyphen and then a sequential number added to the end, for example **hp01-sh-0**.<br /><br />It can be a maximum of 10 characters and is used in the computer name in the operating system. The prefix and the suffix combined can be a maximum of 15 characters. Session host names must be unique. |
    | Virtual machine location | Select the Azure region where to deploy your session host VMs. This region must be the same as your virtual network is in. |
-   | Availability zones | Select one or more [availability zones](/azure/reliability/availability-zones-overview.md) in which to deploy your virtual machines. |
-   | Security type | Select from **Standard**, **[Trusted launch virtual machines](/azure/virtual-machines/trusted-launch)**, or **[Confidential virtual machines](/azure/confidential-computing/confidential-vm-overview.md)**.<br /><br />- If you select **Trusted launch virtual machines**, options for **secure boot** and **vTPM** are automatically selected.<br /><br />- If you select **Confidential virtual machines**, options for **secure boot**, **vTPM**, and **integrity monitoring** are automatically selected. You can't opt out of vTPM when using a confidential VM.<br /><br />**Trusted launch virtual machines** is the default. |
+   | Availability zones | Select one or more [availability zones](/azure/reliability/availability-zones-overview) in which to deploy your virtual machines. |
+   | Security type | Select from **Standard**, **[Trusted launch virtual machines](/azure/virtual-machines/trusted-launch)**, or **[Confidential virtual machines](/azure/confidential-computing/confidential-vm-overview)**.<br /><br />- If you select **Trusted launch virtual machines**, options for **secure boot** and **vTPM** are automatically selected.<br /><br />- If you select **Confidential virtual machines**, options for **secure boot**, **vTPM**, and **integrity monitoring** are automatically selected. You can't opt out of vTPM when using a confidential VM.<br /><br />**Trusted launch virtual machines** is the default. |
    | Image | Select the OS image you want to use from the list, or select **See all images** to see more, including any custom images you create and store as an [Azure Compute Gallery shared image](/azure/virtual-machines/shared-image-galleries) or a [managed image](/azure/virtual-machines/windows/capture-image-resource). |
    | Virtual machine size | Select a SKU. If you want to use different SKU, select **Change size**, then select from the list. |
    | OS disk type | Select the disk type to use for your session hosts. We recommend **Premium SSD** for production workloads. |
@@ -445,7 +445,7 @@ Here's how to create a host pool by using the Azure portal:
       | **Network and security** |  |
       | **Virtual network** | Select your virtual network. An option to select a subnet appears. |
       | **Subnet** | Select a subnet from your virtual network. |
-      | **Network security group** | Select whether you want to use a network security group (NSG).<br /><br />- **None** doesn't create a new NSG.<br /><br />- **Basic** creates a new NSG for the VM network adapter.<br /><br />- **Advanced** enables you to select an existing NSG.<br /><br />We recommend that you don't create an NSG here, but [create an NSG on the subnet instead](/azure/virtual-network/manage-network-security-group.md). |
+      | **Network security group** | Select whether you want to use a network security group (NSG).<br /><br />- **None** doesn't create a new NSG.<br /><br />- **Basic** creates a new NSG for the VM network adapter.<br /><br />- **Advanced** enables you to select an existing NSG.<br /><br />We recommend that you don't create an NSG here, but [create an NSG on the subnet instead](/azure/virtual-network/manage-network-security-group). |
       | **Public inbound ports** | You can select a port to allow from the list. Azure Virtual Desktop doesn't require public inbound ports, so we recommend that you select **No**. |
       | **Domain to join** |  |
       | **Select which directory you would like to join** | Select from **Microsoft Entra ID** or **Active Directory**, and complete the relevant parameters for the selected option.  |
@@ -1004,7 +1004,7 @@ Here's how to add an application group to a workspace by using the [desktopvirtu
 
 Finally, to assign users or user groups to an application group, select the relevant tab for your scenario and follow the steps. We recommend that you assign user groups to application groups to make ongoing management simpler.
 
-The account you use needs permission to assign roles in Azure RBAC on the application group after it's created. The permission is `Microsoft.Authorization/roleAssignments/write`, which is included in some built-in roles, such as [User Access Administrator](/azure/role-based-access-control/built-in-roles.md#user-access-administrator) and [Owner](/azure/role-based-access-control/built-in-roles.md#owner).
+The account you use needs permission to assign roles in Azure RBAC on the application group after it's created. The permission is `Microsoft.Authorization/roleAssignments/write`, which is included in some built-in roles, such as [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) and [Owner](/azure/role-based-access-control/built-in-roles#owner).
 
 # [Azure portal](#tab/portal)
 

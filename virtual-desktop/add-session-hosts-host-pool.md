@@ -58,7 +58,7 @@ For a general idea of what's required, such as supported operating systems, virt
 
    | Action | RBAC role |
    |--|--|
-   | Create and add session hosts using the Azure portal | [Desktop Virtualization Host Pool Contributor](rbac.md#desktop-virtualization-host-pool-contributor)<br />[Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles.md#virtual-machine-contributor) |
+   | Create and add session hosts using the Azure portal | [Desktop Virtualization Host Pool Contributor](rbac.md#desktop-virtualization-host-pool-contributor)<br />[Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) |
 
 ::: zone-end
 
@@ -68,7 +68,7 @@ For a general idea of what's required, such as supported operating systems, virt
    | Action | RBAC role or roles |
    |--|--|
    | Generate a registration key for the host pool | [Desktop Virtualization Host Pool Contributor](rbac.md#desktop-virtualization-host-pool-contributor) |
-   | Create and add session hosts by using the Azure portal (Azure and Azure Extended Zones) | [Desktop Virtualization Host Pool Contributor](rbac.md#desktop-virtualization-host-pool-contributor)<br />[Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles.md#virtual-machine-contributor) |
+   | Create and add session hosts by using the Azure portal (Azure and Azure Extended Zones) | [Desktop Virtualization Host Pool Contributor](rbac.md#desktop-virtualization-host-pool-contributor)<br />[Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) |
    | Create and add session hosts by using the Azure portal (Azure Local) | [Desktop Virtualization Host Pool Contributor](rbac.md#desktop-virtualization-host-pool-contributor)<br />[Azure Stack HCI VM Contributor](/azure-stack/hci/manage/assign-vm-rbac-roles) |
 
 - Don't disable [Windows Remote Management](/windows/win32/winrm/about-windows-remote-management) (WinRM) when you're creating and adding session hosts by using the Azure portal. [PowerShell DSC](/powershell/dsc/overview) requires it.
@@ -87,11 +87,11 @@ For a general idea of what's required, such as supported operating systems, virt
 
 - To deploy session hosts to [Azure Extended Zones](/azure/virtual-desktop/azure-extended-zones), you also need:
 
-  - Your Azure subscription registered with the respective Azure Extended Zone. For more information, see [Request access to an Azure Extended Zone](/azure/extended-zones/request-access.md).
+  - Your Azure subscription registered with the respective Azure Extended Zone. For more information, see [Request access to an Azure Extended Zone](/azure/extended-zones/request-access).
 
-  - An [Azure load balancer](/azure/load-balancer/load-balancer-outbound-connections.md) with an outbound rule on the virtual network to which you're deploying session hosts. You can use an existing load balancer or you create a new one when adding session hosts.
+  - An [Azure load balancer](/azure/load-balancer/load-balancer-outbound-connections) with an outbound rule on the virtual network to which you're deploying session hosts. You can use an existing load balancer or you create a new one when adding session hosts.
 
-- If you want to use the Azure CLI or Azure PowerShell locally, see [Use the Azure CLI and Azure PowerShell with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [desktopvirtualization](/cli/azure/desktopvirtualization) Azure CLI extension or the [Az.DesktopVirtualization](/powershell/module/az.desktopvirtualization) Azure PowerShell module installed. Alternatively, use [Azure Cloud Shell](/azure/cloud-shell/overview.md).
+- If you want to use the Azure CLI or Azure PowerShell locally, see [Use the Azure CLI and Azure PowerShell with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [desktopvirtualization](/cli/azure/desktopvirtualization) Azure CLI extension or the [Az.DesktopVirtualization](/powershell/module/az.desktopvirtualization) Azure PowerShell module installed. Alternatively, use [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 > [!IMPORTANT]
 > If you want to create Microsoft Entra joined session hosts, we only support this using the [`AADLoginForWindows`](/entra/identity/devices/howto-vm-sign-in-azure-ad-windows) VM extension, which is added and configured automatically when using the Azure portal or ARM template with the Azure Virtual Desktop service.
@@ -259,7 +259,7 @@ Here's how to create session hosts and register them to a host pool by using the
       | **Network and security** |  |
       | **Virtual network** | Select your virtual network. An option to select a subnet appears. |
       | **Subnet** | Select a subnet from your virtual network. |
-      | **Network security group** | Select whether you want to use a network security group (NSG).<br /><br />- **None** doesn't create a new NSG.<br /><br />- **Basic** creates a new NSG for the VM network adapter.<br /><br />- **Advanced** enables you to select an existing NSG.<br /><br />We recommend that you don't create an NSG here, but [create an NSG on the subnet instead](/azure/virtual-network/manage-network-security-group.md). |
+      | **Network security group** | Select whether you want to use a network security group (NSG).<br /><br />- **None** doesn't create a new NSG.<br /><br />- **Basic** creates a new NSG for the VM network adapter.<br /><br />- **Advanced** enables you to select an existing NSG.<br /><br />We recommend that you don't create an NSG here, but [create an NSG on the subnet instead](/azure/virtual-network/manage-network-security-group). |
       | **Public inbound ports** | You can select a port to allow from the list. Azure Virtual Desktop doesn't require public inbound ports, so we recommend that you select **No**. |
       | **Domain to join** |  |
       | **Select which directory you would like to join** | Select from **Microsoft Entra ID** or **Active Directory** and complete the relevant parameters for the selected option.<br /><br />To learn more about joining session hosts to Microsoft Entra ID, see [Microsoft Entra joined session hosts](azure-ad-joined-session-hosts.md). |

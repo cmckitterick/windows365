@@ -18,15 +18,15 @@ In order to use Private Link with Azure Virtual Desktop, you need the following 
 
 - An existing [host pool](create-host-pool.md) with [session hosts](add-session-hosts-host-pool.md), an [application group, and workspace](create-application-group-workspace.md).
 
-- An existing [virtual network](/azure/virtual-network/manage-virtual-network.yml) and [subnet](/azure/virtual-network/virtual-network-manage-subnet.md) you want to use for private endpoints.
+- An existing [virtual network](/azure/virtual-network/manage-virtual-network.yml) and [subnet](/azure/virtual-network/virtual-network-manage-subnet) you want to use for private endpoints.
 
-- The [required Azure role-based access control permissions to create private endpoints](/azure/private-link/rbac-permissions.md).
+- The [required Azure role-based access control permissions to create private endpoints](/azure/private-link/rbac-permissions).
 
 - A supported app on a local device to access a remote session:
    - Remote Desktop app on any platform. If you're using the [Remote Desktop client for Windows](./users/connect-windows.md), you must use version 1.2.4066 or later to connect using a private endpoint.
    - Windows App on macOS or iOS/iPadOS.
 
-- If you want to use Azure CLI or Azure PowerShell locally, see [Use Azure CLI and Azure PowerShell with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [desktopvirtualization](/cli/azure/desktopvirtualization) Azure CLI extension or the [Az.DesktopVirtualization](/powershell/module/az.desktopvirtualization) PowerShell module installed. Alternatively, use the [Azure Cloud Shell](/azure/cloud-shell/overview.md).
+- If you want to use Azure CLI or Azure PowerShell locally, see [Use Azure CLI and Azure PowerShell with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [desktopvirtualization](/cli/azure/desktopvirtualization) Azure CLI extension or the [Az.DesktopVirtualization](/powershell/module/az.desktopvirtualization) PowerShell module installed. Alternatively, use the [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 - Azure PowerShell cmdlets for Azure Virtual Desktop that support Private Link are in preview. You'll need to download and install the [preview version of the Az.DesktopVirtualization module](https://www.powershellgallery.com/packages/Az.DesktopVirtualization/5.0.0-preview) to use these cmdlets, which have been added in version 5.0.0.
 
@@ -126,17 +126,17 @@ Here's how to create a private endpoint for the *connection* sub-resource for co
    |--|--|
    | Virtual network | Select the virtual network you want to create the private endpoint in from the drop-down list. |
    | Subnet | Select the subnet of the virtual network you want to create the private endpoint in from the drop-down list. |
-   | Network policy for private endpoints | Select **edit** if you want to choose a subnet network policy. For more information, see [Manage network policies for private endpoints](/azure/private-link/disable-private-endpoint-network-policy.md). |
+   | Network policy for private endpoints | Select **edit** if you want to choose a subnet network policy. For more information, see [Manage network policies for private endpoints](/azure/private-link/disable-private-endpoint-network-policy). |
    | Private IP configuration | Select **Dynamically allocate IP address** or **Statically allocate IP address**. The address space is from the subnet you selected.<br /><br />If you choose to statically allocate IP addresses, you need to fill in the **Name** and **Private IP** for each listed member. |
    | Application security group | *Optional*: select an existing application security group for the private endpoint from the drop-down list, or create a new one. You can also add one later. |
 
    Once you've completed this tab, select **Next: DNS**.
 
-1. On the **DNS** tab, choose whether you want to use [Azure Private DNS Zone](/azure/dns/private-dns-privatednszone.md) by selecting **Yes** or **No** for **Integrate with private DNS zone**. If you select **Yes**, select the subscription and resource group in which to create the private DNS zone `privatelink.wvd.microsoft.com`. For more information, see [Azure Private Endpoint DNS configuration](/azure/private-link/private-endpoint-dns.md).
+1. On the **DNS** tab, choose whether you want to use [Azure Private DNS Zone](/azure/dns/private-dns-privatednszone) by selecting **Yes** or **No** for **Integrate with private DNS zone**. If you select **Yes**, select the subscription and resource group in which to create the private DNS zone `privatelink.wvd.microsoft.com`. For more information, see [Azure Private Endpoint DNS configuration](/azure/private-link/private-endpoint-dns).
 
    Once you've completed this tab, select **Next: Tags**.
 
-1. *Optional*: On the **Tags** tab, you can enter any [name/value pairs](/azure/azure-resource-manager/management/tag-resources.md) you need, then select **Next: Review + create**.
+1. *Optional*: On the **Tags** tab, you can enter any [name/value pairs](/azure/azure-resource-manager/management/tag-resources) you need, then select **Next: Review + create**.
 
 1. On the **Review + create** tab, ensure validation passes and review the information that is used during deployment.
 
@@ -253,7 +253,7 @@ Here's how to create a private endpoint for the *connection* sub-resource used f
    privatelink       endpoint-hp01   uksouth  Succeeded
    ```
 
-5. You need to [configure DNS for your private endpoint](/azure/private-link/private-endpoint-dns.md) to resolve the DNS name of the private endpoint in the virtual network. The private DNS zone name is `privatelink.wvd.microsoft.com`. For the steps to create and configure the private DNS zone with Azure PowerShell, see [Configure the private DNS zone](/azure/private-link/create-private-endpoint-powershell.md#configure-the-private-dns-zone).
+5. You need to [configure DNS for your private endpoint](/azure/private-link/private-endpoint-dns) to resolve the DNS name of the private endpoint in the virtual network. The private DNS zone name is `privatelink.wvd.microsoft.com`. For the steps to create and configure the private DNS zone with Azure PowerShell, see [Configure the private DNS zone](/azure/private-link/create-private-endpoint-powershell#configure-the-private-dns-zone).
 
 # [Azure CLI](#tab/cli)
 
@@ -333,7 +333,7 @@ Here's how to create a private endpoint for the *connection* sub-resource used f
                                  uksouth     endpoint-hp01         Succeeded            privatelink
    ```
 
-3. You need to [configure DNS for your private endpoint](/azure/private-link/private-endpoint-dns.md) to resolve the DNS name of the private endpoint in the virtual network. The private DNS zone name is `privatelink.wvd.microsoft.com`. For the steps to create and configure the private DNS zone with Azure CLI, see [Configure the private DNS zone](/azure/private-link/create-private-endpoint-cli.md#configure-the-private-dns-zone).
+3. You need to [configure DNS for your private endpoint](/azure/private-link/private-endpoint-dns) to resolve the DNS name of the private endpoint in the virtual network. The private DNS zone name is `privatelink.wvd.microsoft.com`. For the steps to create and configure the private DNS zone with Azure CLI, see [Configure the private DNS zone](/azure/private-link/create-private-endpoint-cli#configure-the-private-dns-zone).
 
 ---
 
@@ -372,17 +372,17 @@ To create a private endpoint for the *feed* sub-resource for a workspace, select
    |--|--|
    | Virtual network | Select the virtual network you want to create the private endpoint in from the drop-down list. |
    | Subnet | Select the subnet of the virtual network you want to create the private endpoint in from the drop-down list. |
-   | Network policy for private endpoints | Select **edit** if you want to choose a subnet network policy. For more information, see [Manage network policies for private endpoints](/azure/private-link/disable-private-endpoint-network-policy.md). |
+   | Network policy for private endpoints | Select **edit** if you want to choose a subnet network policy. For more information, see [Manage network policies for private endpoints](/azure/private-link/disable-private-endpoint-network-policy). |
    | Private IP configuration | Select **Dynamically allocate IP address** or **Statically allocate IP address**. The address space is from the subnet you selected.<br /><br />If you choose to statically allocate IP addresses, you need to fill in the **Name** and **Private IP** for each listed member. |
    | Application security group | *Optional*: select an existing application security group for the private endpoint from the drop-down list, or create a new one. You can also add one later. |
 
    Once you've completed this tab, select **Next: DNS**.
 
-1. On the **DNS** tab, choose whether you want to use [Azure Private DNS Zone](/azure/dns/private-dns-privatednszone.md) by selecting **Yes** or **No** for **Integrate with private DNS zone**. If you select **Yes**, select the subscription and resource group in which to create the private DNS zone `privatelink.wvd.microsoft.com`. For more information, see [Azure Private Endpoint DNS configuration](/azure/private-link/private-endpoint-dns.md).
+1. On the **DNS** tab, choose whether you want to use [Azure Private DNS Zone](/azure/dns/private-dns-privatednszone) by selecting **Yes** or **No** for **Integrate with private DNS zone**. If you select **Yes**, select the subscription and resource group in which to create the private DNS zone `privatelink.wvd.microsoft.com`. For more information, see [Azure Private Endpoint DNS configuration](/azure/private-link/private-endpoint-dns).
 
    Once you've completed this tab, select **Next: Tags**.
 
-1. *Optional*: On the **Tags** tab, you can enter any [name/value pairs](/azure/azure-resource-manager/management/tag-resources.md) you need, then select **Next: Review + create**.
+1. *Optional*: On the **Tags** tab, you can enter any [name/value pairs](/azure/azure-resource-manager/management/tag-resources) you need, then select **Next: Review + create**.
 
 1. On the **Review + create** tab, ensure validation passes and review the information that is used during deployment.
 
@@ -472,7 +472,7 @@ To create a private endpoint for the *feed* sub-resource for a workspace, select
    privatelink       endpoint-ws01   uksouth  Succeeded
    ```
 
-1. You need to [configure DNS for your private endpoint](/azure/private-link/private-endpoint-dns.md) to resolve the DNS name of the private endpoint in the virtual network. The private DNS zone name is `privatelink.wvd.microsoft.com`. For the steps to create and configure the private DNS zone with Azure PowerShell, see [Configure the private DNS zone](/azure/private-link/create-private-endpoint-powershell.md#configure-the-private-dns-zone).
+1. You need to [configure DNS for your private endpoint](/azure/private-link/private-endpoint-dns) to resolve the DNS name of the private endpoint in the virtual network. The private DNS zone name is `privatelink.wvd.microsoft.com`. For the steps to create and configure the private DNS zone with Azure PowerShell, see [Configure the private DNS zone](/azure/private-link/create-private-endpoint-powershell#configure-the-private-dns-zone).
 
 # [Azure CLI](#tab/cli)
 
@@ -543,7 +543,7 @@ To create a private endpoint for the *feed* sub-resource for a workspace, select
                                  uksouth     endpoint-ws01         Succeeded            privatelink
    ```
 
-1. You need to [configure DNS for your private endpoint](/azure/private-link/private-endpoint-dns.md) to resolve the DNS name of the private endpoint in the virtual network. The private DNS zone name is `privatelink.wvd.microsoft.com`. For the steps to create and configure the private DNS zone with Azure CLI, see [Configure the private DNS zone](/azure/private-link/create-private-endpoint-cli.md#configure-the-private-dns-zone).
+1. You need to [configure DNS for your private endpoint](/azure/private-link/private-endpoint-dns) to resolve the DNS name of the private endpoint in the virtual network. The private DNS zone name is `privatelink.wvd.microsoft.com`. For the steps to create and configure the private DNS zone with Azure CLI, see [Configure the private DNS zone](/azure/private-link/create-private-endpoint-cli#configure-the-private-dns-zone).
 
 ---
 
@@ -587,17 +587,17 @@ To create a private endpoint for the *global* sub-resource used for the initial 
    |--|--|
    | Virtual network | Select the virtual network you want to create the private endpoint in from the drop-down list. |
    | Subnet | Select the subnet of the virtual network you want to create the private endpoint in from the drop-down list. |
-   | Network policy for private endpoints | Select **edit** if you want to choose a subnet network policy. For more information, see [Manage network policies for private endpoints](/azure/private-link/disable-private-endpoint-network-policy.md). |
+   | Network policy for private endpoints | Select **edit** if you want to choose a subnet network policy. For more information, see [Manage network policies for private endpoints](/azure/private-link/disable-private-endpoint-network-policy). |
    | Private IP configuration | Select **Dynamically allocate IP address** or **Statically allocate IP address**. The address space is from the subnet you selected.<br /><br />If you choose to statically allocate IP addresses, you need to fill in the **Name** and **Private IP** for each listed member. |
    | Application security group | *Optional*: select an existing application security group for the private endpoint from the drop-down list, or create a new one. You can also add one later. |
 
    Once you've completed this tab, select **Next: DNS**.
 
-1. On the **DNS** tab, choose whether you want to use [Azure Private DNS Zone](/azure/dns/private-dns-privatednszone.md) by selecting **Yes** or **No** for **Integrate with private DNS zone**. If you select **Yes**, select the subscription and resource group in which to create the private DNS zone `privatelink-global.wvd.microsoft.com`. For more information, see [Azure Private Endpoint DNS configuration](/azure/private-link/private-endpoint-dns.md).
+1. On the **DNS** tab, choose whether you want to use [Azure Private DNS Zone](/azure/dns/private-dns-privatednszone) by selecting **Yes** or **No** for **Integrate with private DNS zone**. If you select **Yes**, select the subscription and resource group in which to create the private DNS zone `privatelink-global.wvd.microsoft.com`. For more information, see [Azure Private Endpoint DNS configuration](/azure/private-link/private-endpoint-dns).
 
    Once you've completed this tab, select **Next: Tags**.
 
-1. *Optional*: On the **Tags** tab, you can enter any [name/value pairs](/azure/azure-resource-manager/management/tag-resources.md) you need, then select **Next: Review + create**.
+1. *Optional*: On the **Tags** tab, you can enter any [name/value pairs](/azure/azure-resource-manager/management/tag-resources) you need, then select **Next: Review + create**.
 
 1. On the **Review + create** tab, ensure validation passes and review the information that is used during deployment.
 
@@ -680,7 +680,7 @@ To create a private endpoint for the *global* sub-resource used for the initial 
    privatelink       endpoint-global uksouth  Succeeded
    ```
 
-1. You need to [configure DNS for your private endpoint](/azure/private-link/private-endpoint-dns.md) to resolve the DNS name of the private endpoint in the virtual network. The private DNS zone name is `privatelink-global.wvd.microsoft.com`. For the steps to create and configure the private DNS zone with Azure PowerShell, see [Configure the private DNS zone](/azure/private-link/create-private-endpoint-powershell.md#configure-the-private-dns-zone).
+1. You need to [configure DNS for your private endpoint](/azure/private-link/private-endpoint-dns) to resolve the DNS name of the private endpoint in the virtual network. The private DNS zone name is `privatelink-global.wvd.microsoft.com`. For the steps to create and configure the private DNS zone with Azure PowerShell, see [Configure the private DNS zone](/azure/private-link/create-private-endpoint-powershell#configure-the-private-dns-zone).
 
 # [Azure CLI](#tab/cli)
 
@@ -752,13 +752,13 @@ To create a private endpoint for the *global* sub-resource used for the initial 
                                  uksouth     endpoint-global       Succeeded            privatelink
    ```
 
-1. You need to [configure DNS for your private endpoint](/azure/private-link/private-endpoint-dns.md) to resolve the DNS name of the private endpoint in the virtual network. The private DNS zone name is `privatelink-global.wvd.microsoft.com`. For the steps to create and configure the private DNS zone with Azure CLI, see [Configure the private DNS zone](/azure/private-link/create-private-endpoint-cli.md#configure-the-private-dns-zone).
+1. You need to [configure DNS for your private endpoint](/azure/private-link/private-endpoint-dns) to resolve the DNS name of the private endpoint in the virtual network. The private DNS zone name is `privatelink-global.wvd.microsoft.com`. For the steps to create and configure the private DNS zone with Azure CLI, see [Configure the private DNS zone](/azure/private-link/create-private-endpoint-cli#configure-the-private-dns-zone).
 
 ---
 
 ## Closing public routes
 
-Once you've created private endpoints, you can also control if traffic is allowed to come from public routes. You can control this at a granular level using Azure Virtual Desktop, or more broadly using a [network security group (NSG)](/azure/virtual-network/network-security-groups-overview.md) or [Azure Firewall](/azure/firewall/protect-azure-virtual-desktop.md?toc=%2Fazure%2Fvirtual-desktop%2Ftoc.json&bc=%2Fazure%2Fvirtual-desktop%2Fbreadcrumb%2Ftoc.json).
+Once you've created private endpoints, you can also control if traffic is allowed to come from public routes. You can control this at a granular level using Azure Virtual Desktop, or more broadly using a [network security group (NSG)](/azure/virtual-network/network-security-groups-overview) or [Azure Firewall](/azure/firewall/protect-azure-virtual-desktop?toc=%2Fazure%2Fvirtual-desktop%2Ftoc.json&bc=%2Fazure%2Fvirtual-desktop%2Fbreadcrumb%2Ftoc.json).
 
 ### Control routes with Azure Virtual Desktop
 
@@ -885,7 +885,7 @@ With Azure Virtual Desktop, you can independently control public traffic for wor
 
 ### Block public routes with network security groups or Azure Firewall
 
-If you're using [network security groups](/azure/virtual-network/network-security-groups-overview.md) or [Azure Firewall](/azure/firewall/overview.md) to control connections from user client devices or your session hosts to the private endpoints, you can use the **WindowsVirtualDesktop** service tag to block traffic from the public internet. If you block public internet traffic using this service tag, all service traffic uses private routes only.
+If you're using [network security groups](/azure/virtual-network/network-security-groups-overview) or [Azure Firewall](/azure/firewall/overview) to control connections from user client devices or your session hosts to the private endpoints, you can use the **WindowsVirtualDesktop** service tag to block traffic from the public internet. If you block public internet traffic using this service tag, all service traffic uses private routes only.
 
 > [!CAUTION]
 > - Make sure you don't block traffic between your private endpoints and the addresses in the [required URL list](safe-url-list.md).
@@ -1007,9 +1007,9 @@ To test that your users can connect to their remote resources:
 
 - Learn more about how Private Link for Azure Virtual Desktop at [Use Private Link with Azure Virtual Desktop](private-link-overview.md).
 
-- Learn how to configure Azure Private Endpoint DNS at [Private Link DNS integration](/azure/private-link/private-endpoint-dns-integration.md#virtual-network-and-on-premises-workloads-using-a-dns-forwarder).
+- Learn how to configure Azure Private Endpoint DNS at [Private Link DNS integration](/azure/private-link/private-endpoint-dns-integration#virtual-network-and-on-premises-workloads-using-a-dns-forwarder).
 
-- For general troubleshooting guides for Private Link, see [Troubleshoot Azure Private Endpoint connectivity problems](/azure/private-link/troubleshoot-private-endpoint-connectivity.md).
+- For general troubleshooting guides for Private Link, see [Troubleshoot Azure Private Endpoint connectivity problems](/azure/private-link/troubleshoot-private-endpoint-connectivity).
 
 - Understand how connectivity for the Azure Virtual Desktop service works at [Azure Virtual Desktop network connectivity](network-connectivity.md).
 

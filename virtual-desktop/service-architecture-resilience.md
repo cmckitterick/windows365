@@ -19,7 +19,7 @@ Microsoft provides the virtual desktop infrastructure (VDI) components for core 
 - **Resource directory**: provides information to instruct the web service which of the multiple geographical databases hosts the connection information required for each user.
 - **Geographical database**: contains the connection files (`.rdp`) and icons for every resource that a user has been provisioned.
 
-In addition, Azure Virtual Desktop uses other global Azure services, such as [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview.md) and [Azure Front Door](/azure/frontdoor/front-door-overview.md) to direct users to their closest Azure Virtual Desktop entry points.
+In addition, Azure Virtual Desktop uses other global Azure services, such as [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview) and [Azure Front Door](/azure/frontdoor/front-door-overview) to direct users to their closest Azure Virtual Desktop entry points.
 
 You're responsible for creating and managing session hosts, including any operating system image customizations and applications, virtual network connectivity, the resiliency, and the backup and recovery of those session hosts. You also provide and manage user identities and control access to the service. You can use other Azure services to help you meet your requirements, such as:
 
@@ -45,7 +45,7 @@ During feed discovery, the desktops and apps available to the user are populated
 
 The feed discovery process is as follows:
 
-1. The user might be located anywhere in the world. Azure Traffic Manager routes the user's device to the closest instance of the Azure Virtual Desktop web service based on the [geographic traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods.md#geographic-traffic-routing-method), which uses source IP address of the user's device. 
+1. The user might be located anywhere in the world. Azure Traffic Manager routes the user's device to the closest instance of the Azure Virtual Desktop web service based on the [geographic traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods#geographic-traffic-routing-method), which uses source IP address of the user's device. 
 
 1. The web service connects to the Azure Virtual Desktop broker service in the same Azure region to retrieve the RDP files and application icons for the user's feed. The broker service connects to the Azure Virtual Desktop geographical database and resource directory in the same region to retrieve the information.
 
@@ -66,7 +66,7 @@ The feed discovery process is as follows:
 
 When a user connects to a desktop or app from their feed, the RDP connection is established as follows:
 
-1. All remote sessions begin with a connection to [Azure Front Door](/azure/frontdoor/front-door-overview.md), which provides the global entry point to Azure Virtual Desktop. Azure Front Door determines the Azure Virtual Desktop gateway service with the lowest latency for the user's device and directs the connection to it
+1. All remote sessions begin with a connection to [Azure Front Door](/azure/frontdoor/front-door-overview), which provides the global entry point to Azure Virtual Desktop. Azure Front Door determines the Azure Virtual Desktop gateway service with the lowest latency for the user's device and directs the connection to it
 
 1. The gateway service connects to the broker service in the same Azure region. The gateway service enables session hosts to be in any region and still be accessible to users.
 
@@ -91,7 +91,7 @@ Azure Virtual Desktop is designed to be resilient to failures and provide a reli
 
 The Microsoft-managed components of Azure Virtual Desktop are currently located in around 40 Azure regions to be closer to users and provide a resilient service. Resiliency has been implemented globally, geographically, and within an Azure region in the following ways:
 
-- [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview.md) directs traffic for the web service and [Azure Front Door](/azure/frontdoor/front-door-overview.md) directs traffic for the gateway service. If there's an outage that causes the web service or gateway service to be unavailable from one Azure region, or there's a full region outage, traffic is redirected to the next closest available instance in the nearest region. Redirection of the traffic enables users to still make new connections.
+- [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview) directs traffic for the web service and [Azure Front Door](/azure/frontdoor/front-door-overview) directs traffic for the gateway service. If there's an outage that causes the web service or gateway service to be unavailable from one Azure region, or there's a full region outage, traffic is redirected to the next closest available instance in the nearest region. Redirection of the traffic enables users to still make new connections.
 
 - The geographical database uses [Azure SQL Database](https://azure.microsoft.com/products/azure-sql/database) failover and data replication capabilities within each geography. If there's a database outage, the database fails over to the secondary replica and normal operation resumes. During failover, there's a short period of time where new connections fail until failover is complete, however this failover doesn't affect existing connections.
 
@@ -103,7 +103,7 @@ Here's a high-level diagram showing how the Microsoft-managed components are int
 
 :::image type="content" source="media/service-architecture-resilience/service-architecture-resilience.svg" border="false" alt-text="A diagram showing how the Microsoft-managed components are interconnected." lightbox="media/service-architecture-resilience/service-architecture-resilience.svg":::
 
-The other Azure services on which Azure Virtual Desktop relies are themselves designed to be resilient and reliable. For more information, see [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview.md) and [Azure Front Door](/azure/frontdoor/front-door-overview.md).
+The other Azure services on which Azure Virtual Desktop relies are themselves designed to be resilient and reliable. For more information, see [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview) and [Azure Front Door](/azure/frontdoor/front-door-overview).
 
 ## Global reach
 

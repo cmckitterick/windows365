@@ -43,7 +43,7 @@ The client connection sequence is as follows:
 
 1. Client stores the connection configuration for each available resource in a set of `.rdp` files.
 
-1. When a user selects the resource to connect, the client uses the associated `.rdp` file and establishes a secure TLS 1.2 connection to an Azure Virtual Desktop gateway instance with the help of [Azure Front Door](/azure/frontdoor/concept-end-to-end-tls.md#supported-cipher-suites) and passes the connection information. The latency from all gateways is evaluated, and the gateways are put into groups of 10 ms. The gateway with the lowest latency and then lowest number of existing connections is chosen.
+1. When a user selects the resource to connect, the client uses the associated `.rdp` file and establishes a secure TLS 1.2 connection to an Azure Virtual Desktop gateway instance with the help of [Azure Front Door](/azure/frontdoor/concept-end-to-end-tls#supported-cipher-suites) and passes the connection information. The latency from all gateways is evaluated, and the gateways are put into groups of 10 ms. The gateway with the lowest latency and then lowest number of existing connections is chosen.
 
 1. Azure Virtual Desktop gateway validates the request and asks the Azure Virtual Desktop broker to orchestrate the connection.
 
@@ -59,7 +59,7 @@ The client connection sequence is as follows:
 
 TLS is used for all connections. The version used depends on which connection is made and the capabilities of the client and session host:
 
-- For all connections initiated from the clients and session hosts to the Azure Virtual Desktop infrastructure components, TLS 1.2 is used. Azure Virtual Desktop uses the same TLS 1.2 ciphers as [Azure Front Door](/azure/frontdoor/concept-end-to-end-tls.md#supported-cipher-suites). It's important to make sure both client computers and session hosts can use these ciphers.
+- For all connections initiated from the clients and session hosts to the Azure Virtual Desktop infrastructure components, TLS 1.2 is used. Azure Virtual Desktop uses the same TLS 1.2 ciphers as [Azure Front Door](/azure/frontdoor/concept-end-to-end-tls#supported-cipher-suites). It's important to make sure both client computers and session hosts can use these ciphers.
 
 - For the reverse connect transport, both the client and session host connect to the Azure Virtual Desktop gateway. After the TCP connection for the base transport is established, the client or session host validates the Azure Virtual Desktop gateway's certificate. RDP then establishes a nested TLS connection between client and session host using the session host's certificates. The version of TLS uses the mutually agreed TLS version supported and enabled between the client and session host, up to TLS 1.3. TLS 1.3 is supported starting in Windows 11 (21H2) and in Windows Server 2022. To learn more, see [Windows 11 TLS support](/windows/win32/secauthn/tls-cipher-suites-in-windows-11). For other operating systems, check with the operating system vendor for TLS 1.3 support.
 

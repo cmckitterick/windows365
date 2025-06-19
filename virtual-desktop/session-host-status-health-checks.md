@@ -47,4 +47,4 @@ The health check is a test run by the agent on the session host. The following t
 - To troubleshoot issues while configuring a virtual machine (VM) in Azure Virtual Desktop, see [Session host virtual machine configuration](/troubleshoot/azure/virtual-desktop/troubleshoot-vm-configuration).
 - To troubleshoot issues related to the Azure Virtual Desktop agent or session connectivity, see [Troubleshoot common Azure Virtual Desktop Agent issues](/troubleshoot/azure/virtual-desktop/troubleshoot-agent).
 - To troubleshoot issues when using PowerShell with Azure Virtual Desktop, see [Azure Virtual Desktop PowerShell](/troubleshoot/azure/virtual-desktop/troubleshoot-powershell).
-- To go through a troubleshoot tutorial, see [Tutorial: Troubleshoot Resource Manager template deployments](/azure/azure-resource-manager/templates/template-tutorial-troubleshoot.md).
+- To go through a troubleshoot tutorial, see [Tutorial: Troubleshoot Resource Manager template deployments](/azure/azure-resource-manager/templates/template-tutorial-troubleshoot).

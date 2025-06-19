@@ -16,7 +16,7 @@ UDP-based transport offers better connection reliability and more consistent lat
 
 RDP Shortpath can be used in two ways:
 
-1. **Managed networks**, where direct connectivity is established between the client and the session host when using a private connection, such as [Azure ExpressRoute](/azure/expressroute/expressroute-introduction.md) or a site-to-site virtual private network (VPN). A connection using a managed network is established in one of the following ways:
+1. **Managed networks**, where direct connectivity is established between the client and the session host when using a private connection, such as [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) or a site-to-site virtual private network (VPN). A connection using a managed network is established in one of the following ways:
 
    1. A *direct* UDP connection between the client device and session host, where you need to enable the RDP Shortpath listener and allow an inbound port on each session host to accept connections.
    
@@ -58,9 +58,9 @@ To learn how RDP Shortpath works for managed networks and public networks, selec
 
 You can achieve the direct line of sight connectivity required to use RDP Shortpath with managed networks using the following methods.
 
-- [ExpressRoute private peering](/azure/expressroute/expressroute-circuit-peerings.md)
+- [ExpressRoute private peering](/azure/expressroute/expressroute-circuit-peerings)
 
-- Site-to-site or Point-to-site VPN (IPsec), such as [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways.md)
+- Site-to-site or Point-to-site VPN (IPsec), such as [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways)
 
 Having direct line of sight connectivity means that the client can connect directly to the session host without being blocked by firewalls.
 
@@ -145,7 +145,7 @@ Most Azure Virtual Desktop clients run on computers on the private network. Inte
 
 Because of IP packet modification, the recipient of the traffic will see the public IP address of the NAT gateway instead of the actual sender. When traffic comes back to the NAT gateway, it will take care to forward it to the intended recipient without the sender's knowledge. In most scenarios, the devices hidden behind such a NAT aren't aware translation is happening and don't know the network address of the NAT gateway.
 
-NAT is applicable to the Azure Virtual Networks where all session hosts reside. When a session host tries to reach the network address on the Internet, the NAT Gateway (either your own or default provided by Azure), or Azure Load Balancer performs the address translation. For more information about various types of Source Network Address Translation, see [Use Source Network Address Translation (SNAT) for outbound connections](/azure/load-balancer/load-balancer-outbound-connections.md).
+NAT is applicable to the Azure Virtual Networks where all session hosts reside. When a session host tries to reach the network address on the Internet, the NAT Gateway (either your own or default provided by Azure), or Azure Load Balancer performs the address translation. For more information about various types of Source Network Address Translation, see [Use Source Network Address Translation (SNAT) for outbound connections](/azure/load-balancer/load-balancer-outbound-connections).
 
 Most networks typically include firewalls that inspect traffic and block it based on rules. Most customers configure their firewalls to prevent incoming connections (that is, unsolicited packets from the Internet sent without a request). Firewalls employ different techniques to track data flow to distinguish between solicited and unsolicited traffic. In the context of TCP, the firewall tracks SYN and ACK packets, and the process is straightforward. UDP firewalls usually use heuristics based on packet addresses to associate traffic with UDP flows and allow or block it. There are many different NAT implementations available.
 
@@ -179,7 +179,7 @@ To support RDP Shortpath for public networks, you typically don't need any parti
 
 As RDP Shortpath uses UDP to establish a data flow, if a firewall on your network blocks UDP traffic, RDP Shortpath will fail and the connection will fall back to TCP-based reverse connect transport. Azure Virtual Desktop uses STUN servers provided by Azure Communication Services and Microsoft Teams. By the nature of the feature, outbound connectivity from the session hosts to the client is required. Unfortunately, you can't predict where your users are located in most cases. Therefore, we recommend allowing outbound UDP connectivity from your session hosts to the internet. To reduce the number of ports required, you can [limit the port range used by clients](configure-rdp-shortpath-limit-ports-public-networks.md) for the UDP flow. Use the following tables for reference when configuring firewalls for RDP Shortpath.
 
-If your environment uses Symmetric NAT, which is the mapping of a single private source *IP:Port* to a unique public destination *IP:Port*, then you can use a relayed connection with TURN. This will be the case if you use Azure Firewall and Azure NAT Gateway. For more information about NAT with Azure virtual networks, see [Source Network Address Translation with virtual networks](/azure/virtual-network/nat-gateway/nat-gateway-resource.md#source-network-address-translation).
+If your environment uses Symmetric NAT, which is the mapping of a single private source *IP:Port* to a unique public destination *IP:Port*, then you can use a relayed connection with TURN. This will be the case if you use Azure Firewall and Azure NAT Gateway. For more information about NAT with Azure virtual networks, see [Source Network Address Translation with virtual networks](/azure/virtual-network/nat-gateway/nat-gateway-resource#source-network-address-translation).
 
 We have some general recommendations for successful connections using RDP Shortpath for public networks. For more information, see [General recommendations](#general-recommendations).
 

@@ -13,7 +13,7 @@ This article tells you how to install Microsoft 365 Apps for enterprise, OneDriv
 
 This article assumes you've already created a virtual machine (VM). If not, see [Prepare and customize a custom VHD image](set-up-customize-master-image.md#create-a-vm)
 
-This article also assumes you have elevated access on the VM, whether it's provisioned in Azure or Hyper-V Manager. If not, see [Elevate access to manage all Azure subscription and management groups](/azure/role-based-access-control/elevate-access-global-admin.md).
+This article also assumes you have elevated access on the VM, whether it's provisioned in Azure or Hyper-V Manager. If not, see [Elevate access to manage all Azure subscription and management groups](/azure/role-based-access-control/elevate-access-global-admin).
 
 >[!NOTE]
 >These instructions are for an Azure Virtual Desktop-specific configuration that can be used with your organization's existing processes. Consider using our Windows Enterprise multi-session images with Microsoft 365 Apps pre-installed, which are available to select when deploying a host pool, or find them in the [Azure Marketplace](https://azuremarketplace.microsoft.com/).

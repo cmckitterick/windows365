@@ -22,8 +22,8 @@ The following tables compare the storage solutions Azure Storage offers for Azur
 |Use case|General purpose|General purpose to enterprise scale|Cross-platform|
 |Platform service|Yes, Azure-native solution|Yes, Azure-native solution|No, self-managed|
 |Regional availability|All regions|[Select regions](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/?products=netapp&regions=all&rar=true)|All regions|
-|Redundancy|Locally redundant/zone-redundant/geo-redundant/geo-zone-redundant|Locally redundant/zone-redundant [with cross-zone replication](/azure/azure-netapp-files/cross-zone-replication-introduction.md)/geo-redundant [with cross-region replication](/azure/azure-netapp-files/cross-region-replication-introduction.md)|Locally redundant/zone-redundant/geo-redundant|
-|Tiers and performance| Standard (Transaction optimized)<br>Premium<br>Up to max 100K IOPS per share with 10 GBps per share at about 3-ms latency|Standard<br>Premium<br>Ultra<br>Up to max 460K IOPS per volume with 4.5 GBps per volume at about 1 ms latency. For IOPS and performance details, see [Azure NetApp Files performance considerations](/azure/azure-netapp-files/azure-netapp-files-performance-considerations.md) and [the FAQ](/azure/azure-netapp-files/faq-performance.md#how-do-i-convert-throughput-based-service-levels-of-azure-netapp-files-to-inputoutput-operations-per-second-iops).|Standard HDD: up to 500 IOPS per-disk limits<br>Standard SSD: up to 4k IOPS per-disk limits<br>Premium SSD: up to 20k IOPS per-disk limits<br>We recommend Premium disks for Storage Spaces Direct|
+|Redundancy|Locally redundant/zone-redundant/geo-redundant/geo-zone-redundant|Locally redundant/zone-redundant [with cross-zone replication](/azure/azure-netapp-files/cross-zone-replication-introduction)/geo-redundant [with cross-region replication](/azure/azure-netapp-files/cross-region-replication-introduction)|Locally redundant/zone-redundant/geo-redundant|
+|Tiers and performance| Standard (Transaction optimized)<br>Premium<br>Up to max 100K IOPS per share with 10 GBps per share at about 3-ms latency|Standard<br>Premium<br>Ultra<br>Up to max 460K IOPS per volume with 4.5 GBps per volume at about 1 ms latency. For IOPS and performance details, see [Azure NetApp Files performance considerations](/azure/azure-netapp-files/azure-netapp-files-performance-considerations) and [the FAQ](/azure/azure-netapp-files/faq-performance#how-do-i-convert-throughput-based-service-levels-of-azure-netapp-files-to-inputoutput-operations-per-second-iops).|Standard HDD: up to 500 IOPS per-disk limits<br>Standard SSD: up to 4k IOPS per-disk limits<br>Premium SSD: up to 20k IOPS per-disk limits<br>We recommend Premium disks for Storage Spaces Direct|
 |Capacity|100 TiB per share, Up to 5 PiB per general purpose account |100 TiB per volume, up to 12.5 PiB per NetApp account|Maximum 32 TiB per disk|
 |Required infrastructure|Minimum share size 1 GiB|Minimum capacity pool 1 TiB, min volume size 50 GiB|Two VMs on Azure IaaS (+ Cloud Witness) or at least three VMs without and costs for disks|
 
@@ -34,7 +34,7 @@ The following tables compare the storage solutions Azure Storage offers for Azur
 |Access|Cloud, on-premises and hybrid (Azure file sync)|Cloud, on-premises|Cloud, on-premises|
 |Backup|Azure backup snapshot integration|Azure NetApp Files snapshots<br>Azure NetApp Files backup|Azure backup snapshot integration|
 |Security and compliance|[All Azure supported certificates](https://www.microsoft.com/trustcenter/compliance/complianceofferings)|[Azure supported certificates](https://www.microsoft.com/trustcenter/compliance/complianceofferings)|[All Azure supported certificates](https://www.microsoft.com/trustcenter/compliance/complianceofferings)|
-|Microsoft Entra integration|[Native Active Directory and Microsoft Entra Domain Services](/azure/storage/files/storage-files-active-directory-overview.md)|[Microsoft Entra Domain Services and Native Active Directory](/azure/azure-netapp-files/faq-smb.md#does-azure-netapp-files-support-azure-active-directory)|Native Active Directory or Microsoft Entra Domain Services support only|
+|Microsoft Entra integration|[Native Active Directory and Microsoft Entra Domain Services](/azure/storage/files/storage-files-active-directory-overview)|[Microsoft Entra Domain Services and Native Active Directory](/azure/azure-netapp-files/faq-smb#does-azure-netapp-files-support-azure-active-directory)|Native Active Directory or Microsoft Entra Domain Services support only|
 
 Once you've chosen your storage method, check out [Azure Virtual Desktop pricing](https://azure.microsoft.com/pricing/details/virtual-desktop/) for information about our pricing plans.
 
@@ -46,7 +46,7 @@ Azure Files offers two different tiers of storage: premium and standard. These t
 
 - Standard file shares are backed by hard disk drives (HDDs) and are deployed in the general purpose version 2 (GPv2) storage account type. Standard file shares provide reliable performance for IO workloads that are less sensitive to performance variability, such as general-purpose file shares and dev/test environments. Standard file shares use a pay-as-you-go billing model, where you pay based on storage usage, including data stored and transactions.
 
-To learn more about how billing works in Azure Files, see [Understand Azure Files billing](/azure/storage/files/understanding-billing.md).
+To learn more about how billing works in Azure Files, see [Understand Azure Files billing](/azure/storage/files/understanding-billing).
 
 The following table lists our recommendations for which performance tier to use based on your workload. These recommendations will help you select the performance tier that meets your performance targets, budget, and regional considerations. We've based these recommendations on the example scenarios from [Remote Desktop workload types](/windows-server/remote/remote-desktop-services/remote-desktop-workloads). 
 
@@ -58,11 +58,11 @@ The following table lists our recommendations for which performance tier to use 
 |Heavy|Premium file shares|
 |Power|Premium file shares|
 
-For more information about Azure Files performance, see [File share and file scale targets](/azure/storage/files/storage-files-scale-targets.md#azure-files-scale-targets). For more information about pricing, see [Azure Files pricing](https://azure.microsoft.com/pricing/details/storage/files/).
+For more information about Azure Files performance, see [File share and file scale targets](/azure/storage/files/storage-files-scale-targets#azure-files-scale-targets). For more information about pricing, see [Azure Files pricing](https://azure.microsoft.com/pricing/details/storage/files/).
 
 ## Azure NetApp Files tiers
 
-Azure NetApp Files volumes are organized in capacity pools. Volume performance is defined by the service level of the hosting capacity pool. Three performance levels are offered, ultra, premium and standard. For more information, see [Storage hierarchy of Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-understand-storage-hierarchy.md). Azure NetApp Files performance is [a function of tier times capacity](/azure/azure-netapp-files/azure-netapp-files-performance-considerations.md). More provisioned capacity leads to higher performance budget, which likely results in a lower tier requirement, providing a more optimal TCO.
+Azure NetApp Files volumes are organized in capacity pools. Volume performance is defined by the service level of the hosting capacity pool. Three performance levels are offered, ultra, premium and standard. For more information, see [Storage hierarchy of Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-understand-storage-hierarchy). Azure NetApp Files performance is [a function of tier times capacity](/azure/azure-netapp-files/azure-netapp-files-performance-considerations). More provisioned capacity leads to higher performance budget, which likely results in a lower tier requirement, providing a more optimal TCO.
 
 The following table lists our recommendations for which performance tier to use based on workload defaults.
 

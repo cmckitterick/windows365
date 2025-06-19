@@ -36,7 +36,7 @@ Before you update session hosts using session host update, you need:
 
 - Remove any resource locks on session hosts or the resource group they're in.
 
-- If you want to use Azure PowerShell locally, see [Use Azure CLI and Azure PowerShell with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [Az.DesktopVirtualization](/powershell/module/az.desktopvirtualization) PowerShell module installed. Alternatively, use the [Azure Cloud Shell](/azure/cloud-shell/overview.md).
+- If you want to use Azure PowerShell locally, see [Use Azure CLI and Azure PowerShell with Azure Virtual Desktop](cli-powershell.md) to make sure you have the [Az.DesktopVirtualization](/powershell/module/az.desktopvirtualization) PowerShell module installed. Alternatively, use the [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 - Azure PowerShell cmdlets for Azure Virtual Desktop that support host pools with a session host configuration are in preview. You need to download and install the [preview version of the Az.DesktopVirtualization module](https://www.powershellgallery.com/packages/Az.DesktopVirtualization/) to use these cmdlets, which were added in version 5.3.0.
 
@@ -85,7 +85,7 @@ Here's how to schedule a new update for your session hosts using the Azure porta
 
    | Parameter | Value/Description |
    |--|--|
-   | Security type | Select from **Standard**, **[Trusted launch virtual machines](/azure/virtual-machines/trusted-launch)**, or **[Confidential virtual machines](/azure/confidential-computing/confidential-vm-overview.md)**.<br /><br />- If you select **Trusted launch virtual machines**, options for **secure boot** and **vTPM** are automatically selected.<br /><br />- If you select **Confidential virtual machines**, options for **secure boot**, **vTPM**, and **integrity monitoring** are automatically selected. You can't opt out of vTPM when using a confidential VM. |
+   | Security type | Select from **Standard**, **[Trusted launch virtual machines](/azure/virtual-machines/trusted-launch)**, or **[Confidential virtual machines](/azure/confidential-computing/confidential-vm-overview)**.<br /><br />- If you select **Trusted launch virtual machines**, options for **secure boot** and **vTPM** are automatically selected.<br /><br />- If you select **Confidential virtual machines**, options for **secure boot**, **vTPM**, and **integrity monitoring** are automatically selected. You can't opt out of vTPM when using a confidential VM. |
    | Image | Select the OS image you want to use from the list, or select **See all images** to see more, including any custom images you created and stored as an [Azure Compute Gallery shared image](/azure/virtual-machines/shared-image-galleries) or a [managed image](/azure/virtual-machines/windows/capture-image-resource). |
    | Virtual machine size | Select a recommended SKU from the list. If you want to use different SKU, select **See all sizes**, then select from the list. |
    | OS disk type | Select the disk type to use for your session hosts. We recommend you use **Premium SSD** for production workloads.<br /><br />The disk type needs to be supported on the VM family and size selected. Ensure that you're selecting a combination that Azure compute supports. The name of the OS disk of the updated session hosts has a new name in the format `SessionHostName-DateTime_Hash`. |

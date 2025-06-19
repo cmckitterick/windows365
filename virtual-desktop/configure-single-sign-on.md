@@ -74,7 +74,7 @@ Before you can enable single sign-on, you must meet the following prerequisites:
 
    If your Microsoft Entra hybrid joined session hosts are in a different Active Directory domain than your user accounts, there must be a two-way trust between the two domains. Without the two-way trust, connections fall back to older authentication protocols.
 
-- [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) version 2.9.0 or later on your local device or in [Azure Cloud Shell](/azure/cloud-shell/overview.md).
+- [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) version 2.9.0 or later on your local device or in [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 - Use a supported version of Windows App or the Remote Desktop client to connect to a remote session. The following platforms and versions are supported:
 
@@ -199,7 +199,7 @@ To configure the service principal, use the [Microsoft Graph PowerShell SDK](/po
 
 ## Create a Kerberos server object
 
-If your session hosts meet the following criteria, you must create a Kerberos server object. For more information, see [Enable passwordless security key sign-in to on-premises resources by using Microsoft Entra ID](/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises), specifically the section to [Create a Kerberos Server object](/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises.md#create-a-kerberos-server-object):
+If your session hosts meet the following criteria, you must create a Kerberos server object. For more information, see [Enable passwordless security key sign-in to on-premises resources by using Microsoft Entra ID](/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises), specifically the section to [Create a Kerberos Server object](/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises#create-a-kerberos-server-object):
 
 - Your session host is Microsoft Entra hybrid joined. You must have a Kerberos server object to complete authentication to a domain controller.
 

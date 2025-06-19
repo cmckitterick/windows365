@@ -17,7 +17,7 @@ Azure Virtual Desktop has many built-in advanced security features, such as Reve
 
 Before Azure Virtual Desktop, on-premises virtualization solutions like Remote Desktop Services require granting users access to roles like Gateway, Broker, Web Access, and so on. These roles had to be fully redundant and able to handle peak capacity. Administrators would install these roles as part of the Windows Server operating system, and they had to be domain-joined with specific ports accessible to public connections. To keep deployments secure, administrators had to constantly make sure everything in the infrastructure was maintained and up-to-date.
 
-In most cloud services, however, there's a [shared set of security responsibilities](/azure/security/fundamentals/shared-responsibility.md) between Microsoft and the customer or partner. For Azure Virtual Desktop, most components are Microsoft-managed, but session hosts and some supporting services and components are customer-managed or partner-managed. To learn more about the Microsoft-managed components of Azure Virtual Desktop, see [Azure Virtual Desktop service architecture and resilience](service-architecture-resilience.md).
+In most cloud services, however, there's a [shared set of security responsibilities](/azure/security/fundamentals/shared-responsibility) between Microsoft and the customer or partner. For Azure Virtual Desktop, most components are Microsoft-managed, but session hosts and some supporting services and components are customer-managed or partner-managed. To learn more about the Microsoft-managed components of Azure Virtual Desktop, see [Azure Virtual Desktop service architecture and resilience](service-architecture-resilience.md).
 
 While some components come already secured for your environment, you'll need to configure other areas yourself to fit your organization's or customer's security needs. Here are the components of which you're responsible for the security in your Azure Virtual Desktop deployment:
 
@@ -78,7 +78,7 @@ The following table summarizes our recommendations for each scenario.
 
 ## Azure security best practices
 
-Azure Virtual Desktop is a service under Azure. To maximize the safety of your Azure Virtual Desktop deployment, you should make sure to secure the surrounding Azure infrastructure and management plane as well. To secure your infrastructure, consider how Azure Virtual Desktop fits into your larger Azure ecosystem. To learn more about the Azure ecosystem, see [Azure security best practices and patterns](/azure/security/fundamentals/best-practices-and-patterns.md).
+Azure Virtual Desktop is a service under Azure. To maximize the safety of your Azure Virtual Desktop deployment, you should make sure to secure the surrounding Azure infrastructure and management plane as well. To secure your infrastructure, consider how Azure Virtual Desktop fits into your larger Azure ecosystem. To learn more about the Azure ecosystem, see [Azure security best practices and patterns](/azure/security/fundamentals/best-practices-and-patterns).
 
 Today's threat landscape requires designs with security approaches in mind. Ideally, you'll want to build a series of security mechanisms and controls layered throughout your computer network to protect your data and network from being compromised or attacked. This type of security design is what the United States Cybersecurity and Infrastructure Security Agency (CISA) calls *defense in depth*.
 
@@ -104,15 +104,15 @@ Requiring multifactor authentication for all users and admins in Azure Virtual D
 
 ### Enable Conditional Access
 
-Enabling [Conditional Access](/entra/identity/conditional-access/overview.md) lets you manage risks before you grant users access to your Azure Virtual Desktop environment. When deciding which users to grant access to, we recommend you also consider who the user is, how they sign in, and which device they're using.
+Enabling [Conditional Access](/entra/identity/conditional-access/overview) lets you manage risks before you grant users access to your Azure Virtual Desktop environment. When deciding which users to grant access to, we recommend you also consider who the user is, how they sign in, and which device they're using.
 
 ### Collect audit logs
 
 Enabling audit log collection lets you view user and admin activity related to Azure Virtual Desktop. Some examples of key audit logs are:
 
 -   [Azure Activity Log](/azure/azure-monitor/essentials/activity-log)
--   [Microsoft Entra Activity Log](/entra/identity/reports-monitoring/concept-activity-logs-azure-monitor.md)
--   [Microsoft Entra ID](/entra/identity/fundamentals/active-directory-whatis.md)
+-   [Microsoft Entra Activity Log](/entra/identity/reports-monitoring/concept-activity-logs-azure-monitor)
+-   [Microsoft Entra ID](/entra/identity/fundamentals/active-directory-whatis)
 -   [Session hosts](/azure/azure-monitor/agents/agent-windows)
 -   [Key Vault logs](/azure/key-vault/general/logging)
 
@@ -168,7 +168,7 @@ In addition to securing your session hosts, it's important to also secure the ap
 
 ### User profile security
 
-User profiles can contain sensitive information. You should restrict who has access to user profiles and the methods of accessing them, especially if you're using [FSLogix Profile Container](/fslogix/tutorial-configure-profile-containers) to store user profiles in a virtual hard disk file on an SMB share. You should follow the security recommendations for the provider of your SMB share. For example, If you're using Azure Files to store these virtual hard disk files, you can use [private endpoints](/azure/storage/files/storage-files-networking-overview.md#private-endpoints) to make them only accessible within an Azure virtual network. 
+User profiles can contain sensitive information. You should restrict who has access to user profiles and the methods of accessing them, especially if you're using [FSLogix Profile Container](/fslogix/tutorial-configure-profile-containers) to store user profiles in a virtual hard disk file on an SMB share. You should follow the security recommendations for the provider of your SMB share. For example, If you're using Azure Files to store these virtual hard disk files, you can use [private endpoints](/azure/storage/files/storage-files-networking-overview#private-endpoints) to make them only accessible within an Azure virtual network. 
 
 ### Other security tips for session hosts
 
@@ -192,9 +192,9 @@ When you add session hosts using the Azure portal, the default security type is 
 
 ## Azure confidential computing virtual machines
 
-Azure Virtual Desktop support for [Azure confidential computing](/azure/confidential-computing/overview.md) virtual machines ensures a user's virtual desktop is encrypted in memory, protected in use, and backed by a hardware root of trust.
+Azure Virtual Desktop support for [Azure confidential computing](/azure/confidential-computing/overview) virtual machines ensures a user's virtual desktop is encrypted in memory, protected in use, and backed by a hardware root of trust.
 
-Deploying confidential virtual machines with Azure Virtual Desktop gives users access to Microsoft 365 and other applications on session hosts that use hardware-based isolation, which hardens isolation from other virtual machines, the hypervisor, and the host OS. Memory encryption keys are generated and safeguarded by a dedicated secure processor inside the CPU that can't be read from software. For more information, including the VM sizes available, see the [Azure confidential computing overview](/azure/confidential-computing/overview.md).
+Deploying confidential virtual machines with Azure Virtual Desktop gives users access to Microsoft 365 and other applications on session hosts that use hardware-based isolation, which hardens isolation from other virtual machines, the hypervisor, and the host OS. Memory encryption keys are generated and safeguarded by a dedicated secure processor inside the CPU that can't be read from software. For more information, including the VM sizes available, see the [Azure confidential computing overview](/azure/confidential-computing/overview).
 
 The following operating systems are supported for use as session hosts with confidential virtual machines on Azure Virtual Desktop, for versions that are in active support. For support dates, see [Microsoft Lifecycle Policy](/lifecycle/).
 
