@@ -1,10 +1,10 @@
 ---
 title: Install Office on a custom VHD image - Azure
 description: How to install and customize Office on an Azure Virtual Desktop custom image to Azure.
-author: dougeby
+author: ivaylo-w365
+ms.author: ivivano
 ms.topic: how-to
 ms.date: 05/08/2024
-ms.author: avdcontent
 ms.custom: docs_inherited
 ---
 # Install Office on a custom VHD image
