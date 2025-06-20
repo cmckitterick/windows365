@@ -1,8 +1,8 @@
 ---
 title: What's new in Azure Virtual Desktop Insights?
 description: New features and product updates in Azure Virtual Desktop Insights.
-author: docoombs
-ms.author: DougCoombs
+author: DougCoombs
+ms.author: docoombs
 ms.topic: release-notes
 ms.date: 01/30/2025
 ms.custom: references_regions

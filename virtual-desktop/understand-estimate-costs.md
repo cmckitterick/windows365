@@ -2,8 +2,8 @@
 title: Understand and estimate costs for Azure Virtual Desktop
 description: Learn about which components are charged for in Azure Virtual Desktop and how to estimate the total cost.
 ms.topic: overview
-author: docoombs
-ms.author: DougCoombs
+author: DougCoombs
+ms.author: docoombs
 ms.date: 01/09/2024
 ---
 
