@@ -2,8 +2,8 @@
 title: Example diagnostic queries for session host update - Azure Virtual Desktop
 description: Some example queries you can use with Log Analytics in Azure Monitor to view diagnostics information about session host update.
 ms.topic: how-to
-author: dougeby
-ms.author: avdcontent
+author: cmckitterick
+ms.author: chmckitt
 ms.date: 10/01/2024
 ---
 
