@@ -2,8 +2,8 @@
 title: Screen capture protection in Azure Virtual Desktop
 description: Learn how to enable screen capture protection in Azure Virtual Desktop (preview) to help prevent sensitive information from being captured on client devices.
 ms.topic: how-to
-author: dougeby
-ms.author: avdcontent
+author: Fragnightmist
+ms.author: ryclar
 ms.date: 06/06/2025
 ---
 
