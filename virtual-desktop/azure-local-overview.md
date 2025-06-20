@@ -2,8 +2,8 @@
 title: Azure Virtual Desktop on Azure Local
 description: Learn about using Azure Virtual Desktop on Azure Local, enabling you to deploy session hosts where you need them.
 ms.topic: conceptual
-author: dougeby
-ms.author: avdcontent
+author: stdowns
+ms.author: SteveD-MSFT
 ms.date: 05/20/2025
 ---
 
