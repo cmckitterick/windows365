@@ -2,8 +2,8 @@
 title: Licensing Azure Virtual Desktop
 description: An overview of licensing Azure Virtual Desktop for internal and external commercial purposes, including per-user access pricing.
 ms.topic: overview
-author: dougeby
-ms.author: avdcontent
+author: cosmeao
+ms.author: cosmeochoa
 ms.date: 01/17/2025
 ---
 

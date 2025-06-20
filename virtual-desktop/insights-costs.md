@@ -1,10 +1,10 @@
 ---
 title: Estimate Azure Virtual Desktop Insights monitoring costs - Azure
 description: How to estimate costs and pricing for using Azure Virtual Desktop Insights.
-author: dougeby
+author: DougCoombs
+ms.author: docoombs
 ms.topic: conceptual
 ms.date: 09/12/2023
-ms.author: avdcontent
 ms.custom: docs_inherited
 ---
 

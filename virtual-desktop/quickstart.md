@@ -3,8 +3,8 @@ title: "Quickstart: deploy a sample Azure Virtual Desktop environment"
 description: Quickly and easily deploy a sample Azure Virtual Desktop environment from the Azure portal using quickstart.
 ms.topic: quickstart
 ms.custom: mode-portal
-author: dougeby
-ms.author: avdcontent
+author: ericorman
+ms.author: ericor
 ms.date: 03/05/2025
 #customer intent: As an IT admin, I want quickly and easily deploy Azure Virtual Desktop so that I can evaluate and become familiar with the service before deploying it in production.
 ---
@@ -45,7 +45,7 @@ Before you can use quickstart to deploy a sample Azure Virtual Desktop environme
 
 - An active Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/).
 
-- An Azure account with the following role-based access control (RBAC) roles assigned to the subscription as a minimum. To learn how to assign roles, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal.yml).
+- An Azure account with the following role-based access control (RBAC) roles assigned to the subscription as a minimum.
 
    | Role | Description |
    |--|--|
