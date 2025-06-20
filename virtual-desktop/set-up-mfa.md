@@ -10,8 +10,10 @@ ms.custom: docs_inherited
 
 # Enforce Microsoft Entra multifactor authentication for Azure Virtual Desktop using Conditional Access
 
+<!-- Comment out this dead link.
 > [!IMPORTANT]
 > If you're visiting this page from the Azure Virtual Desktop (classic) documentation, make sure to [return to the Azure Virtual Desktop (classic) documentation](./virtual-desktop-fall-2019/tenant-setup-azure-active-directory.md) once you're finished.
+-->
 
 Users can sign into Azure Virtual Desktop from anywhere using different devices and clients. However, there are certain measures you should take to help keep your environment and your users safe. Using Microsoft Entra multifactor authentication (MFA) with Azure Virtual Desktop prompts users during the sign-in process for another form of identification in addition to their username and password. You can enforce MFA for Azure Virtual Desktop using Conditional Access, and can also configure whether it applies to the web client, mobile apps, desktop clients, or all clients. 
 
@@ -26,7 +28,7 @@ Learn how to enforce MFA for Azure Virtual Desktop and optionally configure sign
 Here's what you need to get started:
 
 - Assign users a license that includes [Microsoft Entra ID P1 or P2](/entra/identity/authentication/concept-mfa-licensing).
-- A [Microsoft Entra group](/entra/identity/fundamentals/active-directory-groups-create-azure-portal) with your Azure Virtual Desktop users assigned as group members.
+- A [Microsoft Entra group](/entra/fundamentals/quickstart-create-group-add-members) with your Azure Virtual Desktop users assigned as group members.
 - [Enable Microsoft Entra multifactor authentication](/entra/identity/authentication/tutorial-enable-azure-mfa).
 
 ## Create a Conditional Access policy
