@@ -4,6 +4,7 @@ metadata:
   description: Frequently asked questions and best practices for using Windows Enterprise multi-session for Azure Virtual Desktop.
   author: ErikjeMS
   ms.topic: faq
+  ms.service: azure-virtual-desktop
   ms.date: 03/25/2025
   ms.author: avdcontent
   ms.custom: docs_inherited
@@ -112,5 +113,5 @@ additionalContent: |
           
   - Read our [Azure Virtual Desktop documentation](overview.md)
   - Visit our [Azure Virtual Desktop TechCommunity](https://techcommunity.microsoft.com/t5/Windows-Virtual-Desktop/bd-p/WindowsVirtualDesktop)
-  - Set up your Azure Virtual Desktop deployment with the [Azure Virtual Desktop tutorials](./virtual-desktop-fall-2019/tenant-setup-azure-active-directory.md)
+  - Set up your Azure Virtual Desktop deployment with the [Azure Virtual Desktop tutorials](/azure/active-directory-b2c/tutorial-create-tenant)
           
