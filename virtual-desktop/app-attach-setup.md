@@ -3,8 +3,8 @@ title: Add and manage App Attach applications in Azure Virtual Desktop
 description: Learn how to add and manage applications with App Attach in Azure Virtual Desktop using the Azure portal and Azure PowerShell, where you can dynamically attach applications from an application package to a user session.
 ms.topic: how-to
 ms.custom: devx-track-azurepowershell
-author: dougeby
-ms.author: avdcontent
+author: JimMoyle
+ms.author: jimoyle
 ms.date: 06/04/2024
 ---
 
