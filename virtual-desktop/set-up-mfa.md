@@ -5,8 +5,6 @@ author: ChristianMontoya
 ms.author: chrimo 
 ms.topic: how-to
 ms.date: 04/02/2025
-author: ChristianMontoya
-ms.author: chrimo
 ms.custom: docs_inherited
 ---
 

@@ -83,7 +83,7 @@ You can use FSLogix profile containers with Microsoft Entra joined VMs when you 
 
 ## Accessing on-premises resources
 
-While you don't need an Active Directory to deploy or access your Microsoft Entra joined VMs, an Active Directory and line-of-sight to it are needed to access on-premises resources from those VMs. To learn more about accessing on-premises resources, see [How SSO to on-premises resources works on Microsoft Entra joined devices](/entra/identity/devices/azuread-join-sso).
+While you don't need an Active Directory to deploy or access your Microsoft Entra joined VMs, an Active Directory and line-of-sight to it are needed to access on-premises resources from those VMs.
 
 ## Next steps
 
