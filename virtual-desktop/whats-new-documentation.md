@@ -210,7 +210,7 @@ Here are the highlights of documentation changes in March 2024:
 
 - Published a new article to [Configure the clipboard transfer direction and types of data that can be copied](clipboard-transfer-direction-data-types.md) between a local device and a remote session.
 
-- Published a new article to [Migrate MSIX packages from MSIX App Attach to App Attach](msix-app-attach-migration.md).
+- Published a new article to [Migrate MSIX packages from MSIX App Attach to App Attach](/azure/virtual-desktop/app-attach-overview).
 
 - Updated [Eligible licenses to use Azure Virtual Desktop](licensing.md#eligible-licenses-to-use-azure-virtual-desktop) to include Windows Server 2022 RDS Subscriber Access License (SAL).
 

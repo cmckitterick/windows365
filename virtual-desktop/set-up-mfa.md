@@ -28,7 +28,7 @@ Learn how to enforce MFA for Azure Virtual Desktop and optionally configure sign
 Here's what you need to get started:
 
 - Assign users a license that includes [Microsoft Entra ID P1 or P2](/entra/identity/authentication/concept-mfa-licensing).
-- A [Microsoft Entra group](/entra/identity/fundamentals/active-directory-groups-create-azure-portal) with your Azure Virtual Desktop users assigned as group members.
+- A [Microsoft Entra group](/entra/fundamentals/quickstart-create-group-add-members) with your Azure Virtual Desktop users assigned as group members.
 - [Enable Microsoft Entra multifactor authentication](/entra/identity/authentication/tutorial-enable-azure-mfa).
 
 ## Create a Conditional Access policy
