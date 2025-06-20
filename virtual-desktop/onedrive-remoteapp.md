@@ -2,8 +2,8 @@
 title: Launch Microsoft OneDrive with a RemoteApp - Azure Virtual Desktop
 description: Learn how to launch Microsoft OneDrive with a RemoteApp in Azure Virtual Desktop.
 ms.topic: how-to
-author: dougeby
-ms.author: avdcontent
+author: pavithir
+ms.author: pavithir
 ms.date: 11/26/2024
 ms.custom:
   - build-2025
