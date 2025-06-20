@@ -1,10 +1,12 @@
 ---
 title: Create an Azure Virtual Desktop golden image
 description: A walkthrough for how to set up a golden image for your Azure Virtual Desktop deployment in the Azure portal.
-author: dougeby
+author: ivaylo-w365
+ms.author: ivivano
 ms.topic: how-to
 ms.date: 12/01/2021
-ms.author: avdcontent
+author: ivaylo-w365
+ms.author: ivivano
 ms.custom: docs_inherited
 ---
 
