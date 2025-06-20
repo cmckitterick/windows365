@@ -2,8 +2,8 @@
 title: Configure RDP Shortpath for Azure Virtual Desktop
 description: Learn how to configure RDP Shortpath for Azure Virtual Desktop, which establishes a UDP-based transport for a remote session.
 ms.topic: how-to
-author: dougeby
-ms.author: avdcontent
+author: ridalwan
+ms.author: ridalwan
 ms.date: 10/03/2024
 ---
 
