@@ -5,8 +5,6 @@ author: ivaylo-w365
 ms.author: ivivano
 ms.topic: how-to
 ms.date: 12/01/2021
-author: ivaylo-w365
-ms.author: ivivano
 ms.custom: docs_inherited
 ---
 
