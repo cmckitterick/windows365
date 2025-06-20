@@ -9,7 +9,7 @@ ms.date: 06/06/2025
 
 # What's new in documentation for Azure Virtual Desktop
 
-We update documentation for Azure Virtual Desktop regularly. In this article, we highlight articles for new features and where there are significant updates to existing articles. To learn what's new in the service, see [What's new for Azure Virtual Desktop](whats-new.md).
+We update documentation for Azure Virtual Desktop regularly. In this article, we highlight articles about new features and those with significant updates. To learn what's new in the service, see [What's new for Azure Virtual Desktop](whats-new.md).
 
 ## June 2025
 
@@ -114,7 +114,7 @@ Here are the highlights of documentation changes in October 2024:
 
 - Updated [Deploy Azure Virtual Desktop](deploy-azure-virtual-desktop.md) and [Add session hosts to a host pool](add-session-hosts-host-pool.md) to include the session host configuration management approach.
 
-- Consolidated Remote Desktop client articles per platform into a [single article with a tab per platform](./users/connect-remote-desktop-client.md) and separated [legacy Windows clients to their own article](./users/connect-legacy-windows.md).
+- Consolidated Remote Desktop client articles per platform into a [single article with a tab per platform](/previous-versions/remote-desktop-client/connect-windows-cloud-services) and separated [legacy Windows clients to their own article](/previous-versions/remote-desktop-client/connect-windows-cloud-services).
 
 - Reorganized the table of contents into a new structure, changing the way articles are grouped and displayed. The new structure is designed to make it easier to find the information you need in the different stages of your journey with Azure Virtual Desktop.
 
