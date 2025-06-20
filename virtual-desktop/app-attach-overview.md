@@ -2,8 +2,8 @@
 title: App Attach in Azure Virtual Desktop
 description: Learn how you can dynamically attach applications from an application package to a user session using App Attach in Azure Virtual Desktop.
 ms.topic: conceptual
-author: dougeby
-ms.author: avdcontent
+author: JimMoyle
+ms.author: jimoyle
 ms.date: 06/04/2025
 ---
 
