@@ -136,7 +136,7 @@ For more information, see [Azure Private Link with Azure Virtual Desktop](privat
 
 ### Updated browser requirements to connect to Azure Virtual Desktop using Windows App in a web browser or the Remote Desktop web client
 
-Starting June 15, 2025, using Windows App in a web browser or the Remote Desktop web client will have updated browser requirements. Ensure your browser is updated and meets the requirements listed at [Get started with Windows App to connect to devices and apps](/windows-app/get-started-connect-devices-desktops-apps?pivots=azure-virtual-desktop&tabs=web-avd#prerequisites) or [Get started with the Remote Desktop client](users/connect-remote-desktop-client.md?tabs=web#prerequisites) by this date.
+Starting June 15, 2025, using Windows App in a web browser or the Remote Desktop web client will have updated browser requirements. Ensure your browser is updated and meets the requirements listed at [Get started with Windows App to connect to devices and apps](/windows-app/get-started-connect-devices-desktops-apps?pivots=azure-virtual-desktop&tabs=web-avd#prerequisites) or [Get started with the Remote Desktop client](/previous-versions/remote-desktop-client/connect-windows-cloud-services?tabs=windows-msrdc-msi) by this date.
 
 ### Support for FIDO devices and passkeys on connecting to Azure Virtual Desktop from an Android device is now in preview
 
@@ -1410,7 +1410,7 @@ Microsoft Defender for Endpoint integration is now generally available. This fea
 
 ### Azure Security baseline for Azure Virtual Desktop
 
-We've recently published [an article about the Azure security baseline](security-baseline.md) for Azure Virtual Desktop that we'd like to call your attention to. These guidelines include information about how to apply the Microsoft cloud security benchmark to Azure Virtual Desktop. The Microsoft cloud security benchmark describes the settings and practices we recommend you use to secure your cloud solutions on Azure.
+We've recently published [an article about the Azure security baseline](/security/benchmark/azure/baselines/azure-virtual-desktop-security-baseline) for Azure Virtual Desktop that we'd like to call your attention to. These guidelines include information about how to apply the Microsoft cloud security benchmark to Azure Virtual Desktop. The Microsoft cloud security benchmark describes the settings and practices we recommend you use to secure your cloud solutions on Azure.
 
 ## December 2020
 
