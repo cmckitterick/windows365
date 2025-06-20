@@ -1,10 +1,10 @@
 ---
 title: Microsoft Entra joined session hosts in Azure Virtual Desktop
 description: Learn about using Microsoft Entra joined session hosts in Azure Virtual Desktop.
-author: dougeby
+author: ChristianMontoya
+ms.author: chrimo
 ms.topic: how-to
 ms.date: 06/11/2025
-ms.author: avdcontent
 ms.custom: docs_inherited
 ---
 
@@ -83,7 +83,7 @@ You can use FSLogix profile containers with Microsoft Entra joined VMs when you 
 
 ## Accessing on-premises resources
 
-While you don't need an Active Directory to deploy or access your Microsoft Entra joined VMs, an Active Directory and line-of-sight to it are needed to access on-premises resources from those VMs. To learn more about accessing on-premises resources, see [How SSO to on-premises resources works on Microsoft Entra joined devices](/entra/identity/devices/azuread-join-sso).
+While you don't need an Active Directory to deploy or access your Microsoft Entra joined VMs, an Active Directory and line-of-sight to it are needed to access on-premises resources from those VMs.
 
 ## Next steps
 

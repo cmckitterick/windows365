@@ -3,8 +3,8 @@ title: Assign Azure RBAC roles or Microsoft Entra roles to the Azure Virtual Des
 description: Learn how to assign Azure RBAC roles or Microsoft Entra roles to the Azure Virtual Desktop service principals by using the Azure portal, Azure CLI, or Azure PowerShell.
 ms.topic: how-to
 ms.custom: devx-track-azurecli, devx-track-azurepowershell
-author: dougeby
-ms.author: avdcontent
+author: ChristianMontoya
+ms.author: chrimo
 ms.date: 12/20/2023
 ---
 
@@ -18,7 +18,7 @@ Several Azure Virtual Desktop features require you to assign Azure role-based ac
 - [Start VM on Connect](start-virtual-machine-connect.md).
 
 > [!TIP]
-> You can find which role or roles you need to assign to which service principal in the article for each feature. For a list of all the available Azure RBAC roles created specifically for Azure Virtual Desktop, see [Built-in Azure RBAC roles for Azure Virtual Desktop](rbac.md). To learn more about Azure RBAC, see [Azure RBAC documentation](/azure/role-based-access-control/index.yml) or for Microsoft Entra roles, see [Microsoft Entra roles documentation](/entra/identity/role-based-access-control/).
+> You can find which role or roles you need to assign to which service principal in the article for each feature. For a list of all the available Azure RBAC roles created specifically for Azure Virtual Desktop, see [Built-in Azure RBAC roles for Azure Virtual Desktop](rbac.md). To learn more about Microsoft Entra roles, see [Microsoft Entra roles documentation](/entra/identity/role-based-access-control/).
 
 Depending on when you registered the *Microsoft.DesktopVirtualization* resource provider, the service principal names begin with either *Azure Virtual Desktop* or *Windows Virtual Desktop*. Also, if you previously used both Azure Virtual Desktop classic and Azure Virtual Desktop (Azure Resource Manager), you see apps with the same name. You can make sure you're assigning roles to the correct service principal by checking its application ID. The application ID for each service principal is in the following table:
 
