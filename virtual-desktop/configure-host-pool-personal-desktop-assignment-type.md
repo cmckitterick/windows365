@@ -1,10 +1,10 @@
 ---
 title: Configure personal desktop assignment in Azure Virtual Desktop  - Azure
 description: How to configure the assignment type of a personal host pool, unassign or reassign desktops, assign multiple desktops to a user, or set a friendly name for a desktop in Azure Virtual Desktop.
-author: dougeby
+author: TomHickling
+ms.author: thhickli
 ms.topic: how-to
 ms.date: 05/28/2025
-ms.author: avdcontent
 ms.custom: devx-track-azurepowershell
 ---
 
