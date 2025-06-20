@@ -1,9 +1,11 @@
 {
   "build": {
-    "markdownEngineName": "markdig",
     "content": [
       {
-        "files": [ "**/*.md", "**/*.yml" ],
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -20,7 +22,13 @@
     ],
     "resource": [
       {
-        "files": [ "**/*.gif", "**/*.jpeg", "**/*.jpg", "**/*.png", "**/*.svg" ],
+        "files": [
+          "**/*.gif", 
+          "**/*.jpeg", 
+          "**/*.jpg", 
+          "**/*.png", 
+          "**/*.svg"
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
