@@ -86,7 +86,7 @@ Also make sure you've registered the *Microsoft.DesktopVirtualization* resource 
 
 ## Identity
 
-To access desktops and applications from your session hosts, your users need to be able to authenticate. [Microsoft Entra ID](/entra/identity/fundamentals/active-directory-whatis) is Microsoft's centralized cloud identity service that enables this capability. Microsoft Entra ID is always used to authenticate users for Azure Virtual Desktop. Session hosts can be joined to the same Microsoft Entra tenant, or to an Active Directory domain using [Active Directory Domain Services](/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview) (AD DS) or [Microsoft Entra Domain Services](/entra/identity/domain-services/overview), providing you with a choice of flexible configuration options.
+To access desktops and applications from your session hosts, your users need to be able to authenticate. [Microsoft Entra ID](/entra/fundamentals/whatis) is Microsoft's centralized cloud identity service that enables this capability. Microsoft Entra ID is always used to authenticate users for Azure Virtual Desktop. Session hosts can be joined to the same Microsoft Entra tenant, or to an Active Directory domain using [Active Directory Domain Services](/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview) (AD DS) or [Microsoft Entra Domain Services](/entra/identity/domain-services/overview), providing you with a choice of flexible configuration options.
 
 ### Session hosts
 
@@ -105,11 +105,11 @@ To join session hosts to Microsoft Entra ID or an Active Directory domain, you n
 
 Your users need accounts that are in Microsoft Entra ID. If you're also using AD DS or Microsoft Entra Domain Services in your deployment of Azure Virtual Desktop, these accounts need to be [hybrid identities](/entra/identity/hybrid/whatis-hybrid-identity), which means the user accounts are synchronized. You need to keep the following things in mind based on which identity provider you use:
 
-- If you're using Microsoft Entra ID with AD DS, you need to configure [Microsoft Entra Connect](/entra/identity/hybrid/whatis-azure-ad-connect) to synchronize user identity data between AD DS and Microsoft Entra ID.
+- If you're using Microsoft Entra ID with AD DS, you need to configure [Microsoft Entra Connect](/entra/identity/hybrid/connect/whatis-azure-ad-connect-v2) to synchronize user identity data between AD DS and Microsoft Entra ID.
 - If you're using Microsoft Entra ID with Microsoft Entra Domain Services, user accounts are synchronized one way from Microsoft Entra ID to Microsoft Entra Domain Services. This synchronization process is automatic.
 
 > [!IMPORTANT]
-> The user account must exist in the Microsoft Entra tenant you use for Azure Virtual Desktop. Azure Virtual Desktop doesn't support [B2B](/entra/identity/external-identities/what-is-b2b), [B2C](../active-directory-b2c/overview.md), or personal Microsoft accounts.
+> The user account must exist in the Microsoft Entra tenant you use for Azure Virtual Desktop. Azure Virtual Desktop doesn't support [B2B](/entra/external-id/external-identities-overview), [B2C](/azure/active-directory-b2c/overview), or personal Microsoft accounts.
 >
 > When using hybrid identities, either the UserPrincipalName (UPN) or the Security Identifier (SID) must match across Active Directory Domain Services and Microsoft Entra ID. For more information, see [Supported identities and authentication methods](authentication.md#hybrid-identity).
 
@@ -214,7 +214,7 @@ Also consider the following:
 
 - Use [Azure Firewall for Azure Virtual Desktop deployments](/azure/firewall/protect-azure-virtual-desktop) to help you lock down your environment and filter outbound traffic.
 
-- To help secure your Azure Virtual Desktop environment in Azure, we recommend you don't open inbound port 3389 on your session hosts. Azure Virtual Desktop doesn't require an open inbound port to be open. If you must open port 3389 for troubleshooting purposes, we recommend you use [just-in-time VM access](../security-center/security-center-just-in-time.md). We also recommend you don't assign a public IP address to your session hosts.
+- To help secure your Azure Virtual Desktop environment in Azure, we recommend you don't open inbound port 3389 on your session hosts. Azure Virtual Desktop doesn't require an open inbound port to be open. If you must open port 3389 for troubleshooting purposes, we recommend you use [just-in-time VM access](/azure/defender-for-cloud/just-in-time-access-usage). We also recommend you don't assign a public IP address to your session hosts.
 
 To learn more, see [Understanding Azure Virtual Desktop network connectivity](network-connectivity.md).
 
@@ -227,7 +227,7 @@ Consider the following points when managing session hosts:
 
 - Don't enable any policies or configurations that disable *Windows Installer*. If you disable Windows Installer, the service can't install agent updates on your session hosts, and your session hosts won't function properly.
 
-- If you're joining session hosts to an AD DS domain and you want to manage them using [Intune](/mem/intune/fundamentals/what-is-intune), you need to configure [Microsoft Entra Connect](/entra/identity/hybrid/whatis-azure-ad-connect) to enable [Microsoft Entra hybrid join](/entra/identity/devices/hybrid-join-plan).
+- If you're joining session hosts to an AD DS domain and you want to manage them using [Intune](/mem/intune/fundamentals/what-is-intune), you need to configure [Microsoft Entra Connect](/entra/identity/hybrid/connect/whatis-azure-ad-connect) to enable [Microsoft Entra hybrid join](/entra/identity/devices/hybrid-join-plan).
 
 - If you're joining session hosts to a Microsoft Entra Domain Services domain, you can't manage them using [Intune](/mem/intune/fundamentals/what-is-intune).
 
