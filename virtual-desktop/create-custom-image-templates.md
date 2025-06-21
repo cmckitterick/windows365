@@ -2,8 +2,8 @@
 title: Use custom image templates to create custom images - Azure Virtual Desktop
 description: Learn how to use custom image templates to create custom images when deploying session hosts in Azure Virtual Desktop.
 ms.topic: how-to
-author: dougeby
-ms.author: avdcontent
+author: ivaylo-w365
+ms.author: ivivano
 ms.date: 01/24/2024
 ---
 
@@ -43,7 +43,7 @@ Before you can create a custom image template, you need to meet the following pr
    "Microsoft.Compute/images/delete"
    ```
 
-- [Assign the custom role to the managed identity](/azure/role-based-access-control/role-assignments-portal-managed-identity.yml#user-assigned-managed-identity). This should be scoped appropriately for your deployment, ideally to the resource group you use store custom image templates.
+- [Assign the custom role to the managed identity](/azure/role-based-access-control/role-assignments-portal-managed-identity). This should be scoped appropriately for your deployment, ideally to the resource group you use store custom image templates.
 
 - *Optional*: If you want to distribute your image to Azure Compute Gallery, [create an Azure Compute Gallery](/azure/virtual-machines/create-gallery), then [create a VM image definition](/azure/virtual-machines/image-version). When you create a VM image definition in the gallery you need to specify the *generation* of the image you intend to create, either *generation 1* or *generation 2*. The generation of the image you want to use as the source image needs to match the generation specified in the VM image definition. Don't create a *VM image version* at this stage. This will be done by Azure Virtual Desktop.
 

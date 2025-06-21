@@ -2,8 +2,8 @@
 title: Required FQDNs and endpoints for Azure Virtual Desktop
 description: A list of FQDNs and endpoints you must allow, ensuring your Azure Virtual Desktop deployment works as intended.
 ms.topic: conceptual
-author: dougeby
-ms.author: avdcontent
+author: PaulCollinge
+ms.author: paulcoll
 ms.date: 11/21/2024
 ---
 

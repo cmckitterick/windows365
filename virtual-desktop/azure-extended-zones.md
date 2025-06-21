@@ -2,8 +2,8 @@
 title: Azure Extended Zones for Azure Virtual Desktop
 description: Learn about using Azure Virtual Desktop on Azure Extended Zones. 
 ms.topic: conceptual
-author: dougeby
-ms.author: avdcontent
+author: TomHickling
+ms.author: thhickli
 ms.date: 11/11/2024
 ---
 

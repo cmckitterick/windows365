@@ -33,7 +33,7 @@ Windows 365 are covered under several compliance certifications and regulatory s
 | [HIPAA](/compliance/regulatory/offering-hipaa-hitech)   | U.S. Health Insurance Portability and Accountability Act | United States |
 
 > [!NOTE]
-> Windows 365 helps your organization meet regulatory compliance standards. Windows 365 supports additional certifications, such as [ISO 22301](/compliance/regulatory/offering-iso-22301), [ISO/IEC 27017](/compliance/regulatory/offering-iso-27017), [ISO/IEC 27018](/compliance/regulatory/offering-iso-27018), and [ISO/IEC 27701](/compliance/regulatory/offering-iso-27701). 
+> Windows 365 helps your organization meet regulatory compliance standards. Windows 365 supports additional certifications, including ISO/IEC 27001, [ISO 22301](/compliance/regulatory/offering-iso-22301), [ISO/IEC 27017](/compliance/regulatory/offering-iso-27017), [ISO/IEC 27018](/compliance/regulatory/offering-iso-27018), [ISO/IEC 27701](/compliance/regulatory/offering-iso-27701), SOC 2 Type 2, FedRAMP, HIPAA, and HITRUST.
 
 For additional certifications, visit [Microsoft Compliance Offerings](/compliance/regulatory/offering-home).
 

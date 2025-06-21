@@ -2,8 +2,8 @@
 title: Configure the session lock behavior for Azure Virtual Desktop
 description: Learn how to configure session lock behavior for Azure Virtual Desktop.
 ms.topic: how-to
-author: dougeby
-ms.author: avdcontent
+author: ChristianMontoya
+ms.author: chrimo
 ms.date: 09/17/2024
 ---
 

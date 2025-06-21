@@ -3,8 +3,8 @@ title: RDP Shortpath - Azure Virtual Desktop
 description: Learn about RDP Shortpath, which establishes a UDP-based transport between a local device and session host in Azure Virtual Desktop.
 ms.topic: concept-article
 ms.custom: references_regions
-author: dougeby
-ms.author: avdcontent
+author: ridalwan
+ms.author: ridalwan
 ms.date: 10/03/2024
 ---
 

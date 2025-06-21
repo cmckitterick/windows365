@@ -63,7 +63,7 @@ The ephemeral disk (d: drive) is deleted and recreated every time the Cloud PC r
 
 Registry keys are automatically set during the provisioning process.
 
-Supported drivers are automatically installed as part of the provisioning process. You don't need to manually install drivers. However, drivers aren't automatically updated, so must manually update drivers as needed.
+Supported drivers are automatically installed as part of the provisioning process. You don't need to manually install drivers. However, drivers aren't automatically updated, so you must manually update drivers as needed.
 
 ## Allowlist
 
@@ -83,6 +83,10 @@ The GPU offerings are available in all [Windows 365 supported regions](requireme
 - Central US
 - Norway East
 - West Europe (Windows 365 Enterprise GPU Standard is available in this region)
+- Mexico Central
+- Japan West
+- Spain Central
+- Israel Central
 
 The West US 2 region is supported but is a restricted region.
 
@@ -97,7 +101,7 @@ For optimal performance of GPU-enabled Cloud PCs, consider these recommendations
 - GPU-enabled Cloud PCs come pre-provisioned with the correct driver needed for the best experience. For information about installing drivers, see [Install NVIDIA GPU drivers on N-series VMs running Windows](/azure/virtual-machines/windows/n-series-driver-setup) and [Install AMD GPU drivers on N-series VMs running Windows](/azure/virtual-machines/windows/n-series-amd-driver-setup) (for the Standard SKU only in limited regions). The use of any external drivers, including drivers from NVIDIA and AMD websites, isn't supported.
 - Don’t use the Multimedia Redirection extension for the browser or for Teams. By default, this extension is uninstalled for GPU-enabled Cloud PCs during provisioning.
 - GPU offerings aren't designed for game development. These offerings are optimized for graphics applications typically used in Enterprise scenarios. For more information with game development scenarios, see [Create a Game Development Virtual Machine with other Game Engines](/gaming/azure/).
-- If you want to guarantee that all your users have the exact same BPU configuration, instead of using Cloud PCs, you can use Azure Virtual Desktop (AVD). AVD can help customers who prefer hardware specific configurations over workload focused configurations. For a complete list of Azure’s GPU offerings, see [Sizes for virtual machines in Azure - GPU accelerated](/azure/virtual-machines/sizes/overview?tabs=breakdownseries%2Cgeneralsizelist%2Ccomputesizelist%2Cmemorysizelist%2Cstoragesizelist%2Cgpusizelist%2Cfpgasizelist%2Chpcsizelist#gpu-accelerated).
+- If you want to guarantee that all your users have the exact same GPU configuration, instead of using Cloud PCs, you can use Azure Virtual Desktop (AVD). AVD can help customers who prefer hardware specific configurations over workload focused configurations. For a complete list of Azure’s GPU offerings, see [Sizes for virtual machines in Azure - GPU accelerated](/azure/virtual-machines/sizes/overview?tabs=breakdownseries%2Cgeneralsizelist%2Ccomputesizelist%2Cmemorysizelist%2Cstoragesizelist%2Cgpusizelist%2Cfpgasizelist%2Chpcsizelist#gpu-accelerated).
 - By default, GPU-enabled Cloud PCs are provisioned to use GPU-accelerated remote frame encoding. For more information about different hardware-accelerated graphics encoding profiles and how to manage them on your GPU-enabled Cloud PCs, see [Enable GPU Acceleration](/azure/virtual-desktop/graphics-enable-gpu-acceleration?tabs=intune).
 
   - The following table lists compatibility of Windows 365 Cloud PC SKUs with our two different GPU-accelerated graphics encoding profiles:    

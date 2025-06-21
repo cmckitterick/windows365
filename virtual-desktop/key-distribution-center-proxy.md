@@ -1,10 +1,10 @@
 ---
 title: Set up Kerberos Key Distribution Center proxy Azure Virtual Desktop - Azure
 description: How to set up an Azure Virtual Desktop host pool to use a Kerberos Key Distribution Center proxy.
-author: dougeby
+author: ChristianMontoya
+ms.author: chrimo
 ms.topic: how-to
 ms.date: 05/04/2021
-ms.author: avdcontent
 ms.custom: docs_inherited
 ---
 # Configure a Kerberos Key Distribution Center proxy
@@ -25,7 +25,7 @@ This article will show you how to configure the feed in the Azure Virtual Deskto
 To configure an Azure Virtual Desktop session host with a KDC proxy, you'll need the following things:
 
 - Access to the Azure portal and an Azure administrator account.
-- The remote client machines must be running at least Windows 10 and have the [Windows Desktop client](/windows-server/remote/remote-desktop-services/clients/windowsdesktop) installed. The web client isn't currently supported.
+- The remote client machines must be running at least Windows 10 and have the Windows Desktop client installed. The web client isn't currently supported.
 - You must have a KDC proxy already installed on your machine. To learn how to do that, see [Set up the RD Gateway role for Azure Virtual Desktop](/windows-server/remote/remote-desktop-services/remote-desktop-gateway-role).
 - The machine's OS must be Windows Server 2016 or later.
 

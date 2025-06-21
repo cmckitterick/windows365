@@ -2,8 +2,8 @@
 title: MSIXMGR tool parameters - Azure Virtual Desktop 
 description: Learn about the command line parameters and syntax you can use with the MSIXMGR tool.
 ms.topic: conceptual
-author: dougeby
-ms.author: avdcontent
+author: JimMoyle
+ms.author: jimoyle
 ms.date: 03/05/2024
 ---
 
