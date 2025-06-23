@@ -294,7 +294,7 @@ Windows App and the Remote Desktop app for Android now support FIDO devices and 
 
 #### Intune Mobile Application Management (MAM) support on Windows App on Android (preview) for devices running Android 15<!--56126266-->
 
-Intune MAM policies can now be applied to Windows App on Android (preview) when the device is running on Android 15. Previously, Windows App could run on Android 15, but MAM policies wouldn’t take effect. For more information, see [Configure client device redirection settings for Windows App and the Remote Desktop app using Microsoft Intune](/azure/virtual-desktop/client-device-redirection-intune).
+Intune MAM policies can now be applied to Windows App on Android (preview) when the device is running on Android 15. Previously, Windows App could run on Android 15, but MAM policies wouldn’t take effect.
 
 <!-- ########################## -->
 ## Week of February 3, 2025 (Service release 2501)
@@ -413,8 +413,6 @@ Windows 365 Frontline in shared mode gives you the ability to provision a collec
 #### Configure client device redirection settings for Windows App on iOS/iPadOS/Android using Microsoft Intune<!--51893843-->
 
 You can now use Microsoft Intune Mobile Application Management to check for device posture and manage redirections for Windows App on iOS, iPadOS, and Android (preview). You can use Microsoft Intune on both corporate managed and personal devices.
-
-For more information, see [Configure client device redirection settings for Windows App and the Remote Desktop app using Microsoft Intune](/azure/virtual-desktop/client-device-redirection-intune).
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device security
