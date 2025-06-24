@@ -3,8 +3,8 @@ title: Use the Remote Desktop client to connect to Azure Virtual Desktop
 description: Learn how to connect to Azure Virtual Desktop using the Remote Desktop client.
 ms.topic: how-to
 ms.date: 02/26/2025
-ms.author: avdcontent
-author: dougeby
+author: cawerner
+ms.author: cawerner
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
