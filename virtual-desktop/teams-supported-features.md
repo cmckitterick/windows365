@@ -4,7 +4,7 @@ description: Supported features for Microsoft Teams on Azure Virtual Desktop.
 ms.topic: conceptual
 ms.custom: docs_inherited
 search.audiencetype: EndUser
-ms.author: cawerner
+author: cawerner
 ms.author: cawerner
 ms.date: 06/03/2025
 ---

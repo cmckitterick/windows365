@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot Microsoft Teams on Azure Virtual Desktop - Azure
 description: Known issues and troubleshooting instructions for Teams on Azure Virtual Desktop.
-ms.author: cawerner
+author: cawerner
 ms.author: cawerner
 ms.topic: troubleshooting
 ms.date: 03/07/2023
