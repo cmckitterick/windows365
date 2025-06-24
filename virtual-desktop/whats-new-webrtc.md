@@ -1,10 +1,10 @@
 ---
 title: What's new in the Remote Desktop WebRTC Redirector Service?
 description: New features and product updates the Remote Desktop WebRTC Redirector Service for Azure Virtual Desktop.
-author: dougeby
+author: cawerner
+ms.author: cawerner
 ms.topic: release-notes
 ms.date: 05/08/2025
-ms.author: avdcontent
 ms.custom: references_regions
 ---
 
