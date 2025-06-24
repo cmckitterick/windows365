@@ -2,8 +2,8 @@
 title: Use RDP Multipath to improve Azure Virtual Desktop connections
 description: Learn how RDP Multipath enhances remote connections to an Azure Virtual Desktop session by intelligently managing multiple network paths.
 ms.topic: how-to
-author: dougeby
-ms.author: avdcontent
+author: cawerner
+ms.author: cawerner
 ms.date: 06/02/2025
 ---
 

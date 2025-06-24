@@ -1,10 +1,10 @@
 ---
 title: Use Microsoft Teams on Azure Virtual Desktop - Azure
 description: How to use Microsoft Teams on Azure Virtual Desktop.
-author: dougeby
+ms.author: cawerner
+ms.author: cawerner
 ms.topic: how-to
 ms.date: 06/03/2025
-ms.author: avdcontent
 ms.custom: docs_inherited
 ---
 
