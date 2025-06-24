@@ -1,10 +1,10 @@
 ---
 title: Set up diagnostics for monitoring agent updates
 description: How to set up diagnostic reports to monitor agent updates.
-author: dougeby
+author: cawerner
+ms.author: cawerner
 ms.topic: how-to
 ms.date: 03/20/2023
-ms.author: avdcontent
 ms.custom: docs_inherited
 ---
 

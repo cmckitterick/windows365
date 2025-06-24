@@ -2,8 +2,8 @@
 title: Connect to Azure Virtual Desktop
 description: Learn how you can connect remotely to a Windows desktops and apps remotely running in Azure Virtual Desktop using Windows App or the Remote Desktop client.
 ms.topic: concept-article
-author: dougeby
-ms.author: avdcontent
+author: cawerner
+ms.author: cawerner
 ms.date: 03/05/2025
 ---
 
