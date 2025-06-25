@@ -2,8 +2,8 @@
 title: Built-in Azure RBAC roles Azure Virtual Desktop
 description: An overview of built-in Azure RBAC roles for Azure Virtual Desktop available.
 ms.topic: conceptual
-author: dougeby
-ms.author: avdcontent
+author: cawerner
+ms.author: cawerner
 ms.date: 09/23/2024
 ---
 

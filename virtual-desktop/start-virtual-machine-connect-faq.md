@@ -1,10 +1,10 @@
 ---
 title: Azure Virtual Desktop Start VM Connect FAQ - Azure
 description: Frequently asked questions and best practices for using the Start VM on Connect feature.
-author: dougeby
+author: cawerner
+ms.author: cawerner
 ms.topic: conceptual
 ms.date: 11/01/2023
-ms.author: avdcontent
 ms.custom: docs_inherited
 ---
 # Start VM on Connect FAQ

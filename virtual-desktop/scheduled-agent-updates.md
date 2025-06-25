@@ -1,10 +1,10 @@
 ---
 title: Azure Virtual Desktop Scheduled Agent Updates
 description: How to use the Scheduled Agent Updates feature to choose a date and time to update your Azure Virtual Desktop agent components.
-author: dougeby
 ms.topic: how-to
+author: cawerner
+ms.author: cawerner
 ms.date: 07/20/2022
-ms.author: avdcontent
 ms.custom: docs_inherited
 ---
 
