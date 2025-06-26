@@ -2,7 +2,7 @@
 # required metadata
 title: Certificates and networking for Windows 365 Link devices
 titleSuffix:
-description: Learn about certificates and neetworking for Windows 365 Link devices
+description: Learn about certificates and networking for Windows 365 Link devices
 keywords:
 author: ErikjeMS  
 ms.author: erikje
@@ -40,8 +40,8 @@ If your current implementation relies on AD joined devices and group policy, fir
 Windows 365 Link supports the same certificate policies for authentication as Windows 11. Intune can be used for:
 
 - Trusted certificate installation.
-- PKCS certificates.
-- SCEP certificates.
+- Public Key Cryptography Standards (PKCS) certificates.
+-Simple Certificate Enrollment Protocol (SCEP) certificates.
 
 Most certificate policies that work with Microsoft Entra joined Windows 11 devices also work on Windows 365 Link.
 
@@ -56,13 +56,13 @@ Windows 365 Link supports the same policies for Wi-Fi and wired networks as Wind
 For more information, see [Wi-Fi settings for Windows 10/11 devices in Microsoft Intune](/intune/intune-service/configuration/wi-fi-settings-windows) and [Configure wired network settings for Windows devices in Microsoft Intune](/intune/intune-service/configuration/wired-network-settings-windows).
 
 > [!NOTE]
-> Windows 365 Link doesn't support the use of username/password for network authentication, like MS-CHAP v2. This method uses the same response function as hte deprecated NTLMv1 network authentication. Windows 365 Link doesn't support EAP-MSCHAPv2 or PEAP-MSCHAPv2 for authentication. Instead of using these, we recommend that you use certificate based authentication like EAP-TLS or PEAP-TLS.
+> Windows 365 Link doesn't support the use of username/password for network authentication, like MS-CHAP v2. This method uses the same response function as the deprecated NTLMv1 network authentication. Windows 365 Link doesn't support EAP-MSCHAPv2 or PEAP-MSCHAPv2 for authentication. Instead of using these protocols, we recommend that you use certificate based authentication like EAP-TLS or PEAP-TLS.
 
 ## Proxy
 
 Windows 365 Link supports the same policies for Network Proxy as Windows 11, but users can't be prompted for authentication with the proxy. Most proxy policies that work with Microsoft Entra joined Windows 11 devices also work on Windows 365 Link.
 
-In some cases, a [device restriction policy for proxy settings](/intune/intune-service/configuration/device-restrictions-windows-10#network-proxy) might show as **Not Applicable** when assigned to Link devices. If this happens, a Custom policy can instead be used to set the network proxy CSP OMA-URI values.
+In some cases, a [device restriction policy for proxy settings](/intune/intune-service/configuration/device-restrictions-windows-10#network-proxy) might show as **Not Applicable** when assigned to Link devices. If this result happens, a Custom policy can instead be used to set the network proxy configuration service provider (CSP) OMA-URI values.
 
 For more information, see [NetworkProxy CSP](/windows/client-management/mdm/networkproxy-csp).
 
