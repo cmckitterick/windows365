@@ -43,7 +43,7 @@ Windows 365 Link supports the same certificate policies for authentication as Wi
 - PKCS certificates.
 - SCEP certificates.
 
-Certificate policies that work with Microsoft Entra joined Windows 11 devices also work on Windows 365 Link.
+Most certificate policies that work with Microsoft Entra joined Windows 11 devices also work on Windows 365 Link.
 
 Windows 365 Link is a shared device. Therefore, you should deploy device certificates instead of user certificates for Wi-Fi Authentication.
 
@@ -51,7 +51,7 @@ For more information, see [Types of certificate that are supported by Microsoft 
 
 ## Networking
 
-Windows 365 Link supports the same policies for Wi-Fi and wired networks as Windows 11. This support includes the Basic profile and Enterprise profiles that use certificates for authentication. Wi-Fi policies that work with Microsoft Entra joined Windows 11 devices also work on Windows 365 Link.
+Windows 365 Link supports the same policies for Wi-Fi and wired networks as Windows 11. This support includes the Basic profile and Enterprise profiles that use certificates for authentication. Most Wi-Fi policies that work with Microsoft Entra joined Windows 11 devices also work on Windows 365 Link.
 
 For more information, see [Wi-Fi settings for Windows 10/11 devices in Microsoft Intune](/intune/intune-service/configuration/wi-fi-settings-windows) and [Configure wired network settings for Windows devices in Microsoft Intune](/intune/intune-service/configuration/wired-network-settings-windows).
 
@@ -60,7 +60,7 @@ For more information, see [Wi-Fi settings for Windows 10/11 devices in Microsoft
 
 ## Proxy
 
-Windows 365 Link supports the same policies for Network Proxy as Windows 11, but users can't be prompted for authentication with the proxy. Proxy policies that work with Microsft Entra joined Windows 11 devices also work on Windows 365 Link.
+Windows 365 Link supports the same policies for Network Proxy as Windows 11, but users can't be prompted for authentication with the proxy. Most proxy policies that work with Microsoft Entra joined Windows 11 devices also work on Windows 365 Link.
 
 In some cases, a [device restriction policy for proxy settings](/intune/intune-service/configuration/device-restrictions-windows-10#network-proxy) might show as **Not Applicable** when assigned to Link devices. If this happens, a Custom policy can instead be used to set the network proxy CSP OMA-URI values.
 
