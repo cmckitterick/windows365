@@ -49,6 +49,8 @@ items:
     href: conditional-access-policies.md
   - name: Sign-in methods
     href: sign-in-methods.md
+  - name: Certificates and networking
+    href: certificates-networking.md
 - name: Managing Windows 365 Link
   items:
   - name: Management overview
