@@ -49,7 +49,7 @@ To place a Cloud PC under review, you must first have an Azure storage account i
 As part of the process to place Cloud PCs under review, Windows 365 requires the **Storage Account Contributor** and **Storage Blob Data Contributor** roles for your Azure storage account.
 
 1. [Create a Storage Account](/azure/storage/common/storage-account-create) in the Azure subscription of your choice. To create the account, you can use PowerShell, Azure CLI, Azure Resource Manager Template, or Azure portal.
-1. Configure the storage account with the following settings;
+2. Configure the storage account with the following settings;
        - **Instance details**
         - **Region**: Same region as Cloud PC suggested for performance. There's no restriction on which region.
         - **Performance**: **Premium** (supports hot access tier) or **Standard** (supports all [access tiers](/azure/storage/blobs/access-tiers-overview)).
@@ -61,7 +61,7 @@ As part of the process to place Cloud PCs under review, Windows 365 requires the
        - **Networking**
         - **Network access**: **Enable public access from all networks**
 
-       OPTIONAL: If you want to copy your storage account copied to immutable storage, set these fields: 
+   OPTIONAL: If you want to copy your storage account copied to immutable storage, set these fields: 
 
    - Select **Enable versioning for blobs**.
       - Select **Enable version-level immutability support**.
@@ -69,7 +69,7 @@ As part of the process to place Cloud PCs under review, Windows 365 requires the
 
     After the storage account is created, you must apply a [lock policy](/azure/storage/blobs/immutable-policy-configure-container-scope). For more information about how to configure Azure Blob Storage for immutability and adherence to regulations like [SEC Rule 17a-4](/compliance/regulatory/offering-sec-docs), see [Azure - Cohasset Assessment - WORM Storage (2024) Report](https://aka.ms/AzureWormStorage).
    
-       NOT SUPPORTED: Setting a [Permit scope for copy operations](/azure/storage/common/security-restrict-copy-operations). It must be (null), the default value, to allow copying from any storage account to the destination account.
+   NOT SUPPORTED: Setting a [Permit scope for copy operations](/azure/storage/common/security-restrict-copy-operations). It must be (null), the default value, to allow copying from any storage account to the destination account.
 
 1. [Assign an Azure role for access to blob data](/azure/storage/blobs/assign-azure-role-data-access). The minimum permissions required for the Windows 365 service to place a Cloud PC under review are **Storage Account Contributor** and **Storage Blob Data Contributor**. Depending on when your tenant was provisioned, the identity for the Windows 365 service for RBAC will be listed as *Windows 365* whereas older tenants may show *Cloud PC*. 
 
