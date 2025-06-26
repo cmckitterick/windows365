@@ -1,7 +1,7 @@
 
 {:changed-files-limit 60
  :allowed-branchname-matches ["main" "release-.*"]
- :allowed-filename-matches ["Windows365/"] ;; Can be overridden in repo-specific edn file. This is an allow list that identifies which folders contain the files Acrolinx will check. Separate multiple folders as follows ["folder/" "folder2"]
+ :allowed-filename-matches ["Windows365/" "virtual-desktop/"] ;; Can be overridden in repo-specific edn file. This is an allow list that identifies which folders contain the files Acrolinx will check. Separate multiple folders as follows ["folder/" "folder2"]
  
 :use-gh-statuses true
  
