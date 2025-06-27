@@ -119,7 +119,7 @@ To configure drive redirection using host pool RDP properties:
 
 1. For **Drive/storage redirection**, select the drop-down list, then select one of the following options:
 
-   - **Don't redirect any drives (default)**
+   - **Don't redirect any drives** (*default*)
       
    - **Redirect all disk drives, including ones that are connected later**
       
