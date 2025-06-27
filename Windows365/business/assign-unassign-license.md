@@ -40,4 +40,4 @@ You can assign some licenses on [windows365.microsoft.com](https://windows365.mi
 5. Select licenses that you want to assign to the user, or deselect licenses that you want to unassign from the user.
 6. Select **Save changes**.
     - When you assign a Windows 365 license, Windows 365 will immediately begin creating a new Cloud PC for the user.
-    - When you unassign a Windows 365 license from a user or a license expires, the Cloud PC will enter into a grace period for 24 hours. During the grace period, that user can still access their CPC as normal. After the 24 hour grace period ends, the Cloud PC will be deleted.
+    - When you unassign a Windows 365 license from a user or a license expires, the Cloud PC will enter into a grace period for seven days. During the grace period, that user can still access their Cloud PC as normal. After the seven day grace period ends, the Cloud PC will be deleted.
